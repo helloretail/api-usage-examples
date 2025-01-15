@@ -1,15 +1,15 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2025-01-15T11:05:13.037Z",
+    "__export_date": "2025-01-15T12:29:37.761Z",
     "__export_source": "insomnia.desktop.app:v2022.4.2",
     "resources": [
         {
-            "_id": "req_4a2d1de1207a4a75b0495b47683f6e20",
-            "parentId": "fld_2dcae1991ffc438d875db669bd490c2c",
-            "modified": 1736939053247,
-            "created": 1736938871579,
-            "url": "https://domain-name.dk/rest/V1/awext/info",
+            "_id": "req_67a1339e4e95492b9386dd731cc28fd2",
+            "parentId": "fld_06c36812d73147d8a828aee53b6ec305",
+            "modified": 1736944051954,
+            "created": 1736943894206,
+            "url": "https://www.domain-name.dk/?feed=addwish_info",
             "name": "Version and extraattributes information",
             "description": "",
             "method": "GET",
@@ -17,14 +17,14 @@
             "parameters": [],
             "headers": [
                 {
-                    "id": "pair_a54394b9db6d4d01802462a86af6daf2",
+                    "id": "pair_f834231243e84cf794826409d18cbbd2",
                     "name": "Authorization",
-                    "value": "Bearer tok_m2_{ your Magento 2 token }",
+                    "value": "Bearer tok_wc_{ Your WooCommerce token }",
                     "description": ""
                 }
             ],
             "authentication": {},
-            "metaSortKey": -1736938871579,
+            "metaSortKey": -1736943894206,
             "isPrivate": false,
             "settingStoreCookies": true,
             "settingSendCookies": true,
@@ -35,15 +35,15 @@
             "_type": "request"
         },
         {
-            "_id": "fld_2dcae1991ffc438d875db669bd490c2c",
+            "_id": "fld_06c36812d73147d8a828aee53b6ec305",
             "parentId": "fld_c837ff051d0643e8b3e4d2ac2d969a3e",
-            "modified": 1736938861874,
-            "created": 1736938861874,
-            "name": "Magento 2",
+            "modified": 1736943891578,
+            "created": 1736943891578,
+            "name": "WooCommerce",
             "description": "",
             "environment": {},
             "environmentPropertyOrder": null,
-            "metaSortKey": -1736938861874,
+            "metaSortKey": -1736943891578,
             "_type": "request_group"
         },
         {
@@ -79,6 +79,90 @@
             "description": "",
             "scope": "collection",
             "_type": "workspace"
+        },
+        {
+            "_id": "req_d3c5c9f640d64784a8dcaafb0a287757",
+            "parentId": "fld_70572a7c03a7429f9ebaa3d2273dd3c0",
+            "modified": 1736944020263,
+            "created": 1736943555077,
+            "url": "https://www.domain-name.dk/awext/index/info",
+            "name": "Version and extraattributes information",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_2f86fe883a3b4ae1a14bc9647ebde221",
+                    "name": "Authorization",
+                    "value": "Bearer tok_{ your Magento 2 token }",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1736943555077,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_70572a7c03a7429f9ebaa3d2273dd3c0",
+            "parentId": "fld_c837ff051d0643e8b3e4d2ac2d969a3e",
+            "modified": 1736943552598,
+            "created": 1736943552598,
+            "name": "Magento 1",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1736943552598,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_4a2d1de1207a4a75b0495b47683f6e20",
+            "parentId": "fld_2dcae1991ffc438d875db669bd490c2c",
+            "modified": 1736943607478,
+            "created": 1736938871579,
+            "url": "https://www.domain-name.dk/rest/V1/awext/info",
+            "name": "Version and extraattributes information",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_a54394b9db6d4d01802462a86af6daf2",
+                    "name": "Authorization",
+                    "value": "Bearer tok_m2_{ your Magento 2 token }",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1736938871579,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_2dcae1991ffc438d875db669bd490c2c",
+            "parentId": "fld_c837ff051d0643e8b3e4d2ac2d969a3e",
+            "modified": 1736938861874,
+            "created": 1736938861874,
+            "name": "Magento 2",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1736938861874,
+            "_type": "request_group"
         },
         {
             "_id": "req_b79a7b0f7d384bb7aced0dd0a480a80d",
@@ -2130,10 +2214,45 @@
         {
             "_id": "jar_775e73c035bc4082b30cd76c17ae11e0",
             "parentId": "wrk_60b7a5fb3eac4286b8d0b694ea1434aa",
-            "modified": 1731336495041,
+            "modified": 1736943578777,
             "created": 1731336495041,
             "name": "Default Jar",
-            "cookies": [],
+            "cookies": [
+                {
+                    "key": "om_frontend",
+                    "value": "pcf4s2b2nsari0740g3m3p1i8r",
+                    "expires": "2025-02-14T12:19:38.000Z",
+                    "maxAge": 2592000,
+                    "domain": "www.houseofkids.dk",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "extensions": [
+                        "SameSite=None"
+                    ],
+                    "hostOnly": false,
+                    "creation": "2025-01-15T12:19:26.434Z",
+                    "lastAccessed": "2025-01-15T12:19:38.777Z",
+                    "id": "909912419668472"
+                },
+                {
+                    "key": "currency",
+                    "value": "DKK",
+                    "expires": "2025-02-14T12:19:38.000Z",
+                    "maxAge": 2592000,
+                    "domain": "www.houseofkids.dk",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "extensions": [
+                        "SameSite=None"
+                    ],
+                    "hostOnly": false,
+                    "creation": "2025-01-15T12:19:26.435Z",
+                    "lastAccessed": "2025-01-15T12:19:38.777Z",
+                    "id": "3383739288930645"
+                }
+            ],
             "_type": "cookie_jar"
         },
         {
