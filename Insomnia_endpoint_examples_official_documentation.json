@@ -1,7 +1,7 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2025-01-15T12:29:37.761Z",
+    "__export_date": "2025-01-31T13:13:17.800Z",
     "__export_source": "insomnia.desktop.app:v2022.4.2",
     "resources": [
         {
@@ -461,7 +461,7 @@
         {
             "_id": "req_f5d5ef94ac0c4721ae59c7a02cb6b28b",
             "parentId": "fld_918d112e189747838c3a18b97fccf355",
-            "modified": 1733224185655,
+            "modified": 1738329030237,
             "created": 1731336495144,
             "url": "https://core.helloretail.com/serve/collect/conversion",
             "name": "Conversion tracking [PRODUCTNUMBERS]",
@@ -469,7 +469,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"trackingUserId\": \"67360c0015222d284cad5cec\",\n    \"websiteUuid\": \"d364dcdc-e618-45bd-b395-8653579884fe\",\n    \"total\": 499.32,\n    \"orderNumber\": \"hr-REST-API-test-18\",\n    \"email\": \"customer@example.com\",\n    \"customerId\": \"123456\",\n    \"productNumbers\": [\n        \"14814386553167\"\n    ]\n}"
+                "text": "{\n    \"trackingUserId\": \"67321f3a7f80eb30448b1279\",\n    \"websiteUuid\": \"d364dcdc-e618-45bd-b395-8653579884fe\",\n    \"total\": 2185.85,\n    \"orderNumber\": \"hr-REST-API-test-31-01-2025-e\",\n    \"email\": \"customer@example.com\",\n    \"customerId\": \"123456789\",\n\t\t\"products\":[\n\t\t\t\t{\n\t\t\t\t\t\"productNumber\": \"14814386389327\",\n\t\t\t\t\t\"quantity\": 1,\n\t\t\t\t\t\"lineTotal\": 785.95 \n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"productNumber\": \"14814386717007\",\n\t\t\t\t\t\"quantity\": 2,\n\t\t\t\t\t\"lineTotal\": 699.95\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -505,7 +505,7 @@
         {
             "_id": "req_3fe3a966f8f8436d95d270d3d98c2f23",
             "parentId": "fld_918d112e189747838c3a18b97fccf355",
-            "modified": 1733224188371,
+            "modified": 1738329085979,
             "created": 1731336495146,
             "url": "https://core.helloretail.com/serve/collect/conversion",
             "name": "Conversion tracking [URLS]",
@@ -513,7 +513,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"trackingUserId\": \"67321f3a7f80eb30448b1279\",\n    \"websiteUuid\": \"d364dcdc-e618-45bd-b395-8653579884fe\",\n    \"total\": 499.32,\n    \"orderNumber\": \"hr-REST-API-test-1\",\n    \"email\": \"customer@example.com\",\n    \"customerId\": \"123456\",\n    \"urls\": [\n        \"https://www.hr-api-test.dk/products/selling-plans-ski-wax\"\n    ]\n}"
+                "text": "{\n    \"trackingUserId\": \"67321f3a7f80eb30448b1279\",\n    \"websiteUuid\": \"d364dcdc-e618-45bd-b395-8653579884fe\",\n    \"total\": 2185.85,\n    \"orderNumber\": \"hr-REST-API-test-31-01-2025-f\",\n    \"email\": \"customer@example.com\",\n    \"customerId\": \"123456789\",\n\t\t\"products\":[\n\t\t\t\t{\n\t\t\t\t\t\"url\": \"https://www.hr-api-test.dk/products/the-compare-at-price-snowboard\",\n\t\t\t\t\t\"quantity\": 1,\n\t\t\t\t\t\"lineTotal\": 785.95 \n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"url\": \"https://www.hr-api-test.dk/products/the-complete-snowboard\",\n\t\t\t\t\t\"quantity\": 2,\n\t\t\t\t\t\"lineTotal\": 699.95\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -697,7 +697,7 @@
         {
             "_id": "req_8c6586b65beb4c91901087e9df923f51",
             "parentId": "fld_918d112e189747838c3a18b97fccf355",
-            "modified": 1733224226524,
+            "modified": 1738329137492,
             "created": 1731336495132,
             "url": "https://core.helloretail.com/serve/collect/click",
             "name": "Click tracking",
