@@ -1,7 +1,7 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2025-01-31T13:13:17.800Z",
+    "__export_date": "2025-02-12T10:07:54.640Z",
     "__export_source": "insomnia.desktop.app:v2022.4.2",
     "resources": [
         {
@@ -729,7 +729,7 @@
         {
             "_id": "req_de303fdba58f430da1c4386bd3da1031",
             "parentId": "fld_fa293cae6dc242e5b1ebe0f9c007ad34",
-            "modified": 1736521250465,
+            "modified": 1739354741674,
             "created": 1731336495106,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products",
@@ -785,7 +785,7 @@
         {
             "_id": "req_06eec7f572e740f3a7d3da48b1aa7771",
             "parentId": "fld_fa293cae6dc242e5b1ebe0f9c007ad34",
-            "modified": 1733839036951,
+            "modified": 1739354771182,
             "created": 1731336495107,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories",
@@ -817,7 +817,7 @@
         {
             "_id": "req_73b3813d7e8e449c8704b32d1871730f",
             "parentId": "fld_fa293cae6dc242e5b1ebe0f9c007ad34",
-            "modified": 1733224244529,
+            "modified": 1739354436845,
             "created": 1731336495109,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories, brands",
@@ -849,7 +849,7 @@
         {
             "_id": "req_642b3578c93a44edbf68d49e95b84c3a",
             "parentId": "fld_fa293cae6dc242e5b1ebe0f9c007ad34",
-            "modified": 1733224246108,
+            "modified": 1739354438188,
             "created": 1731336495110,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories, brands, sitePages",
@@ -881,7 +881,7 @@
         {
             "_id": "req_090180a47f004ecebd0e66e04192f6ba",
             "parentId": "fld_fa293cae6dc242e5b1ebe0f9c007ad34",
-            "modified": 1736512338370,
+            "modified": 1739354772625,
             "created": 1731336495111,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories, brands, sitePages, blogPosts",
@@ -911,9 +911,41 @@
             "_type": "request"
         },
         {
+            "_id": "req_264fda472ffd4604829d9d772a371d77",
+            "parentId": "fld_fa293cae6dc242e5b1ebe0f9c007ad34",
+            "modified": 1739354836865,
+            "created": 1739354799385,
+            "url": "https://core.helloretail.com/serve/search/",
+            "name": "Search: products, categories, brands, sitePages, blogPosts, Redirects",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n    \"query\": \"test\",\n    \"key\": \"40cce1a0-aab6-4855-a279-86a53a29c8b4\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"brands\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"sitePages\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"blogPosts\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n\t\t\"redirects\": {\n\t\t\t\t\"start\": 0,\n\t\t\t\t\"count\": 2\n\t\t}\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_ac07af9c81614844b84f467027e5ded8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1724676869267,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
             "_id": "req_e59c950923aa40fbb9cc997ab46fbe2a",
             "parentId": "fld_1ad366da97bd43d793d4283a06970e08",
-            "modified": 1736938616082,
+            "modified": 1739354764194,
             "created": 1731336495114,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products",
@@ -957,7 +989,7 @@
         {
             "_id": "req_6d63987de2764ab6bab08b8b1abd2697",
             "parentId": "fld_1ad366da97bd43d793d4283a06970e08",
-            "modified": 1736521269929,
+            "modified": 1739354764651,
             "created": 1731336495115,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories",
@@ -989,7 +1021,7 @@
         {
             "_id": "req_332a87d303e041908ce7cef774bdb701",
             "parentId": "fld_1ad366da97bd43d793d4283a06970e08",
-            "modified": 1736521266137,
+            "modified": 1739354442434,
             "created": 1731336495117,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories, brands",
@@ -1053,7 +1085,7 @@
         {
             "_id": "req_e5323a67781d4354b78140572e0f5508",
             "parentId": "fld_1ad366da97bd43d793d4283a06970e08",
-            "modified": 1733224292560,
+            "modified": 1739354825278,
             "created": 1731336495119,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories, brands, sitePages, blogPosts",
@@ -1085,7 +1117,7 @@
         {
             "_id": "req_2e12f3fa1d4b48c1bd5ded8eca04cba7",
             "parentId": "fld_04fe0d14fd8246d195a228cd5659cf56",
-            "modified": 1733239296834,
+            "modified": 1739354452836,
             "created": 1731336495123,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products",
