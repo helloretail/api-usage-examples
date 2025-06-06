@@ -1,7 +1,7 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2025-02-12T10:07:54.640Z",
+    "__export_date": "2025-06-06T11:39:50.307Z",
     "__export_source": "insomnia.desktop.app:v2022.4.2",
     "resources": [
         {
@@ -505,7 +505,7 @@
         {
             "_id": "req_3fe3a966f8f8436d95d270d3d98c2f23",
             "parentId": "fld_918d112e189747838c3a18b97fccf355",
-            "modified": 1738329085979,
+            "modified": 1749209921911,
             "created": 1731336495146,
             "url": "https://core.helloretail.com/serve/collect/conversion",
             "name": "Conversion tracking [URLS]",
@@ -729,7 +729,7 @@
         {
             "_id": "req_de303fdba58f430da1c4386bd3da1031",
             "parentId": "fld_fa293cae6dc242e5b1ebe0f9c007ad34",
-            "modified": 1739354741674,
+            "modified": 1749208902426,
             "created": 1731336495106,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products",
@@ -737,7 +737,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"query\": \"test\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"]\n    }\n}"
+                "text": "{\n    \"query\": \"test\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n\t\t\"deviceType\":\"DESKTOP\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"]\n    }\n}"
             },
             "parameters": [],
             "headers": [
@@ -785,7 +785,7 @@
         {
             "_id": "req_06eec7f572e740f3a7d3da48b1aa7771",
             "parentId": "fld_fa293cae6dc242e5b1ebe0f9c007ad34",
-            "modified": 1739354771182,
+            "modified": 1749209929488,
             "created": 1731336495107,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories",
@@ -793,7 +793,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    }\n}"
+                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n\t\t\"deviceType\":\"DESKTOP\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    }\n}"
             },
             "parameters": [],
             "headers": [
@@ -817,7 +817,7 @@
         {
             "_id": "req_73b3813d7e8e449c8704b32d1871730f",
             "parentId": "fld_fa293cae6dc242e5b1ebe0f9c007ad34",
-            "modified": 1739354436845,
+            "modified": 1749208924975,
             "created": 1731336495109,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories, brands",
@@ -825,7 +825,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"brands\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    }\n}"
+                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n\t\t\"deviceType\":\"DESKTOP\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"brands\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    }\n}"
             },
             "parameters": [],
             "headers": [
@@ -849,7 +849,7 @@
         {
             "_id": "req_642b3578c93a44edbf68d49e95b84c3a",
             "parentId": "fld_fa293cae6dc242e5b1ebe0f9c007ad34",
-            "modified": 1739354438188,
+            "modified": 1749208928694,
             "created": 1731336495110,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories, brands, sitePages",
@@ -857,7 +857,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"brands\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"sitePages\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    }\n}"
+                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n\t\t\"deviceType\":\"DESKTOP\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"brands\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"sitePages\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    }\n}"
             },
             "parameters": [],
             "headers": [
@@ -881,7 +881,7 @@
         {
             "_id": "req_090180a47f004ecebd0e66e04192f6ba",
             "parentId": "fld_fa293cae6dc242e5b1ebe0f9c007ad34",
-            "modified": 1739354772625,
+            "modified": 1749208934243,
             "created": 1731336495111,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories, brands, sitePages, blogPosts",
@@ -889,7 +889,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"query\": \"*\",\n    \"key\": \"40cce1a0-aab6-4855-a279-86a53a29c8b4\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"brands\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"sitePages\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"blogPosts\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    }\n}"
+                "text": "{\n    \"query\": \"*\",\n    \"key\": \"40cce1a0-aab6-4855-a279-86a53a29c8b4\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n\t\t\"deviceType\":\"DESKTOP\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"brands\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"sitePages\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"blogPosts\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    }\n}"
             },
             "parameters": [],
             "headers": [
@@ -913,7 +913,7 @@
         {
             "_id": "req_264fda472ffd4604829d9d772a371d77",
             "parentId": "fld_fa293cae6dc242e5b1ebe0f9c007ad34",
-            "modified": 1739354836865,
+            "modified": 1749208938278,
             "created": 1739354799385,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories, brands, sitePages, blogPosts, Redirects",
@@ -921,7 +921,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"query\": \"test\",\n    \"key\": \"40cce1a0-aab6-4855-a279-86a53a29c8b4\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"brands\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"sitePages\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"blogPosts\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n\t\t\"redirects\": {\n\t\t\t\t\"start\": 0,\n\t\t\t\t\"count\": 2\n\t\t}\n}"
+                "text": "{\n    \"query\": \"test\",\n    \"key\": \"40cce1a0-aab6-4855-a279-86a53a29c8b4\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n\t\t\"deviceType\":\"DESKTOP\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"brands\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"sitePages\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n    \"blogPosts\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"]\n    },\n\t\t\"redirects\": {\n\t\t\t\t\"start\": 0,\n\t\t\t\t\"count\": 2\n\t\t}\n}"
             },
             "parameters": [],
             "headers": [
@@ -945,7 +945,7 @@
         {
             "_id": "req_e59c950923aa40fbb9cc997ab46fbe2a",
             "parentId": "fld_1ad366da97bd43d793d4283a06970e08",
-            "modified": 1739354764194,
+            "modified": 1749208947948,
             "created": 1731336495114,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products",
@@ -953,7 +953,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\": [\"brand:HR API TEST\"]\n    }\n}"
+                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n\t\t\"deviceType\":\"DESKTOP\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\": [\"brand:HR API TEST\"]\n    }\n}"
             },
             "parameters": [],
             "headers": [
@@ -989,7 +989,7 @@
         {
             "_id": "req_6d63987de2764ab6bab08b8b1abd2697",
             "parentId": "fld_1ad366da97bd43d793d4283a06970e08",
-            "modified": 1739354764651,
+            "modified": 1749208950577,
             "created": 1731336495115,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories",
@@ -997,7 +997,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\": [\"brand:HR API TEST\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\",\"hierarchy\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Home page\"]\n    }\n}"
+                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n\t\t\"deviceType\":\"DESKTOP\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\": [\"brand:HR API TEST\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\",\"hierarchy\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Home page\"]\n    }\n}"
             },
             "parameters": [],
             "headers": [
@@ -1021,7 +1021,7 @@
         {
             "_id": "req_332a87d303e041908ce7cef774bdb701",
             "parentId": "fld_1ad366da97bd43d793d4283a06970e08",
-            "modified": 1739354442434,
+            "modified": 1749208953375,
             "created": 1731336495117,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories, brands",
@@ -1029,7 +1029,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\": [\"brand:Hydrogen Vendor\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Home page\"]\n    },\n    \"brands\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Automated Collection\"]\n    }\n}"
+                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n\t\t\"deviceType\":\"DESKTOP\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\": [\"brand:Hydrogen Vendor\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Home page\"]\n    },\n    \"brands\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Automated Collection\"]\n    }\n}"
             },
             "parameters": [],
             "headers": [
@@ -1053,7 +1053,7 @@
         {
             "_id": "req_e91ead26e2d0486282f6be0ea0ded4c6",
             "parentId": "fld_1ad366da97bd43d793d4283a06970e08",
-            "modified": 1733224286796,
+            "modified": 1749208956160,
             "created": 1731336495118,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories, brands, sitePages",
@@ -1061,7 +1061,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\": [\"brand:Hydrogen Vendor\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Home page\"]\n    },\n    \"brands\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Automated Collection\"]\n    },\n    \"sitePages\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Hydrogen\"]\n    }\n}"
+                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n\t\t\"deviceType\":\"DESKTOP\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\": [\"brand:Hydrogen Vendor\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Home page\"]\n    },\n    \"brands\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Automated Collection\"]\n    },\n    \"sitePages\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Hydrogen\"]\n    }\n}"
             },
             "parameters": [],
             "headers": [
@@ -1085,7 +1085,7 @@
         {
             "_id": "req_e5323a67781d4354b78140572e0f5508",
             "parentId": "fld_1ad366da97bd43d793d4283a06970e08",
-            "modified": 1739354825278,
+            "modified": 1749208959125,
             "created": 1731336495119,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products, categories, brands, sitePages, blogPosts",
@@ -1093,7 +1093,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\": [\"brand:Hydrogen Vendor\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Home page\"]\n    },\n    \"brands\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Automated Collection\"]\n    },\n    \"sitePages\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Hydrogen\"]\n    },\n    \"blogPosts\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Home page\"]\n    }\n}"
+                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n\t\t\"deviceType\":\"DESKTOP\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\": [\"brand:Hydrogen Vendor\"]\n    },\n    \"categories\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Home page\"]\n    },\n    \"brands\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Automated Collection\"]\n    },\n    \"sitePages\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Hydrogen\"]\n    },\n    \"blogPosts\": {\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\", \"originalUrl\",\"trackingCode\"],\n\t\t\t\t\"filters\":[\"extraDataList.category:Home page\"]\n    }\n}"
             },
             "parameters": [],
             "headers": [
@@ -1117,7 +1117,7 @@
         {
             "_id": "req_2e12f3fa1d4b48c1bd5ded8eca04cba7",
             "parentId": "fld_04fe0d14fd8246d195a228cd5659cf56",
-            "modified": 1739354452836,
+            "modified": 1749208966490,
             "created": 1731336495123,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products",
@@ -1125,7 +1125,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\",\"price\"],\n\t\t\t\t\"sorting\": [\"price asc\"]\n    }\n}"
+                "text": "{\n    \"query\": \"*\",\n    \"key\": \"fd33f6d4-ca71-4fbf-b096-451e4872594f\",\n    \"trackingUserId\":\"67321f3a7f80eb30448b1279\",\n\t\t\"format\": \"json\",\n\t\t\"deviceType\":\"DESKTOP\",\n    \"products\": {\n        \"returnFilters\": false,\n        \"start\":0,\n        \"count\":10,\n        \"fields\":[\"title\",\"originalUrl\",\"trackingCode\",\"price\"],\n\t\t\t\t\"sorting\": [\"price asc\"]\n    }\n}"
             },
             "parameters": [],
             "headers": [
@@ -1161,7 +1161,7 @@
         {
             "_id": "req_aab88f9e8ad74973bcb8abc7700a426c",
             "parentId": "fld_6a1b4e56630545649b5dfd1f617ed07c",
-            "modified": 1733239637748,
+            "modified": 1749209227253,
             "created": 1731336495086,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "single recommendation [no context data]",
@@ -1169,7 +1169,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"frontpage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"MOST_BOUGHT\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":3\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"frontpage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"MOST_BOUGHT\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":3\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1229,7 +1229,7 @@
         {
             "_id": "req_1e7ef72335e54367bb469d138296157c",
             "parentId": "fld_6a1b4e56630545649b5dfd1f617ed07c",
-            "modified": 1731595141052,
+            "modified": 1749209239464,
             "created": 1731336495084,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "multiple recommendations [no context data]",
@@ -1237,7 +1237,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"frontpage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"MOST_BOUGHT\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":3\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"frontpage-2\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"MOST_BOUGHT\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"frontpage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"MOST_BOUGHT\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":3\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"frontpage-2\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"context\": {},\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"MOST_BOUGHT\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1261,7 +1261,7 @@
         {
             "_id": "req_746e2a6d458c44f5b89eaf920ac42a2e",
             "parentId": "fld_6af6c785a762431fb201f86a691ec83c",
-            "modified": 1733239661999,
+            "modified": 1749209417759,
             "created": 1731336495089,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "single recommendation [context object utilized - URLS]",
@@ -1269,7 +1269,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"productpage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t \"urls\":[\"https://www.hr-api-test.dk/products/the-collection-snowboard-hydrogen\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"ALTERNATIVES\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"productpage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t \"urls\":[\"https://www.hr-api-test.dk/products/the-collection-snowboard-hydrogen\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"ALTERNATIVES\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1305,7 +1305,7 @@
         {
             "_id": "req_9fe904d6171545908d5e5bc4c274b35e",
             "parentId": "fld_6af6c785a762431fb201f86a691ec83c",
-            "modified": 1733320350140,
+            "modified": 1749209341208,
             "created": 1731336495091,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "single recommendation [context object utilized - PRODUCTNUMBERS]",
@@ -1313,7 +1313,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"productpage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t \"productNumbers\":[\"14814386880847\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"ALTERNATIVES\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"productpage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t \"productNumbers\":[\"14814386880847\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"ALTERNATIVES\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1337,7 +1337,7 @@
         {
             "_id": "req_3397b25b7fa645478f99dce0ef5ec125",
             "parentId": "fld_6af6c785a762431fb201f86a691ec83c",
-            "modified": 1733239653413,
+            "modified": 1749209284312,
             "created": 1731336495092,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "multiple recommendations [context object utilized - URLS]",
@@ -1345,7 +1345,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"productpage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t \"urls\":[\"https://www.hr-api-test.dk/products/the-collection-snowboard-liquid\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"ALTERNATIVES\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"productpage-2\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t \"urls\":[\"https://www.hr-api-test.dk/products/the-collection-snowboard-liquid\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"BOUGHT_TOGETHER\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"productpage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t \"urls\":[\"https://www.hr-api-test.dk/products/the-collection-snowboard-liquid\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"ALTERNATIVES\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"productpage-2\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t \"urls\":[\"https://www.hr-api-test.dk/products/the-collection-snowboard-liquid\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"BOUGHT_TOGETHER\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1369,7 +1369,7 @@
         {
             "_id": "req_ffc3fb30998d4a6cbad94c9d27616dce",
             "parentId": "fld_6af6c785a762431fb201f86a691ec83c",
-            "modified": 1733224058560,
+            "modified": 1749209416414,
             "created": 1731336495094,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "multiple recommendations [context object utilized - PRODUCTNUMBERS]",
@@ -1377,7 +1377,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"productpage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t \"productNumbers\":[\"14814386880847\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"ALTERNATIVES\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"productpage-2\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t \"productNumbers\":[\"14814386880847\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"BOUGHT_TOGETHER\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"productpage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t \"productNumbers\":[\"14814386880847\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"ALTERNATIVES\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"productpage-2\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t \"productNumbers\":[\"14814386880847\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"BOUGHT_TOGETHER\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1401,7 +1401,7 @@
         {
             "_id": "req_009476e04b774fe194295bcf18318139",
             "parentId": "fld_a1469bea04fe42c381b6304fe0bb1170",
-            "modified": 1733224057484,
+            "modified": 1749209526205,
             "created": 1731336495097,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "single recommendation [context object omitted - HIERARCHIES]",
@@ -1409,7 +1409,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"categorypage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"hierarchies\":{\"$in\":[[\"Snowboard\"]]}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"categorypage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"hierarchies\":{\"$in\":[[\"Snowboard\"]]}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1445,7 +1445,7 @@
         {
             "_id": "req_c9bbbe23115547da86a8dd2632c37b61",
             "parentId": "fld_a1469bea04fe42c381b6304fe0bb1170",
-            "modified": 1733224056626,
+            "modified": 1749209539156,
             "created": 1733222728376,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "single recommendation [context object utilized - HIERARCHIES]",
@@ -1453,7 +1453,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"categorypage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t \"hierarchies\":[[\"Snowboard\"]]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"hierarchies\":{\"$in\":\"$hierarchies\"}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"categorypage-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t \"hierarchies\":[[\"Snowboard\"]]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"hierarchies\":{\"$in\":\"$hierarchies\"}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1477,7 +1477,7 @@
         {
             "_id": "req_675783178c4642e99abb03564863d013",
             "parentId": "fld_4a4b002e2cf945ea8b4de8f828c64c2b",
-            "modified": 1733224054702,
+            "modified": 1749209565124,
             "created": 1731336495100,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "single recommendation [context object omitted - CUSTOM]",
@@ -1485,7 +1485,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"other-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\",\"brand\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$all\":[\"Hydrogen Vendor\"]}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"MOST_BOUGHT\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":3,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$all\":[\"HR API TEST\"]}\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"other-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\",\"brand\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":4,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$all\":[\"Hydrogen Vendor\"]}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"MOST_BOUGHT\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":3,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$all\":[\"HR API TEST\"]}\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1521,7 +1521,7 @@
         {
             "_id": "req_67b098edc6564d68b52e8b4f2b49dbef",
             "parentId": "fld_4a4b002e2cf945ea8b4de8f828c64c2b",
-            "modified": 1733224045058,
+            "modified": 1749209582783,
             "created": 1733223010633,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "single recommendation [context object utilized - CUSTOM]",
@@ -1529,7 +1529,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"other-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\",\"brand\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"brand\": [\"Hydrogen Vendor\",\"HR API TEST\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$in\":\"$brand\"}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"MOST_VIEWED\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":3,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$in\":\"$brand\"}\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"other-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\",\"brand\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"brand\": [\"Hydrogen Vendor\",\"HR API TEST\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$in\":\"$brand\"}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"MOST_VIEWED\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":3,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$in\":\"$brand\"}\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1553,7 +1553,7 @@
         {
             "_id": "req_6a8c48ad35f14cfba9211e4341bb4dd8",
             "parentId": "fld_4a4b002e2cf945ea8b4de8f828c64c2b",
-            "modified": 1733224051559,
+            "modified": 1749209608648,
             "created": 1733223300512,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "multiple recommendations [context object omitted - CUSTOM]",
@@ -1561,7 +1561,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"other-2\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\",\"hierarchies\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"context\": {},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"hierarchies\": {\"$in\":[[\"accessories\"]]}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"hierarchies\":{\"$all\":[[\"snowboard\"]]}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"other-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\",\"brand\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"context\": {},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$all\":[\"Hydrogen Vendor\"]}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$all\":[\"HR API TEST\"]}\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"other-2\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\",\"hierarchies\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"hierarchies\": {\"$in\":[[\"accessories\"]]}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"hierarchies\":{\"$all\":[[\"snowboard\"]]}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"other-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\",\"brand\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$all\":[\"Hydrogen Vendor\"]}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$all\":[\"HR API TEST\"]}\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1585,7 +1585,7 @@
         {
             "_id": "req_b204414582e64769acfe758fdf8c9243",
             "parentId": "fld_4a4b002e2cf945ea8b4de8f828c64c2b",
-            "modified": 1733224053088,
+            "modified": 1749209639510,
             "created": 1731336495101,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "multiple recommendations [context object utilized - CUSTOM]",
@@ -1593,7 +1593,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"other-2\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\",\"hierarchies\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"hierarchies\":[[\"snowboard\"]]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"hierarchies\": {\"$in\":\"$hierarchies\"}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"hierarchies\":{\"$all\":\"$hierarchies\"}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"other-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\",\"brand\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"brand\":[\"Hydrogen Vendor\",\"HR API TEST\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$in\":\"$brand\"}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$in\":\"$brand\"}\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"websiteUuid\":\"d364dcdc-e618-45bd-b395-8653579884fe\",\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"other-2\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\",\"hierarchies\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"hierarchies\":[[\"snowboard\"]]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"hierarchies\": {\"$in\":\"$hierarchies\"}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"hierarchies\":{\"$all\":\"$hierarchies\"}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"trackingKey\":\"other-1\",\n\t\t\t\t\t\t\"fields\":[\"title\",\"originalUrl\",\"trackingCode\",\"brand\"],\n\t\t\t\t\t\t\"hideAdditionalVariants\":true,\n\t\t\t\t\t\t\"count\":8,\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"brand\":[\"Hydrogen Vendor\",\"HR API TEST\"]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"sources\":[\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$in\":\"$brand\"}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"type\":\"TOP\",\n\t\t\t\t\t\t\t\t\t\t\"limit\":2,\n\t\t\t\t\t\t\t\t\t\t\"filters\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"brand\": {\"$in\":\"$brand\"}\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1617,7 +1617,7 @@
         {
             "_id": "req_8fb8e9bfd9234813bc5553b902ab09bb",
             "parentId": "fld_bc56b1cd088441c19fb6048aada55d00",
-            "modified": 1731596803492,
+            "modified": 1749209660204,
             "created": 1731336495063,
             "url": "https://core.helloretail.com/serve/recoms?apiLogTag=something",
             "name": "single recommendation [no context data]",
@@ -1625,7 +1625,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4efe\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"context\": {}\n\t\t\t\t}\n\n\t\t]\n}"
+                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4efe\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {}\n\t\t\t\t}\n\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1673,7 +1673,7 @@
         {
             "_id": "req_f767ffaf9dee4579a210d8956a3602e2",
             "parentId": "fld_bc56b1cd088441c19fb6048aada55d00",
-            "modified": 1733239304625,
+            "modified": 1749209710467,
             "created": 1731336495064,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "multiple recommendations [no context data]",
@@ -1681,7 +1681,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4efe\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"context\": {}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4ef8\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"context\": {}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4ef2\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"context\": {}\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4efe\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4ef8\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4ef2\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {}\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1705,7 +1705,7 @@
         {
             "_id": "req_9ecdd643653a4459b2cc2ae93bc665f2",
             "parentId": "fld_610c461311c44f86aefd40f82e6b89f1",
-            "modified": 1733320345110,
+            "modified": 1749209728151,
             "created": 1731336495068,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "single recommendation [context data required - URLS]",
@@ -1713,7 +1713,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4eec\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"urls\":[\"https://www.hr-api-test.dk/products/selling-plans-ski-wax\"]\n\t\t\t\t\t\t}\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4eec\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"urls\":[\"https://www.hr-api-test.dk/products/selling-plans-ski-wax\"]\n\t\t\t\t\t\t}\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1749,7 +1749,7 @@
         {
             "_id": "req_daa59e0f3f2d4533889256fb22805394",
             "parentId": "fld_610c461311c44f86aefd40f82e6b89f1",
-            "modified": 1733320340963,
+            "modified": 1749209732991,
             "created": 1731336495069,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "single recommendation [context data required - PRODUCTNUMBERS]",
@@ -1757,7 +1757,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4eec\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"productNumbers\":[\"14814386553167\"]\n\t\t\t\t\t\t}\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4eec\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"productNumbers\":[\"14814386553167\"]\n\t\t\t\t\t\t}\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1781,7 +1781,7 @@
         {
             "_id": "req_0e5071617d7b4ac49fc37fd6aa72b7d5",
             "parentId": "fld_610c461311c44f86aefd40f82e6b89f1",
-            "modified": 1731597107291,
+            "modified": 1749209747709,
             "created": 1731336495071,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "multiple recommendations [context data required - URLS]",
@@ -1789,7 +1789,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4eec\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"urls\":[\"https://www.hr-api-test.dk/products/selling-plans-ski-wax\"]\n\t\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4ee5\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"urls\":[\"https://www.hr-api-test.dk/products/selling-plans-ski-wax\"]\n\t\t\t\t\t\t}\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4eec\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"urls\":[\"https://www.hr-api-test.dk/products/selling-plans-ski-wax\"]\n\t\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4ee5\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"urls\":[\"https://www.hr-api-test.dk/products/selling-plans-ski-wax\"]\n\t\t\t\t\t\t}\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1813,7 +1813,7 @@
         {
             "_id": "req_53fc535e4bec4c2ab2c574f143540e91",
             "parentId": "fld_610c461311c44f86aefd40f82e6b89f1",
-            "modified": 1731597110142,
+            "modified": 1749209761464,
             "created": 1731336495072,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "multiple recommendations [context data required - PRODUCTNUMBERS]",
@@ -1821,7 +1821,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4eec\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"productNumbers\":[\"14814386553167\"]\n\t\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4ee5\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"productNumbers\":[\"14814386553167\"]\n\t\t\t\t\t\t}\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4eec\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"productNumbers\":[\"14814386553167\"]\n\t\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4ee5\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"productNumbers\":[\"14814386553167\"]\n\t\t\t\t\t\t}\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1845,7 +1845,7 @@
         {
             "_id": "req_a1acdf3973864952a8376b0987a6cc21",
             "parentId": "fld_96bf4dc2c8f94c90b8b89e17856307d2",
-            "modified": 1731597608437,
+            "modified": 1749209773554,
             "created": 1731336495075,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "single recommendation [context data required - HIERARCHIES]",
@@ -1853,7 +1853,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4ede\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"hierarchies\": [[\"accessories\"]]\n\t\t\t\t\t\t}\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361182d053e038d07a4ede\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\"hierarchies\": [[\"accessories\"]]\n\t\t\t\t\t\t}\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1889,7 +1889,7 @@
         {
             "_id": "req_0028a46274c34ddaaff42f128cbf8821",
             "parentId": "fld_77aa18b6a4764b3dadf9d59942fbad41",
-            "modified": 1731597634791,
+            "modified": 1749209780893,
             "created": 1731336495078,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "single recommendation [context data required - CUSTOM]",
@@ -1897,7 +1897,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k673613c085074171ef9f9d9d\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\t\"brand\": \"HR API TEST\",\n\t\t\t\t\t\t\t\t\"extraData\":{\n\t\t\t\t\t\t\t\t\t\t\"isAccessory\": \"true\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"extraDataList\": {\n\t\t\t\t\t\t\t\t\t\t\"tags\": [\"Sport\"]\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k673613c085074171ef9f9d9d\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\t\"brand\": \"HR API TEST\",\n\t\t\t\t\t\t\t\t\"extraData\":{\n\t\t\t\t\t\t\t\t\t\t\"isAccessory\": \"true\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"extraDataList\": {\n\t\t\t\t\t\t\t\t\t\t\"tags\": [\"Sport\"]\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1933,7 +1933,7 @@
         {
             "_id": "req_ca1376f6427049daa4b1d406ce567a4e",
             "parentId": "fld_77aa18b6a4764b3dadf9d59942fbad41",
-            "modified": 1731597712379,
+            "modified": 1749209792595,
             "created": 1731336495079,
             "url": "https://core.helloretail.com/serve/recoms",
             "name": "multiple recommendations [context data required - CUSTOM]",
@@ -1941,7 +1941,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k673613c085074171ef9f9d9d\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\t\"brand\": \"HR API TEST\",\n\t\t\t\t\t\t\t\t\"extraData\":{\n\t\t\t\t\t\t\t\t\t\t\"isAccessory\": \"true\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"extraDataList\": {\n\t\t\t\t\t\t\t\t\t\t\"tags\": [\"Sport\"]\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361554bb6f1c28c79aa6f6\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\t\"brand\": \"Hydrogen Vendor\",\n\t\t\t\t\t\t\t\t\"extraData\":{\n\t\t\t\t\t\t\t\t\t\t\"isAccessory\": \"true\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"extraDataList\": {\n\t\t\t\t\t\t\t\t\t\t\"tags\": [\"Winter\"]\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t}\n\t\t]\n}"
+                "text": "{\n\t\t\"trackingUserId\":\"\",\n\t\t\"requests\":[\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k673613c085074171ef9f9d9d\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\t\"brand\": \"HR API TEST\",\n\t\t\t\t\t\t\t\t\"extraData\":{\n\t\t\t\t\t\t\t\t\t\t\"isAccessory\": \"true\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"extraDataList\": {\n\t\t\t\t\t\t\t\t\t\t\"tags\": [\"Sport\"]\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\t\"key\": \"k67361554bb6f1c28c79aa6f6\",\n\t\t\t\t\t\t\"format\":\"json\",\n\t\t\t\t\t\t\"fields\": [\"title\",\"originalUrl\",\"trackingCode\"],\n\t\t\t\t\t\t\"deviceType\":\"DESKTOP\",\n\t\t\t\t\t\t\"context\": {\n\t\t\t\t\t\t\t\t\"brand\": \"Hydrogen Vendor\",\n\t\t\t\t\t\t\t\t\"extraData\":{\n\t\t\t\t\t\t\t\t\t\t\"isAccessory\": \"true\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"extraDataList\": {\n\t\t\t\t\t\t\t\t\t\t\"tags\": [\"Winter\"]\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t}\n\t\t]\n}"
             },
             "parameters": [],
             "headers": [
@@ -1965,7 +1965,7 @@
         {
             "_id": "req_8c105d5f9d7542878690aeb9541c7782",
             "parentId": "fld_fbdf06baa618459d907d1d04ccf27419",
-            "modified": 1733224479806,
+            "modified": 1749209844807,
             "created": 1731336495048,
             "url": "https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc",
             "name": "Params.filters BRAND example [No filters or sorting]",
@@ -1973,7 +1973,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n  \"url\": \"https://www.test.dk/category-path\",\n  \"format\": \"json\",\n  \"firstLoad\": false,\n  \"trackingUserId\": \"\",\n  \"params\": {\n    \"filters\": {\n      \"brand\": \"HR API TEST\"\n    }\n  },\n  \"products\": {\n    \"start\": 0,\n    \"count\": 20,\n    \"fields\": [\n      \"productNumber\",\n\t\t\t\"title\",\n\t\t\t\"brand\"\n    ],\n    \"filters\": [],\n    \"sorting\": []\n  }\n}"
+                "text": "{\n  \"url\": \"https://www.test.dk/category-path\",\n  \"format\": \"json\",\n  \"firstLoad\": false,\n  \"trackingUserId\": \"\",\n\t\"deviceType\":\"DESKTOP\",\n  \"params\": {\n    \"filters\": {\n      \"brand\": \"HR API TEST\"\n    }\n  },\n  \"products\": {\n    \"start\": 0,\n    \"count\": 20,\n    \"fields\": [\n      \"productNumber\",\n\t\t\t\"title\",\n\t\t\t\"brand\"\n    ],\n    \"filters\": [],\n    \"sorting\": []\n  }\n}"
             },
             "parameters": [],
             "headers": [
@@ -2009,7 +2009,7 @@
         {
             "_id": "req_bb3cb94087e34df98a0924323c4b83f6",
             "parentId": "fld_fbdf06baa618459d907d1d04ccf27419",
-            "modified": 1733224422995,
+            "modified": 1749209859644,
             "created": 1731336495047,
             "url": "https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc",
             "name": "Params.filters HIERARCHIES example [No filters or sorting]",
@@ -2017,7 +2017,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n  \"url\": \"https://www.test.dk/category-path\",\n  \"format\": \"json\",\n  \"firstLoad\": false,\n  \"trackingUserId\": \"\",\n  \"params\": {\n    \"filters\": {\n      \"hierarchies\": [\"accessories\"]\n    }\n  },\n  \"products\": {\n    \"start\": 0,\n    \"count\": 20,\n    \"fields\": [\n      \"productNumber\",\n\t\t\t\"title\",\n\t\t\t\"hierarchies\"\n    ],\n    \"filters\": [],\n    \"sorting\": []\n  }\n}"
+                "text": "{\n  \"url\": \"https://www.test.dk/category-path\",\n  \"format\": \"json\",\n  \"firstLoad\": false,\n  \"trackingUserId\": \"\",\n\t\"deviceType\":\"DESKTOP\",\n  \"params\": {\n    \"filters\": {\n      \"hierarchies\": [\"accessories\"]\n    }\n  },\n  \"products\": {\n    \"start\": 0,\n    \"count\": 20,\n    \"fields\": [\n      \"productNumber\",\n\t\t\t\"title\",\n\t\t\t\"hierarchies\"\n    ],\n    \"filters\": [],\n    \"sorting\": []\n  }\n}"
             },
             "parameters": [],
             "headers": [
@@ -2041,7 +2041,7 @@
         {
             "_id": "req_cac810e83f1045168dea7bfe282be57d",
             "parentId": "fld_fbdf06baa618459d907d1d04ccf27419",
-            "modified": 1733224422732,
+            "modified": 1749209867697,
             "created": 1731336495051,
             "url": "https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc",
             "name": "Params.filters BRAND example [Filters and sorting]",
@@ -2049,7 +2049,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n  \"url\": \"https://www.test.dk/category-path\",\n  \"format\": \"json\",\n  \"firstLoad\": true,\n  \"trackingUserId\": \"\",\n  \"params\": {\n    \"filters\": {\n      \"brand\": \"HR API TEST\"\n    }\n  },\n  \"products\": {\n    \"start\": 0,\n    \"count\": 20,\n    \"fields\": [\n      \"productNumber\",\n\t\t\t\"title\",\n\t\t\t\"brand\",\n\t\t\t\"hierarchies\",\n\t\t\t\"price\"\n    ],\n    \"filters\": [\n\t\t\t\"hierarchies:accessories$\"\n\t\t],\n    \"sorting\": [\n\t\t\t\"title asc\"\n    ]\n  }\n}"
+                "text": "{\n  \"url\": \"https://www.test.dk/category-path\",\n  \"format\": \"json\",\n  \"firstLoad\": true,\n  \"trackingUserId\": \"\",\n\t\"deviceType\":\"DESKTOP\",\n  \"params\": {\n    \"filters\": {\n      \"brand\": \"HR API TEST\"\n    }\n  },\n  \"products\": {\n    \"start\": 0,\n    \"count\": 20,\n    \"fields\": [\n      \"productNumber\",\n\t\t\t\"title\",\n\t\t\t\"brand\",\n\t\t\t\"hierarchies\",\n\t\t\t\"price\"\n    ],\n    \"filters\": [\n\t\t\t\"hierarchies:accessories$\"\n\t\t],\n    \"sorting\": [\n\t\t\t\"title asc\"\n    ]\n  }\n}"
             },
             "parameters": [],
             "headers": [
@@ -2073,7 +2073,7 @@
         {
             "_id": "req_867265f3bdc846f4881f2a46a8a400d7",
             "parentId": "fld_fbdf06baa618459d907d1d04ccf27419",
-            "modified": 1733224422461,
+            "modified": 1749209872784,
             "created": 1731336495050,
             "url": "https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc",
             "name": "Params.filters HIERARCHIES example [Filters and sorting]",
@@ -2081,7 +2081,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n  \"url\": \"https://www.test.dk/category-path\",\n  \"format\": \"json\",\n  \"firstLoad\": true,\n  \"trackingUserId\": \"\",\n  \"params\": {\n    \"filters\": {\n      \"hierarchies\": [\"snowboard\"]\n    }\n  },\n  \"products\": {\n    \"start\": 0,\n    \"count\": 20,\n    \"fields\": [\n      \"productNumber\",\n\t\t\t\"title\",\n\t\t\t\"hierarchies\",\n\t\t\t\"brand\",\n\t\t\t\"price\"\n    ],\n    \"filters\": [\n\t\t\t\"brand:HR API TEST\"\n\t\t],\n    \"sorting\": [\n\t\t\t\"price asc\"\n    ]\n  }\n}"
+                "text": "{\n  \"url\": \"https://www.test.dk/category-path\",\n  \"format\": \"json\",\n  \"firstLoad\": true,\n  \"trackingUserId\": \"\",\n\t\"deviceType\":\"DESKTOP\",\n  \"params\": {\n    \"filters\": {\n      \"hierarchies\": [\"snowboard\"]\n    }\n  },\n  \"products\": {\n    \"start\": 0,\n    \"count\": 20,\n    \"fields\": [\n      \"productNumber\",\n\t\t\t\"title\",\n\t\t\t\"hierarchies\",\n\t\t\t\"brand\",\n\t\t\t\"price\"\n    ],\n    \"filters\": [\n\t\t\t\"brand:HR API TEST\"\n\t\t],\n    \"sorting\": [\n\t\t\t\"price asc\"\n    ]\n  }\n}"
             },
             "parameters": [],
             "headers": [
@@ -2105,7 +2105,7 @@
         {
             "_id": "req_eac0a04c804f4a98ad58b89f31f33b13",
             "parentId": "fld_fbdf06baa618459d907d1d04ccf27419",
-            "modified": 1733224422162,
+            "modified": 1749209881867,
             "created": 1731336495053,
             "url": "https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc",
             "name": "TRACKINGCODE example [simple]",
@@ -2113,7 +2113,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n  \"url\": \"https://www.test.dk/category-path\",\n  \"format\": \"json\",\n  \"firstLoad\": false,\n  \"trackingUserId\": \"\",\n  \"params\": {\n    \"filters\": {\n    }\n  },\n  \"products\": {\n    \"start\": 0,\n    \"count\": 20,\n    \"fields\": [\n      \"title\",\n\t\t\t\"trackingCode\"\n    ],\n    \"filters\": [],\n    \"sorting\": []\n  }\n}"
+                "text": "{\n  \"url\": \"https://www.test.dk/category-path\",\n  \"format\": \"json\",\n  \"firstLoad\": false,\n  \"trackingUserId\": \"\",\n\t\"deviceType\":\"DESKTOP\",\n  \"params\": {\n    \"filters\": {\n    }\n  },\n  \"products\": {\n    \"start\": 0,\n    \"count\": 20,\n    \"fields\": [\n      \"title\",\n\t\t\t\"trackingCode\"\n    ],\n    \"filters\": [],\n    \"sorting\": []\n  }\n}"
             },
             "parameters": [],
             "headers": [
@@ -2137,7 +2137,7 @@
         {
             "_id": "req_79823ba80bb4434fbdcf0fea26d4da39",
             "parentId": "fld_fbdf06baa618459d907d1d04ccf27419",
-            "modified": 1733224421858,
+            "modified": 1749209895201,
             "created": 1731336495054,
             "url": "https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc",
             "name": "Params.filters HIERARCHIES example [No filters or sorting + No fields property]",
@@ -2145,7 +2145,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n  \"url\": \"https://www.test.dk/category-path\",\n  \"format\": \"json\",\n  \"firstLoad\": false,\n  \"trackingUserId\": \"\",\n  \"params\": {\n    \"filters\": {\n      \"hierarchies\": [\"snowboard\"]\n    }\n  },\n  \"products\": {\n    \"start\": 0,\n    \"count\": 20,\n    \"filters\": [],\n    \"sorting\": []\n  }\n}"
+                "text": "{\n  \"url\": \"https://www.test.dk/category-path\",\n  \"format\": \"json\",\n  \"firstLoad\": false,\n  \"trackingUserId\": \"\",\n\t\"deviceType\":\"DESKTOP\",\n  \"params\": {\n    \"filters\": {\n      \"hierarchies\": [\"snowboard\"]\n    }\n  },\n  \"products\": {\n    \"start\": 0,\n    \"count\": 20,\n    \"filters\": [],\n    \"sorting\": []\n  }\n}"
             },
             "parameters": [],
             "headers": [
@@ -2169,7 +2169,7 @@
         {
             "_id": "req_467d261c1f2544c0a872b9435c70a607",
             "parentId": "fld_fbdf06baa618459d907d1d04ccf27419",
-            "modified": 1733224421539,
+            "modified": 1749209902992,
             "created": 1731336495056,
             "url": "https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc",
             "name": "Params.filters EXTRADATALIST MATCHES MANY example [No filters or sorting]",
@@ -2177,7 +2177,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"url\": \"https://www.test.dk/category-path\",\n    \"format\": \"json\",\n    \"firstLoad\": false,\n    \"trackingUserId\": \"\",\n    \"params\": {\n        \"filters\": {\n\t\t\t\t\t\"$and\":[\n\t\t\t\t\t\t{\"extraDataList.tags\": \"Accessory\"},\n\t\t\t\t\t\t{\"extraDataList.tags\": \"Sport\"},\n\t\t\t\t\t\t{\"extraDataList.tags\": \"Winter\"}\n\t\t\t\t\t]\n        }\n    },\n    \"products\": {\n        \"start\": 0,\n        \"count\": 20,\n        \"fields\": [\n            \"title\",\"originalUrl\",\"extraDataList.tags\"\n        ],\n        \"filters\": [],\n        \"sorting\": []\n    }\n}"
+                "text": "{\n    \"url\": \"https://www.test.dk/category-path\",\n    \"format\": \"json\",\n    \"firstLoad\": false,\n    \"trackingUserId\": \"\",\n\t\t\"deviceType\":\"DESKTOP\",\n    \"params\": {\n        \"filters\": {\n\t\t\t\t\t\"$and\":[\n\t\t\t\t\t\t{\"extraDataList.tags\": \"Accessory\"},\n\t\t\t\t\t\t{\"extraDataList.tags\": \"Sport\"},\n\t\t\t\t\t\t{\"extraDataList.tags\": \"Winter\"}\n\t\t\t\t\t]\n        }\n    },\n    \"products\": {\n        \"start\": 0,\n        \"count\": 20,\n        \"fields\": [\n            \"title\",\"originalUrl\",\"extraDataList.tags\"\n        ],\n        \"filters\": [],\n        \"sorting\": []\n    }\n}"
             },
             "parameters": [],
             "headers": [
@@ -2201,7 +2201,7 @@
         {
             "_id": "req_681a77d1e10c4be99b2c0d1e4ad261f7",
             "parentId": "fld_fbdf06baa618459d907d1d04ccf27419",
-            "modified": 1733224421194,
+            "modified": 1749209907456,
             "created": 1731336495057,
             "url": "https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc",
             "name": "Params.filters EXTRADATALIST MATCHES ONE OF example [No filters or sorting]",
@@ -2209,7 +2209,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n    \"url\": \"https://www.test.dk/category-path\",\n    \"format\": \"json\",\n    \"firstLoad\": false,\n    \"trackingUserId\": \"\",\n    \"params\": {\n        \"filters\": {\n\t\t\t\t\t\"$or\":[\n\t\t\t\t\t\t{\"extraDataList.tags\": \"Accessory\"},\n\t\t\t\t\t\t{\"extraDataList.tags\": \"Sport\"},\n\t\t\t\t\t\t{\"extraDataList.tags\": \"Winter\"}\n\t\t\t\t\t]\n        }\n    },\n    \"products\": {\n        \"start\": 0,\n        \"count\": 20,\n        \"fields\": [\n            \"title\",\"originalUrl\",\"extraDataList.tags\"\n        ],\n        \"filters\": [],\n        \"sorting\": []\n    }\n}"
+                "text": "{\n    \"url\": \"https://www.test.dk/category-path\",\n    \"format\": \"json\",\n    \"firstLoad\": false,\n    \"trackingUserId\": \"\",\n\t\t\"deviceType\":\"DESKTOP\",\n    \"params\": {\n        \"filters\": {\n\t\t\t\t\t\"$or\":[\n\t\t\t\t\t\t{\"extraDataList.tags\": \"Accessory\"},\n\t\t\t\t\t\t{\"extraDataList.tags\": \"Sport\"},\n\t\t\t\t\t\t{\"extraDataList.tags\": \"Winter\"}\n\t\t\t\t\t]\n        }\n    },\n    \"products\": {\n        \"start\": 0,\n        \"count\": 20,\n        \"fields\": [\n            \"title\",\"originalUrl\",\"extraDataList.tags\"\n        ],\n        \"filters\": [],\n        \"sorting\": []\n    }\n}"
             },
             "parameters": [],
             "headers": [
