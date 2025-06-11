@@ -1,9 +1,213 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2025-06-06T11:39:50.307Z",
+    "__export_date": "2025-06-11T09:41:56.153Z",
     "__export_source": "insomnia.desktop.app:v2022.4.2",
     "resources": [
+        {
+            "_id": "req_d74d85abe5b34e518a228c3f12fa2086",
+            "parentId": "fld_6665c537ba9947d2aa295173b0a67da4",
+            "modified": 1749634769767,
+            "created": 1749628554360,
+            "url": "https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/latest/{pageKey}?apiKey={apiKey}",
+            "name": "Fetch latest page configuration",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_a41c5eba0e254797acdc7d01e1dd49e6",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1749628554360,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_6665c537ba9947d2aa295173b0a67da4",
+            "parentId": "fld_b0ad063e44554702861abc7cba2c0b47",
+            "modified": 1749634630079,
+            "created": 1749634630079,
+            "name": "Configuration Pages",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1749634630079,
+            "_type": "request_group"
+        },
+        {
+            "_id": "fld_b0ad063e44554702861abc7cba2c0b47",
+            "parentId": "fld_d3fd01691b4345e3a965b2265a76465f",
+            "modified": 1749628550788,
+            "created": 1749628550788,
+            "name": "Configuring Solutions",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1749628550788,
+            "_type": "request_group"
+        },
+        {
+            "_id": "fld_d3fd01691b4345e3a965b2265a76465f",
+            "parentId": "wrk_60b7a5fb3eac4286b8d0b694ea1434aa",
+            "modified": 1731336495045,
+            "created": 1731336495045,
+            "name": "REST API examples",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": {},
+            "metaSortKey": -1000000000,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_60b7a5fb3eac4286b8d0b694ea1434aa",
+            "parentId": null,
+            "modified": 1731336495037,
+            "created": 1731336495037,
+            "name": "Hello Retail example endpoints [Official documentation]",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_f4439936406140d5a9c03945cb6d78be",
+            "parentId": "fld_6665c537ba9947d2aa295173b0a67da4",
+            "modified": 1749634802410,
+            "created": 1749628728687,
+            "url": "https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/{versionId}?apiKey={apiKey}",
+            "name": "Update page configuration [Personalized_Boosts]",
+            "description": "",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\t\"data\": {\n\t\t\t\t\"type\": \"page\",\n\t\t\t\t\"attributes\": {\n\t\t\t\t\t\t\"state\": \"DRAFT\",\n\t\t\t\t\t\t\"personalized_boosts\": [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"field\": \"product.hierarchy\",\n\t\t\t\t\t\t\t\t\t\t\"boost\": 2\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"field\": \"product.brand\",\n\t\t\t\t\t\t\t\t\t\t\"boost\": 2\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"field\": \"product.extraData.isAccessory\",\n\t\t\t\t\t\t\t\t\t\t\"boost\": 2\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"field\": \"product.pi.budgetZone\",\n                  \t\"boost\": 3\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"field\": \"product.pi.productCluster\",\n                  \t\"boost\": 4\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t}\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_56da230910d14f26a0a419325cabd8a8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1749628554310,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_be6d5ae0f8d848418e84767c59de3f87",
+            "parentId": "fld_6665c537ba9947d2aa295173b0a67da4",
+            "modified": 1749634805321,
+            "created": 1749631608432,
+            "url": "https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/{versionId}?apiKey={apiKey}",
+            "name": "Update page configuration [product_boosts]",
+            "description": "",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\t\"data\": {\n\t\t\t\t\"type\": \"page\",\n\t\t\t\t\"attributes\": {\n\t\t\t\t\t\t\"state\": \"DRAFT\",\n\t\t\t\t\t\t\"product_boosts\": [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"field\": \"brand\",\n\t\t\t\t\t\t\t\t\t\t\"value\": \"Nike\",\n\t\t\t\t\t\t\t\t\t\t\"boost\": 4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"field\": \"extraDataList.tags\",\n\t\t\t\t\t\t\t\t\t\t\"value\": \"Snow\",\n\t\t\t\t\t\t\t\t\t\t\"boost\": 4\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\"field\": \"inStock\",\n\t\t\t\t\t\t\t\t\t\t\"value\": \"false\",\n\t\t\t\t\t\t\t\t\t\t\"boost\": -1\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t}\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_56da230910d14f26a0a419325cabd8a8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1749628554260,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_0051ccd5e8234e218de349d3f3c32736",
+            "parentId": "fld_6665c537ba9947d2aa295173b0a67da4",
+            "modified": 1749634807401,
+            "created": 1749632093272,
+            "url": "https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/{versionId}?apiKey={apiKey}",
+            "name": "Update page configuration [url_overrides]",
+            "description": "",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\t\"data\": {\n\t\t\t\t\"type\": \"page\",\n\t\t\t\t\"attributes\": {\n\t\t\t\t\t\t\"state\": \"DRAFT\",\n\t\t\t\t\t\t\"url_overrides\": [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"url\": \"/women/shoes/special-tags\",\n\t\t\t\t\t\t\t\t\t\"fixedProducts\": [],\n\t\t\t\t\t\t\t\t\t\"productBoosts\": [\n\t\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\t\"field\": \"extraDataList.tags\",\n\t\t\t\t\t\t\t\t\t\t\t\"value\": \"Sport\",\n\t\t\t\t\t\t\t\t\t\t\t\"boost\": 3\n\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\t\"field\": \"inStock\",\n\t\t\t\t\t\t\t\t\t\t\t\"value\": \"false\",\n\t\t\t\t\t\t\t\t\t\t\t\"boost\": -1\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t],\n\t\t\t\t\t\t\t\t\t\"showFilteredProducts\": true,\n\t\t\t\t\t\t\t\t\t\"productScoreBoost\": 1.5\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t}\n\t\t}\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_56da230910d14f26a0a419325cabd8a8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1749628554210,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_38aee4fa9b254fd7bf4ebf0d36920014",
+            "parentId": "fld_6665c537ba9947d2aa295173b0a67da4",
+            "modified": 1749634895567,
+            "created": 1749632214307,
+            "url": "https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/{versionId}?apiKey={apiKey}",
+            "name": "Update page configuration [show_out_of_stock_products]",
+            "description": "",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\t\"data\": {\n\t\t\t\t\"type\": \"page\",\n\t\t\t\t\"attributes\": {\n\t\t\t\t\t\t\"state\": \"DRAFT\",\n\t\t\t\t\t\t\"show_out_of_stock_products\": false\n\t\t\t\t}\n\t\t}\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_56da230910d14f26a0a419325cabd8a8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1749628554160,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
         {
             "_id": "req_67a1339e4e95492b9386dd731cc28fd2",
             "parentId": "fld_06c36812d73147d8a828aee53b6ec305",
@@ -57,28 +261,6 @@
             "environmentPropertyOrder": null,
             "metaSortKey": -1736938842981,
             "_type": "request_group"
-        },
-        {
-            "_id": "fld_d3fd01691b4345e3a965b2265a76465f",
-            "parentId": "wrk_60b7a5fb3eac4286b8d0b694ea1434aa",
-            "modified": 1731336495045,
-            "created": 1731336495045,
-            "name": "REST API examples",
-            "description": "",
-            "environment": {},
-            "environmentPropertyOrder": {},
-            "metaSortKey": -1000000000,
-            "_type": "request_group"
-        },
-        {
-            "_id": "wrk_60b7a5fb3eac4286b8d0b694ea1434aa",
-            "parentId": null,
-            "modified": 1731336495037,
-            "created": 1731336495037,
-            "name": "Hello Retail example endpoints [Official documentation]",
-            "description": "",
-            "scope": "collection",
-            "_type": "workspace"
         },
         {
             "_id": "req_d3c5c9f640d64784a8dcaafb0a287757",
@@ -729,7 +911,7 @@
         {
             "_id": "req_de303fdba58f430da1c4386bd3da1031",
             "parentId": "fld_fa293cae6dc242e5b1ebe0f9c007ad34",
-            "modified": 1749208902426,
+            "modified": 1749629822978,
             "created": 1731336495106,
             "url": "https://core.helloretail.com/serve/search/",
             "name": "Search: products",
