@@ -1,30 +1,32 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2025-06-11T09:41:56.153Z",
+    "__export_date": "2025-06-17T08:38:16.149Z",
     "__export_source": "insomnia.desktop.app:v2022.4.2",
     "resources": [
         {
-            "_id": "req_d74d85abe5b34e518a228c3f12fa2086",
-            "parentId": "fld_6665c537ba9947d2aa295173b0a67da4",
-            "modified": 1749634769767,
-            "created": 1749628554360,
-            "url": "https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/latest/{pageKey}?apiKey={apiKey}",
-            "name": "Fetch latest page configuration",
+            "_id": "req_aeee6847b263464281a1c63cb337bc3b",
+            "parentId": "fld_32b81f6ced56429590af684739f50c3c",
+            "modified": 1750149440679,
+            "created": 1750148404857,
+            "url": "https://core.helloretail.com/graphql?apiKey={apiKey}",
+            "name": "Update Search configuration [personalizedFields]",
             "description": "",
-            "method": "GET",
-            "body": {},
+            "method": "POST",
+            "body": {
+                "mimeType": "application/graphql",
+                "text": "{\"query\":\"mutation UpdateSearchPersonalization {\\n  updateSearchAlgorithmPersonalization(\\n    personalization: {\\n      algorithmId: \\\"8013\\\"\\n      personalizedFields: [\\n        {\\n          field: \\\"product.pi.budgetZone\\\"\\n          boostValue: 5\\n        }\\n        {\\n          field: \\\"product.pi.productCluster\\\"\\n          boostValue: 3\\n\\t\\t\\t\\t},\\n\\t\\t\\t\\t{\\n\\t\\t\\t\\t\\tfield: \\\"product.hierarchy\\\"\\n\\t\\t\\t\\t\\tboostValue: 3\\n\\t\\t\\t\\t},\\n\\t\\t\\t\\t{\\n\\t\\t\\t\\t\\tfield: \\\"product.extraData.weight\\\"\\n\\t\\t\\t\\t\\tboostValue: 3\\n\\t\\t\\t\\t}\\n      ]\\n    }\\n  ) {\\n    allowedFields\\n    availableFields\\n    personalizedFields {\\n      field\\n      boostValue\\n    }\\n  }\\n}\",\"operationName\":\"UpdateSearchPersonalization\"}"
+            },
             "parameters": [],
             "headers": [
                 {
-                    "id": "pair_a41c5eba0e254797acdc7d01e1dd49e6",
                     "name": "Content-Type",
                     "value": "application/json",
-                    "description": ""
+                    "id": "pair_d817a234182d43f788c600a9281bc2db"
                 }
             ],
             "authentication": {},
-            "metaSortKey": -1749628554360,
+            "metaSortKey": -1750148404857,
             "isPrivate": false,
             "settingStoreCookies": true,
             "settingSendCookies": true,
@@ -35,15 +37,15 @@
             "_type": "request"
         },
         {
-            "_id": "fld_6665c537ba9947d2aa295173b0a67da4",
+            "_id": "fld_32b81f6ced56429590af684739f50c3c",
             "parentId": "fld_b0ad063e44554702861abc7cba2c0b47",
-            "modified": 1749634630079,
-            "created": 1749634630079,
-            "name": "Configuration Pages",
+            "modified": 1750148304503,
+            "created": 1750148304503,
+            "name": "Configuring Search",
             "description": "",
             "environment": {},
             "environmentPropertyOrder": null,
-            "metaSortKey": -1749634630079,
+            "metaSortKey": -1750148304503,
             "_type": "request_group"
         },
         {
@@ -81,9 +83,83 @@
             "_type": "workspace"
         },
         {
+            "_id": "req_6b2f038e92544317948e64bcc9aaadb6",
+            "parentId": "fld_32b81f6ced56429590af684739f50c3c",
+            "modified": 1750149423557,
+            "created": 1750149340178,
+            "url": "https://core.helloretail.com/graphql?apiKey={apiKey}",
+            "name": "Update Search configuration [Clear all personalizedFields]",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/graphql",
+                "text": "{\"query\":\"mutation UpdateSearchPersonalization {\\n  updateSearchAlgorithmPersonalization(\\n    personalization: {\\n      algorithmId: \\\"8013\\\"\\n      personalizedFields: []\\n    }\\n  ) {\\n    allowedFields\\n    availableFields\\n    personalizedFields {\\n      field\\n      boostValue\\n    }\\n  }\\n}\",\"operationName\":\"UpdateSearchPersonalization\"}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_d817a234182d43f788c600a9281bc2db"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1749888479608.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_d74d85abe5b34e518a228c3f12fa2086",
+            "parentId": "fld_6665c537ba9947d2aa295173b0a67da4",
+            "modified": 1749634769767,
+            "created": 1749628554360,
+            "url": "https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/latest/{pageKey}?apiKey={apiKey}",
+            "name": "Fetch latest page configuration",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_a41c5eba0e254797acdc7d01e1dd49e6",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1749628554360,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_6665c537ba9947d2aa295173b0a67da4",
+            "parentId": "fld_b0ad063e44554702861abc7cba2c0b47",
+            "modified": 1750148283097,
+            "created": 1749634630079,
+            "name": "Configuring Pages",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1749634630079,
+            "_type": "request_group"
+        },
+        {
             "_id": "req_f4439936406140d5a9c03945cb6d78be",
             "parentId": "fld_6665c537ba9947d2aa295173b0a67da4",
-            "modified": 1749634802410,
+            "modified": 1750149300380,
             "created": 1749628728687,
             "url": "https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/{versionId}?apiKey={apiKey}",
             "name": "Update page configuration [Personalized_Boosts]",
