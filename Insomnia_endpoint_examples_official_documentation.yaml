@@ -1,0 +1,3521 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1751026405008
+  modified: 1751026405008
+  description: ""
+collection:
+  - name: REST API examples
+    meta:
+      id: fld_1b65882e60794ad4a2f0a2d5fbc5accc
+      created: 1731336495045
+      modified: 1731336495045
+      sortKey: -1000000000
+      description: ""
+    children:
+      - name: Pages
+        meta:
+          id: fld_15a51155f7684ed7bd039e7334beb77c
+          created: 1731336495046
+          modified: 1731336495046
+          sortKey: -1724318249216
+          description: ""
+        children:
+          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+            name: Params.filters HIERARCHIES example [No filters or sorting]
+            meta:
+              id: req_ac98b39fc8c545828ef7ce141fe90334
+              created: 1731336495047
+              modified: 1762859353306
+              isPrivate: false
+              description: ""
+              sortKey: -1724318266847
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "url": "https://www.test.dk/category-path",
+                  "format": "json",
+                  "firstLoad": false,
+                  "trackingUserId": "",
+                	"deviceType":"DESKTOP",
+                  "params": {
+                    "filters": {
+                      "hierarchies": ["accessories"]
+                    }
+                  },
+                  "products": {
+                    "start": 0,
+                    "count": 20,
+                    "fields": [
+                      "productNumber",
+                			"title",
+                			"hierarchies",
+                			"trackingCode"
+                    ],
+                    "filters": [],
+                    "sorting": []
+                  }
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+            name: Params.filters BRAND example [No filters or sorting]
+            meta:
+              id: req_1e557e318b304dad9e64dad0faa77e2b
+              created: 1731336495048
+              modified: 1762859347164
+              isPrivate: false
+              description: ""
+              sortKey: -1724318266897
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "url": "https://www.test.dk/category-path",
+                  "format": "json",
+                  "firstLoad": false,
+                  "trackingUserId": "",
+                	"deviceType":"DESKTOP",
+                  "params": {
+                    "filters": {
+                      "brand": "HR API TEST"
+                    }
+                  },
+                  "products": {
+                    "start": 0,
+                    "count": 20,
+                    "fields": [
+                      "productNumber",
+                			"title",
+                			"brand",
+                			"trackingCode"
+                    ],
+                    "filters": [],
+                    "sorting": []
+                  }
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+            name: Params.filters HIERARCHIES example [Filters and sorting]
+            meta:
+              id: req_606389199b4c408a902267cf9c98eaa0
+              created: 1731336495050
+              modified: 1762859388364
+              isPrivate: false
+              description: ""
+              sortKey: -1723775173793.25
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "url": "https://www.test.dk/category-path",
+                  "format": "json",
+                  "firstLoad": true,
+                  "trackingUserId": "",
+                	"deviceType":"DESKTOP",
+                  "params": {
+                    "filters": {
+                      "hierarchies": ["snowboard"]
+                    }
+                  },
+                  "products": {
+                    "start": 0,
+                    "count": 20,
+                    "fields": [
+                      "productNumber",
+                			"title",
+                			"hierarchies",
+                			"brand",
+                			"trackingCode"
+                    ],
+                    "filters": [
+                			"brand:HR API TEST"
+                		],
+                    "sorting": [
+                			"price asc"
+                    ]
+                  }
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+            name: Params.filters BRAND example [Filters and sorting]
+            meta:
+              id: req_53b9a4a19b1a4c35b4c5d77e6cdd0f9b
+              created: 1731336495051
+              modified: 1762859380229
+              isPrivate: false
+              description: ""
+              sortKey: -1724046720320.125
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "url": "https://www.test.dk/category-path",
+                  "format": "json",
+                  "firstLoad": true,
+                  "trackingUserId": "",
+                	"deviceType":"DESKTOP",
+                  "params": {
+                    "filters": {
+                      "brand": "HR API TEST"
+                    }
+                  },
+                  "products": {
+                    "start": 0,
+                    "count": 20,
+                    "fields": [
+                      "productNumber",
+                			"title",
+                			"brand",
+                			"hierarchies",
+                			"trackingCode"
+                    ],
+                    "filters": [
+                			"hierarchies:accessories$"
+                		],
+                    "sorting": [
+                			"title asc"
+                    ]
+                  }
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+            name: Params.filters EXTRADATALIST MATCHES MANY example [No filters or sorting]
+            meta:
+              id: req_ca780a4a4a074cdea55f53b86d66d43f
+              created: 1731336495056
+              modified: 1749209902992
+              isPrivate: false
+              description: ""
+              sortKey: -1723666555032.5
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "url": "https://www.test.dk/category-path",
+                    "format": "json",
+                    "firstLoad": false,
+                    "trackingUserId": "",
+                		"deviceType":"DESKTOP",
+                    "params": {
+                        "filters": {
+                					"$and":[
+                						{"extraDataList.tags": "Accessory"},
+                						{"extraDataList.tags": "Sport"},
+                						{"extraDataList.tags": "Winter"}
+                					]
+                        }
+                    },
+                    "products": {
+                        "start": 0,
+                        "count": 20,
+                        "fields": [
+                            "title","originalUrl","extraDataList.tags"
+                        ],
+                        "filters": [],
+                        "sorting": []
+                    }
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+            name: Params.filters EXTRADATALIST MATCHES ONE OF example [No filters or
+              sorting]
+            meta:
+              id: req_2a85e4a7daff46d2b969467a6cee1b3a
+              created: 1731336495057
+              modified: 1749209907456
+              isPrivate: false
+              description: ""
+              sortKey: -1723133263203.25
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "url": "https://www.test.dk/category-path",
+                    "format": "json",
+                    "firstLoad": false,
+                    "trackingUserId": "",
+                		"deviceType":"DESKTOP",
+                    "params": {
+                        "filters": {
+                					"$or":[
+                						{"extraDataList.tags": "Accessory"},
+                						{"extraDataList.tags": "Sport"},
+                						{"extraDataList.tags": "Winter"}
+                					]
+                        }
+                    },
+                    "products": {
+                        "start": 0,
+                        "count": 20,
+                        "fields": [
+                            "title","originalUrl","extraDataList.tags"
+                        ],
+                        "filters": [],
+                        "sorting": []
+                    }
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+            name: Params.filters EXTRADATALIST example [No filters or sorting]
+            meta:
+              id: req_121d01dc4aee4b54a1335db82ce30742
+              created: 1762859463256
+              modified: 1762859802040
+              isPrivate: false
+              description: ""
+              sortKey: -1724182493583.5625
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "url": "https://www.test.dk/category-path",
+                  "format": "json",
+                  "firstLoad": false,
+                  "trackingUserId": "",
+                	"deviceType":"DESKTOP",
+                  "params": {
+                    "filters": {
+                      "extraDataList.collection_ids": "123456789"
+                    }
+                  },
+                  "products": {
+                    "start": 0,
+                    "count": 20,
+                    "fields": [
+                      "productNumber",
+                			"title",
+                			"brand",
+                			"trackingCode"
+                    ],
+                    "filters": [],
+                    "sorting": []
+                  }
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+            name: Params.filters EXTRADATALIST example [Filters and sorting]
+            meta:
+              id: req_ae83d3c4375145bc8ccdc7d3f5710ac8
+              created: 1762859880500
+              modified: 1762859910749
+              isPrivate: false
+              description: ""
+              sortKey: -1723720864412.875
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "url": "https://www.test.dk/category-path",
+                  "format": "json",
+                  "firstLoad": false,
+                  "trackingUserId": "",
+                	"deviceType":"DESKTOP",
+                  "params": {
+                    "filters": {
+                      "extraDataList.collection_ids": "123456789"
+                    }
+                  },
+                  "products": {
+                    "start": 0,
+                    "count": 20,
+                    "fields": [
+                      "productNumber",
+                			"title",
+                			"brand",
+                			"trackingCode"
+                    ],
+                    "filters": [
+                			"brand:HR API TEST"
+                		],
+                    "sorting": [
+                			"price asc"
+                    ]
+                  }
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+        scripts:
+          afterResponse: ""
+          preRequest: ""
+      - name: Recoms
+        meta:
+          id: fld_1199ae0155ee40eba5bea320745dc0fa
+          created: 1731336495059
+          modified: 1731336495059
+          sortKey: -1724318254367
+          description: ""
+        children:
+          - name: Managed
+            meta:
+              id: fld_de5e5a0f89a44adaa9a6aaf711dfb92f
+              created: 1731336495060
+              modified: 1731336495060
+              sortKey: -1724672335099
+              description: ""
+            children:
+              - name: Front page | 404 page
+                meta:
+                  id: fld_05966644e148460c8697d75b2d48f75b
+                  created: 1731336495062
+                  modified: 1731336495062
+                  sortKey: -1724673510918
+                  description: ""
+                children:
+                  - url: https://core.helloretail.com/serve/recoms?apiLogTag=something
+                    name: single recommendation [no context data]
+                    meta:
+                      id: req_5974957f9f4040b69fe5ad8b018516ce
+                      created: 1731336495063
+                      modified: 1749209660204
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724672351151
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"key": "k67361182d053e038d07a4efe",
+                        						"format":"json",
+                        						"fields": ["title","originalUrl","trackingCode"],
+                        						"deviceType":"DESKTOP",
+                        						"context": {}
+                        				}
+
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: multiple recommendations [no context data]
+                    meta:
+                      id: req_1ce1c732e01443bbafd5362ed5faabbe
+                      created: 1731336495064
+                      modified: 1749209710467
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724672351101
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"key": "k67361182d053e038d07a4efe",
+                        						"format":"json",
+                        						"fields": ["title","originalUrl","trackingCode"],
+                        						"deviceType":"DESKTOP",
+                        						"context": {}
+                        				},
+                        				{
+                        						"key": "k67361182d053e038d07a4ef8",
+                        						"format":"json",
+                        						"fields": ["title","originalUrl","trackingCode"],
+                        						"deviceType":"DESKTOP",
+                        						"context": {}
+                        				},
+                        				{
+                        						"key": "k67361182d053e038d07a4ef2",
+                        						"format":"json",
+                        						"fields": ["title","originalUrl","trackingCode"],
+                        						"deviceType":"DESKTOP",
+                        						"context": {}
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                scripts:
+                  afterResponse: ""
+                  preRequest: ""
+              - name: Product page | Cart page | Upsell
+                meta:
+                  id: fld_c573be75babb45c6a7c0cd76c95205bc
+                  created: 1731336495067
+                  modified: 1731336495067
+                  sortKey: -1724606540229.0625
+                  description: ""
+                children:
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: single recommendation [context data required - URLS]
+                    meta:
+                      id: req_beb99c09a9ac45cb9055d4e4a8877154
+                      created: 1731336495068
+                      modified: 1749209728151
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724539569540.125
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: >-
+                        {
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"key": "k67361182d053e038d07a4eec",
+                        						"format":"json",
+                        						"fields": ["title","originalUrl","trackingCode"],
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							"urls":["https://www.hr-api-test.dk/products/selling-plans-ski-wax"]
+                        						}
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: single recommendation [context data required - PRODUCTNUMBERS]
+                    meta:
+                      id: req_e15f8b47760d4c279946c58855b32979
+                      created: 1731336495069
+                      modified: 1749209732991
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724539569490.125
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"key": "k67361182d053e038d07a4eec",
+                        						"format":"json",
+                        						"fields": ["title","originalUrl","trackingCode"],
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							"productNumbers":["14814386553167"]
+                        						}
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: multiple recommendations [context data required - URLS]
+                    meta:
+                      id: req_51a04eb78e3f41c0922be44f136f200a
+                      created: 1731336495071
+                      modified: 1749209747709
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724539569440.125
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: >-
+                        {
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"key": "k67361182d053e038d07a4eec",
+                        						"format":"json",
+                        						"fields": ["title","originalUrl","trackingCode"],
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							"urls":["https://www.hr-api-test.dk/products/selling-plans-ski-wax"]
+                        						}
+                        				},
+                        				{
+                        						"key": "k67361182d053e038d07a4ee5",
+                        						"format":"json",
+                        						"fields": ["title","originalUrl","trackingCode"],
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							"urls":["https://www.hr-api-test.dk/products/selling-plans-ski-wax"]
+                        						}
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: multiple recommendations [context data required - PRODUCTNUMBERS]
+                    meta:
+                      id: req_aac8eb796cb5492abf8a28fd424f190c
+                      created: 1731336495072
+                      modified: 1749209761464
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724517439225.8125
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"key": "k67361182d053e038d07a4eec",
+                        						"format":"json",
+                        						"fields": ["title","originalUrl","trackingCode"],
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							"productNumbers":["14814386553167"]
+                        						}
+                        				},
+                        				{
+                        						"key": "k67361182d053e038d07a4ee5",
+                        						"format":"json",
+                        						"fields": ["title","originalUrl","trackingCode"],
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							"productNumbers":["14814386553167"]
+                        						}
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                scripts:
+                  afterResponse: ""
+                  preRequest: ""
+              - name: Category page
+                meta:
+                  id: fld_497da854b96d4e8ba65bd22bc5f4a6eb
+                  created: 1731336495074
+                  modified: 1731336495074
+                  sortKey: -1724550924620.2812
+                  description: ""
+                children:
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: single recommendation [context data required - HIERARCHIES]
+                    meta:
+                      id: req_08ba52fe12b146bea931a52d03d23320
+                      created: 1731336495075
+                      modified: 1749209773554
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724539569515.125
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"key": "k67361182d053e038d07a4ede",
+                        						"format":"json",
+                        						"fields": ["title","originalUrl","trackingCode"],
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							"hierarchies": [["accessories"]]
+                        						}
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                scripts:
+                  afterResponse: ""
+                  preRequest: ""
+              - name: Other
+                meta:
+                  id: fld_4c8441845b0c48bcb5c431458f4c157d
+                  created: 1731336495077
+                  modified: 1731336495077
+                  sortKey: -1724523116815.8906
+                  description: ""
+                children:
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: single recommendation [context data required - CUSTOM]
+                    meta:
+                      id: req_2b264c2aedfa4f4a982acd2cfdefa846
+                      created: 1731336495078
+                      modified: 1749209780893
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724495309011.5
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"key": "k673613c085074171ef9f9d9d",
+                        						"format":"json",
+                        						"fields": ["title","originalUrl","trackingCode"],
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        								"brand": "HR API TEST",
+                        								"extraData":{
+                        										"isAccessory": "true"
+                        								},
+                        								"extraDataList": {
+                        										"tags": ["Sport"]
+                        								}
+                        						}
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: multiple recommendations [context data required - CUSTOM]
+                    meta:
+                      id: req_948066ed4ca941679dac19937a7b2221
+                      created: 1731336495079
+                      modified: 1749209792595
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724406787954.25
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"key": "k673613c085074171ef9f9d9d",
+                        						"format":"json",
+                        						"fields": ["title","originalUrl","trackingCode"],
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        								"brand": "HR API TEST",
+                        								"extraData":{
+                        										"isAccessory": "true"
+                        								},
+                        								"extraDataList": {
+                        										"tags": ["Sport"]
+                        								}
+                        						}
+                        				},
+                        				{
+                        						"key": "k67361554bb6f1c28c79aa6f6",
+                        						"format":"json",
+                        						"fields": ["title","originalUrl","trackingCode"],
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        								"brand": "Hydrogen Vendor",
+                        								"extraData":{
+                        										"isAccessory": "true"
+                        								},
+                        								"extraDataList": {
+                        										"tags": ["Winter"]
+                        								}
+                        						}
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                scripts:
+                  afterResponse: ""
+                  preRequest: ""
+            scripts:
+              afterResponse: ""
+              preRequest: ""
+          - name: Unmanaged
+            meta:
+              id: fld_1ad523defd08430a9ca3efa474d18789
+              created: 1731336495082
+              modified: 1731336495082
+              sortKey: -1724672341044
+              description: ""
+            children:
+              - name: Front page | 404 page
+                meta:
+                  id: fld_4fd31f7aa55e4fc493dcdf8ebfe0e700
+                  created: 1731336495083
+                  modified: 1731336495083
+                  sortKey: -1724674502275
+                  description: ""
+                children:
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: multiple recommendations [no context data]
+                    meta:
+                      id: req_5abf82d65e664cd9a5586537cd3d6f63
+                      created: 1731336495084
+                      modified: 1749209239464
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724673485377
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"trackingKey":"frontpage-1",
+                        						"fields":["title","originalUrl","trackingCode"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {},
+                        						"sources":[
+                        								{
+                        										"type":"TOP",
+                        										"limit":4
+                        								},
+                        								{
+                        										"type":"MOST_BOUGHT",
+                        										"limit":3
+                        								},
+                        								{
+                        										"type":"TOP"
+                        								}
+                        						]
+                        				},
+                        				{
+                        						"trackingKey":"frontpage-2",
+                        						"fields":["title","originalUrl","trackingCode"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"context": {},
+                        						"deviceType":"DESKTOP",
+                        						"sources":[
+                        								{
+                        										"type":"MOST_BOUGHT",
+                        										"limit":4
+                        								},
+                        								{
+                        										"type":"TOP"
+                        								}
+                        						]
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: single recommendation [no context data]
+                    meta:
+                      id: req_7f7e5006818d4660a98e9b2eb2b71533
+                      created: 1731336495086
+                      modified: 1749209227253
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724673485427
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"trackingKey":"frontpage-1",
+                        						"fields":["title","originalUrl","trackingCode"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {},
+                        						"sources":[
+                        								{
+                        										"type":"TOP",
+                        										"limit":4
+                        								},
+                        								{
+                        										"type":"MOST_BOUGHT",
+                        										"limit":3
+                        								},
+                        								{
+                        										"type":"TOP"
+                        								}
+                        						]
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                scripts:
+                  afterResponse: ""
+                  preRequest: ""
+              - name: Product page | Cart page | Upsell
+                meta:
+                  id: fld_bd8b9b4802174704877d67ec68baf042
+                  created: 1731336495088
+                  modified: 1731336495088
+                  sortKey: -1724674502225
+                  description: ""
+                children:
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: single recommendation [context object utilized - URLS]
+                    meta:
+                      id: req_cb4a2c681b4d48bbb0ae194759cb5509
+                      created: 1731336495089
+                      modified: 1749209417759
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724672918289
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: >-
+                        {
+                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"trackingKey":"productpage-1",
+                        						"fields":["title","originalUrl","trackingCode"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							 "urls":["https://www.hr-api-test.dk/products/the-collection-snowboard-hydrogen"]
+                        						},
+                        						"sources":[
+                        								{
+                        										"type":"ALTERNATIVES"
+                        								}
+                        						]
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: single recommendation [context object utilized - PRODUCTNUMBERS]
+                    meta:
+                      id: req_c4250bae81834f71a759284314c7894a
+                      created: 1731336495091
+                      modified: 1749209341208
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724672847396.75
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"trackingKey":"productpage-1",
+                        						"fields":["title","originalUrl","trackingCode"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							 "productNumbers":["14814386880847"]
+                        						},
+                        						"sources":[
+                        								{
+                        										"type":"ALTERNATIVES"
+                        								}
+                        						]
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: multiple recommendations [context object utilized - URLS]
+                    meta:
+                      id: req_5e2caa317d114f0a9957fb443dfec612
+                      created: 1731336495092
+                      modified: 1749209284312
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724672776504.5
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: >-
+                        {
+                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"trackingKey":"productpage-1",
+                        						"fields":["title","originalUrl","trackingCode"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							 "urls":["https://www.hr-api-test.dk/products/the-collection-snowboard-liquid"]
+                        						},
+                        						"sources":[
+                        								{
+                        										"type":"ALTERNATIVES",
+                        										"limit":4
+                        								},
+                        								{
+                        										"type":"TOP"
+                        								}
+                        						]
+                        				},
+                        				{
+                        						"trackingKey":"productpage-2",
+                        						"fields":["title","originalUrl","trackingCode"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							 "urls":["https://www.hr-api-test.dk/products/the-collection-snowboard-liquid"]
+                        						},
+                        						"sources":[
+                        								{
+                        										"type":"BOUGHT_TOGETHER",
+                        										"limit":4
+                        								},
+                        								{
+                        										"type":"TOP"
+                        								}
+                        						]
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: multiple recommendations [context object utilized - PRODUCTNUMBERS]
+                    meta:
+                      id: req_8126503d247f4060952e7b1f508ad7f6
+                      created: 1731336495094
+                      modified: 1749209416414
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724672563827.75
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"trackingKey":"productpage-1",
+                        						"fields":["title","originalUrl","trackingCode"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							 "productNumbers":["14814386880847"]
+                        						},
+                        						"sources":[
+                        								{
+                        										"type":"ALTERNATIVES",
+                        										"limit":4
+                        								},
+                        								{
+                        										"type":"TOP"
+                        								}
+                        						]
+                        				},
+                        				{
+                        						"trackingKey":"productpage-2",
+                        						"fields":["title","originalUrl","trackingCode"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							 "productNumbers":["14814386880847"]
+                        						},
+                        						"sources":[
+                        								{
+                        										"type":"BOUGHT_TOGETHER",
+                        										"limit":4
+                        								},
+                        								{
+                        										"type":"TOP"
+                        								}
+                        						]
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                scripts:
+                  afterResponse: ""
+                  preRequest: ""
+              - name: Category page
+                meta:
+                  id: fld_9edae63acdd94426be1bbd59319a224f
+                  created: 1731336495096
+                  modified: 1731336495096
+                  sortKey: -1724674502175
+                  description: ""
+                children:
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: single recommendation [context object omitted - HIERARCHIES]
+                    meta:
+                      id: req_623f29602cbc4b628c481b7ff67e2812
+                      created: 1731336495097
+                      modified: 1749209526205
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724672882842.875
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"trackingKey":"categorypage-1",
+                        						"fields":["title","originalUrl","trackingCode"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {},
+                        						"sources":[
+                        								{
+                        										"type":"TOP",
+                        										"filters": {
+                        											"hierarchies":{"$in":[["Snowboard"]]}
+                        										}
+                        								}
+                        						]
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: single recommendation [context object utilized - HIERARCHIES]
+                    meta:
+                      id: req_79839ea951e144d49f0670e850b375e7
+                      created: 1733222728376
+                      modified: 1749209539156
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724672865119.8125
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"trackingKey":"categorypage-1",
+                        						"fields":["title","originalUrl","trackingCode"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							 "hierarchies":[["Snowboard"]]
+                        						},
+                        						"sources":[
+                        								{
+                        										"type":"TOP",
+                        										"filters": {
+                        											"hierarchies":{"$in":"$hierarchies"}
+                        										}
+                        								}
+                        						]
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                scripts:
+                  afterResponse: ""
+                  preRequest: ""
+              - name: Other
+                meta:
+                  id: fld_36e8e49864314d2eb5f16f6bf7ced908
+                  created: 1731336495099
+                  modified: 1731336495099
+                  sortKey: -1724674502125
+                  description: ""
+                children:
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: single recommendation [context object omitted - CUSTOM]
+                    meta:
+                      id: req_16d83bc3754347dc8ab3c7fc63031dba
+                      created: 1731336495100
+                      modified: 1749209565124
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724673485402
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: >-
+                        {
+                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"trackingKey":"other-1",
+                        						"fields":["title","originalUrl","trackingCode","brand"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {},
+                        						"sources":[
+                        								{
+                        										"type":"TOP",
+                        										"limit":4,
+                        										"filters": {
+                        											"brand": {"$all":["Hydrogen Vendor"]}
+                        										}
+                        								},
+                        								{
+                        										"type":"MOST_BOUGHT",
+                        										"limit":3,
+                        										"filters": {
+                        												"brand": {"$all":["HR API TEST"]}
+                        											}
+                        									
+                        								},
+                        								{
+                        										"type":"TOP"
+                        								}
+                        						]
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: multiple recommendations [context object utilized - CUSTOM]
+                    meta:
+                      id: req_47c3d6c7d02a4eee8067f90eb228c2d4
+                      created: 1731336495101
+                      modified: 1749209639510
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724673485389.5
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: >-
+                        {
+                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"trackingKey":"other-2",
+                        						"fields":["title","originalUrl","trackingCode","hierarchies"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							"hierarchies":[["snowboard"]]
+                        						},
+                        						"sources":[
+                        								{
+                        										"type":"TOP",
+                        										"limit":2,
+                        										"filters": {
+                        												"hierarchies": {"$in":"$hierarchies"}
+                        										}
+                        								},
+                        								{
+                        										"type":"TOP",
+                        										"limit":2,
+                        										"filters": {
+                        											"hierarchies":{"$all":"$hierarchies"}
+                        										}
+                        								}
+                        						]
+                        				},
+                        				{
+                        						"trackingKey":"other-1",
+                        						"fields":["title","originalUrl","trackingCode","brand"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							"brand":["Hydrogen Vendor","HR API TEST"]
+                        						},
+                        						"sources":[
+                        								{
+                        										"type":"TOP",
+                        										"limit":2,
+                        										"filters": {
+                        											"brand": {"$in":"$brand"}
+                        										}
+                        								},
+                        								{
+                        										"type":"TOP",
+                        										"limit":2,
+                        										"filters": {
+                        												"brand": {"$in":"$brand"}
+                        											}
+                        									
+                        								}
+                        						]
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: single recommendation [context object utilized - CUSTOM]
+                    meta:
+                      id: req_91b3761ef97e4ad98787a8ca318bdeee
+                      created: 1733223010633
+                      modified: 1749209582783
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724673485395.75
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: >-
+                        {
+                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"trackingKey":"other-1",
+                        						"fields":["title","originalUrl","trackingCode","brand"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							"brand": ["Hydrogen Vendor","HR API TEST"]
+                        						},
+                        						"sources":[
+                        								{
+                        										"type":"TOP",
+                        										"limit":2,
+                        										"filters": {
+                        											"brand": {"$in":"$brand"}
+                        										}
+                        								},
+                        								{
+                        										"type":"MOST_VIEWED",
+                        										"limit":3,
+                        										"filters": {
+                        												"brand": {"$in":"$brand"}
+                        											}
+                        									
+                        								}
+                        						]
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: multiple recommendations [context object omitted - CUSTOM]
+                    meta:
+                      id: req_ec68bd662ffd4d568e174c96ef68a846
+                      created: 1733223300512
+                      modified: 1749209608648
+                      isPrivate: false
+                      description: ""
+                      sortKey: -1724673485392.625
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: >-
+                        {
+                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"trackingKey":"other-2",
+                        						"fields":["title","originalUrl","trackingCode","hierarchies"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {},
+                        						"sources":[
+                        								{
+                        										"type":"TOP",
+                        										"limit":2,
+                        										"filters": {
+                        												"hierarchies": {"$in":[["accessories"]]}
+                        										}
+                        								},
+                        								{
+                        										"type":"TOP",
+                        										"limit":2,
+                        										"filters": {
+                        											"hierarchies":{"$all":[["snowboard"]]}
+                        										}
+                        								}
+                        						]
+                        				},
+                        				{
+                        						"trackingKey":"other-1",
+                        						"fields":["title","originalUrl","trackingCode","brand"],
+                        						"hideAdditionalVariants":true,
+                        						"count":8,
+                        						"deviceType":"DESKTOP",
+                        						"context": {},
+                        						"sources":[
+                        								{
+                        										"type":"TOP",
+                        										"limit":2,
+                        										"filters": {
+                        											"brand": {"$all":["Hydrogen Vendor"]}
+                        										}
+                        								},
+                        								{
+                        										"type":"TOP",
+                        										"limit":2,
+                        										"filters": {
+                        												"brand": {"$all":["HR API TEST"]}
+                        											}
+                        									
+                        								}
+                        						]
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                scripts:
+                  afterResponse: ""
+                  preRequest: ""
+            scripts:
+              afterResponse: ""
+              preRequest: ""
+        scripts:
+          afterResponse: ""
+          preRequest: ""
+      - name: Search
+        meta:
+          id: fld_223b53b1b4f0401aa7ba636370e94944
+          created: 1731336495104
+          modified: 1731336495104
+          sortKey: -1724318260166
+          description: ""
+        children:
+          - name: Without filters & sorting
+            meta:
+              id: fld_78daa43cbf4e4cf882e377dbab5c9137
+              created: 1731336495105
+              modified: 1731336495105
+              sortKey: -1724680741397
+              description: ""
+            children:
+              - url: https://core.helloretail.com/serve/search/
+                name: "Search: products"
+                meta:
+                  id: req_d24147b444194a18bc2ebc41bc3e4469
+                  created: 1731336495106
+                  modified: 1749629822978
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1724680253307
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                        "query": "test",
+                        "key": "fd33f6d4-ca71-4fbf-b096-451e4872594f",
+                        "trackingUserId":"67321f3a7f80eb30448b1279",
+                    		"format": "json",
+                    		"deviceType":"DESKTOP",
+                        "products": {
+                            "returnFilters": false,
+                            "start":0,
+                            "count":10,
+                            "fields":["title","originalUrl","trackingCode"]
+                        }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/search/
+                name: "Search: products, categories"
+                meta:
+                  id: req_b0ababdca26e4a559f381512ac49ac3a
+                  created: 1731336495107
+                  modified: 1749209929488
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1724680253257
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                        "query": "*",
+                        "key": "fd33f6d4-ca71-4fbf-b096-451e4872594f",
+                        "trackingUserId":"67321f3a7f80eb30448b1279",
+                    		"format": "json",
+                    		"deviceType":"DESKTOP",
+                        "products": {
+                            "returnFilters": false,
+                            "start":0,
+                            "count":10,
+                            "fields":["title","originalUrl","trackingCode"]
+                        },
+                        "categories": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"]
+                        }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/search/
+                name: "Search: products, categories, brands"
+                meta:
+                  id: req_de88be7a6d8643adac463f77ae6f96e6
+                  created: 1731336495109
+                  modified: 1749208924975
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1724680253207
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                        "query": "*",
+                        "key": "fd33f6d4-ca71-4fbf-b096-451e4872594f",
+                        "trackingUserId":"67321f3a7f80eb30448b1279",
+                    		"format": "json",
+                    		"deviceType":"DESKTOP",
+                        "products": {
+                            "returnFilters": false,
+                            "start":0,
+                            "count":10,
+                            "fields":["title","originalUrl","trackingCode"]
+                        },
+                        "categories": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"]
+                        },
+                        "brands": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"]
+                        }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/search/
+                name: "Search: products, categories, brands, sitePages"
+                meta:
+                  id: req_6aadf727db074bc69ef001808987de18
+                  created: 1731336495110
+                  modified: 1749208928694
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1724680253157
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                        "query": "*",
+                        "key": "fd33f6d4-ca71-4fbf-b096-451e4872594f",
+                        "trackingUserId":"67321f3a7f80eb30448b1279",
+                    		"format": "json",
+                    		"deviceType":"DESKTOP",
+                        "products": {
+                            "returnFilters": false,
+                            "start":0,
+                            "count":10,
+                            "fields":["title","originalUrl","trackingCode"]
+                        },
+                        "categories": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"]
+                        },
+                        "brands": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"]
+                        },
+                        "sitePages": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"]
+                        }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/search/
+                name: "Search: products, categories, brands, sitePages, blogPosts"
+                meta:
+                  id: req_55c1e4d5ba574f4d97e0305bd3ecfc64
+                  created: 1731336495111
+                  modified: 1749208934243
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1724680253107
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                        "query": "*",
+                        "key": "40cce1a0-aab6-4855-a279-86a53a29c8b4",
+                        "trackingUserId":"67321f3a7f80eb30448b1279",
+                    		"format": "json",
+                    		"deviceType":"DESKTOP",
+                        "products": {
+                            "returnFilters": false,
+                            "start":0,
+                            "count":10,
+                            "fields":["title","originalUrl","trackingCode"]
+                        },
+                        "categories": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"]
+                        },
+                        "brands": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"]
+                        },
+                        "sitePages": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"]
+                        },
+                        "blogPosts": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"]
+                        }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/search/
+                name: "Search: products, categories, brands, sitePages, blogPosts, Redirects"
+                meta:
+                  id: req_71687094b54142d886f9bf83ff46f387
+                  created: 1739354799385
+                  modified: 1749208938278
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1724676869267
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                        "query": "test",
+                        "key": "40cce1a0-aab6-4855-a279-86a53a29c8b4",
+                        "trackingUserId":"67321f3a7f80eb30448b1279",
+                    		"format": "json",
+                    		"deviceType":"DESKTOP",
+                        "products": {
+                            "returnFilters": false,
+                            "start":0,
+                            "count":10,
+                            "fields":["title","originalUrl","trackingCode"]
+                        },
+                        "categories": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"]
+                        },
+                        "brands": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"]
+                        },
+                        "sitePages": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"]
+                        },
+                        "blogPosts": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"]
+                        },
+                    		"redirects": {
+                    				"start": 0,
+                    				"count": 2
+                    		}
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+            scripts:
+              afterResponse: ""
+              preRequest: ""
+          - name: With filters
+            meta:
+              id: fld_5f416bb565ca4ffc8180b74480b7658f
+              created: 1731336495113
+              modified: 1731336495113
+              sortKey: -1724677621836
+              description: ""
+            children:
+              - url: https://core.helloretail.com/serve/search/
+                name: "Search: products"
+                meta:
+                  id: req_1b0691aef15d41bc931754dfc341990c
+                  created: 1731336495114
+                  modified: 1749208947948
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1724680253307
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                        "query": "*",
+                        "key": "fd33f6d4-ca71-4fbf-b096-451e4872594f",
+                        "trackingUserId":"67321f3a7f80eb30448b1279",
+                    		"format": "json",
+                    		"deviceType":"DESKTOP",
+                        "products": {
+                            "returnFilters": false,
+                            "start":0,
+                            "count":10,
+                            "fields":["title","originalUrl","trackingCode"],
+                    				"filters": ["brand:HR API TEST"]
+                        }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/search/
+                name: "Search: products, categories"
+                meta:
+                  id: req_4530deed7d924aa8bdb5f4e17772d2ef
+                  created: 1731336495115
+                  modified: 1749208950577
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1724680253257
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: >-
+                    {
+                        "query": "*",
+                        "key": "fd33f6d4-ca71-4fbf-b096-451e4872594f",
+                        "trackingUserId":"67321f3a7f80eb30448b1279",
+                    		"format": "json",
+                    		"deviceType":"DESKTOP",
+                        "products": {
+                            "returnFilters": false,
+                            "start":0,
+                            "count":10,
+                            "fields":["title","originalUrl","trackingCode"],
+                    				"filters": ["brand:HR API TEST"]
+                        },
+                        "categories": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode","hierarchy"],
+                    				"filters":["extraDataList.category:Home page"]
+                        }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/search/
+                name: "Search: products, categories, brands"
+                meta:
+                  id: req_67aeb2ff5f104364b8fe443dddfc2748
+                  created: 1731336495117
+                  modified: 1749208953375
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1724680253207
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: >-
+                    {
+                        "query": "*",
+                        "key": "fd33f6d4-ca71-4fbf-b096-451e4872594f",
+                        "trackingUserId":"67321f3a7f80eb30448b1279",
+                    		"format": "json",
+                    		"deviceType":"DESKTOP",
+                        "products": {
+                            "returnFilters": false,
+                            "start":0,
+                            "count":10,
+                            "fields":["title","originalUrl","trackingCode"],
+                    				"filters": ["brand:Hydrogen Vendor"]
+                        },
+                        "categories": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"],
+                    				"filters":["extraDataList.category:Home page"]
+                        },
+                        "brands": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"],
+                    				"filters":["extraDataList.category:Automated Collection"]
+                        }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/search/
+                name: "Search: products, categories, brands, sitePages"
+                meta:
+                  id: req_fef6b253ba904da98fdd32193299f46d
+                  created: 1731336495118
+                  modified: 1749208956160
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1724680253157
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: >-
+                    {
+                        "query": "*",
+                        "key": "fd33f6d4-ca71-4fbf-b096-451e4872594f",
+                        "trackingUserId":"67321f3a7f80eb30448b1279",
+                    		"format": "json",
+                    		"deviceType":"DESKTOP",
+                        "products": {
+                            "returnFilters": false,
+                            "start":0,
+                            "count":10,
+                            "fields":["title","originalUrl","trackingCode"],
+                    				"filters": ["brand:Hydrogen Vendor"]
+                        },
+                        "categories": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"],
+                    				"filters":["extraDataList.category:Home page"]
+                        },
+                        "brands": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"],
+                    				"filters":["extraDataList.category:Automated Collection"]
+                        },
+                        "sitePages": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"],
+                    				"filters":["extraDataList.category:Hydrogen"]
+                        }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/search/
+                name: "Search: products, categories, brands, sitePages, blogPosts"
+                meta:
+                  id: req_0807a99a4ea74801b63406ec9fa5e31b
+                  created: 1731336495119
+                  modified: 1749208959125
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1724680253107
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: >-
+                    {
+                        "query": "*",
+                        "key": "fd33f6d4-ca71-4fbf-b096-451e4872594f",
+                        "trackingUserId":"67321f3a7f80eb30448b1279",
+                    		"format": "json",
+                    		"deviceType":"DESKTOP",
+                        "products": {
+                            "returnFilters": false,
+                            "start":0,
+                            "count":10,
+                            "fields":["title","originalUrl","trackingCode"],
+                    				"filters": ["brand:Hydrogen Vendor"]
+                        },
+                        "categories": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"],
+                    				"filters":["extraDataList.category:Home page"]
+                        },
+                        "brands": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"],
+                    				"filters":["extraDataList.category:Automated Collection"]
+                        },
+                        "sitePages": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"],
+                    				"filters":["extraDataList.category:Hydrogen"]
+                        },
+                        "blogPosts": {
+                            "start":0,
+                            "count":10,
+                            "fields":["title", "originalUrl","trackingCode"],
+                    				"filters":["extraDataList.category:Home page"]
+                        }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+            scripts:
+              afterResponse: ""
+              preRequest: ""
+          - name: With sorting
+            meta:
+              id: fld_d403e6696bc64e72958450f756964da3
+              created: 1731336495121
+              modified: 1731336495121
+              sortKey: -1724676062055.5
+              description: ""
+            children:
+              - url: https://core.helloretail.com/serve/search/
+                name: "Search: products"
+                meta:
+                  id: req_25f55627820f455f84b35f8f0b7e3821
+                  created: 1731336495123
+                  modified: 1749208966490
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1724680253307
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: >-
+                    {
+                        "query": "*",
+                        "key": "fd33f6d4-ca71-4fbf-b096-451e4872594f",
+                        "trackingUserId":"67321f3a7f80eb30448b1279",
+                    		"format": "json",
+                    		"deviceType":"DESKTOP",
+                        "products": {
+                            "returnFilters": false,
+                            "start":0,
+                            "count":10,
+                            "fields":["title","originalUrl","trackingCode","price"],
+                    				"sorting": ["price asc"]
+                        }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+            scripts:
+              afterResponse: ""
+              preRequest: ""
+        scripts:
+          afterResponse: ""
+          preRequest: ""
+      - name: Tracking
+        meta:
+          id: fld_3f9ecd2efbe44c1a8beb1aad62a88559
+          created: 1731336495131
+          modified: 1731336495131
+          sortKey: -1724925545317
+          description: ""
+        children:
+          - url: https://core.helloretail.com/serve/collect/click
+            name: Click tracking
+            meta:
+              id: req_6dc21b16756c46d5a6a56fff9c11bb6c
+              created: 1731336495132
+              modified: 1738329137492
+              isPrivate: false
+              description: ""
+              sortKey: -1724925592693
+            method: POST
+            body:
+              mimeType: application/json
+              text: >-
+                {
+                    "trackingUserId": "6426929526c7b13a8a1566f9",
+                    "websiteUuid": "d364dcdc-e618-45bd-b395-8653579884fe",
+                    "source": "ps-74b19399-447e-4ea7-8550-3fcdba1fb4bd|63483b0be52a6801e489b0b4|*|pos:0|per:true|"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/serve/collect/pageview
+            name: View tracking [URL]
+            meta:
+              id: req_f2ab5a5032764bc6bdf2976176a5b738
+              created: 1731336495134
+              modified: 1733224218203
+              isPrivate: false
+              description: ""
+              sortKey: -1724925733944
+            method: POST
+            body:
+              mimeType: application/json
+              text: >-
+                {
+                    "location": "https://www.hr-api-test.dk/products/the-collection-snowboard-liquid",
+                    "trackingUserId": "67360c0015222d284cad5cec",
+                    "websiteUuid": "d364dcdc-e618-45bd-b395-8653579884fe",
+                    "referrer": "https://www.hr-api-test.dk",
+                    "url": "https://www.hr-api-test.dk/products/the-collection-snowboard-liquid"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/serve/collect/pageview
+            name: View tracking [PRODUCTNUMBER]
+            meta:
+              id: req_3a57b8f658fd428b8a6aae8177baff88
+              created: 1731336495136
+              modified: 1733224224611
+              isPrivate: false
+              description: ""
+              sortKey: -1724925663318.5
+            method: POST
+            body:
+              mimeType: application/json
+              text: >-
+                {
+                    "location": "https://www.hr-api-test.dk/products/selling-plans-ski-wax",
+                    "trackingUserId": "67321f3a7f80eb30448b1279",
+                    "websiteUuid": "d364dcdc-e618-45bd-b395-8653579884fe",
+                    "referrer": "https://www.hr-api-test.dk/",
+                    "productNumber": "14814386553167"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/serve/trackingUser
+            name: Generate a trackingUserId
+            meta:
+              id: req_b0a921991b5a453ea6c22dedc0247fbd
+              created: 1731336495138
+              modified: 1733224216968
+              isPrivate: false
+              description: ""
+              sortKey: -1724926056529
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "websiteUuid": "d364dcdc-e618-45bd-b395-8653579884fe"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/serve/collect/cart
+            name: Cart tracking [PRODUCTNUMBERS]
+            meta:
+              id: req_d76e65521d6b4ee4a66ca55fc1a0b0ae
+              created: 1731336495140
+              modified: 1733321211963
+              isPrivate: false
+              description: ""
+              sortKey: -1724926161474
+            method: POST
+            body:
+              mimeType: application/json
+              text: >-
+                {
+                    "trackingUserId": "67321f3a7f80eb30448b1279",
+                    "websiteUuid": "d364dcdc-e618-45bd-b395-8653579884fe",
+                    "total": 123.50,
+                    "url": "https://www.hr-api-test.dk/products/test-product-created-through-CRUD-operations/",
+                    "productNumbers": [
+                        "14814386553167"
+                    ],
+                    "email": "customer@example.com"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/serve/collect/cart
+            name: Cart tracking [URLS]
+            meta:
+              id: req_31f2b601773f4e88af469d0bf1585fd1
+              created: 1731336495141
+              modified: 1733224215001
+              isPrivate: false
+              description: ""
+              sortKey: -1724926109001.5
+            method: POST
+            body:
+              mimeType: application/json
+              text: >-
+                {
+                    "trackingUserId": "67321f3a7f80eb30448b1279",
+                    "websiteUuid": "d364dcdc-e618-45bd-b395-8653579884fe",
+                    "total": 123.50,
+                    "url": "https://www.hr-api-test.dk/products/selling-plans-ski-wax",
+                    "urls": [
+                        "https://www.hr-api-test.dk/products/selling-plans-ski-wax"
+                    ],
+                    "email": "customer@example.com"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/serve/collect/conversion
+            name: Conversion tracking [PRODUCTNUMBERS]
+            meta:
+              id: req_86a5f9f9c736403881b09a3b95d991e9
+              created: 1731336495144
+              modified: 1738329030237
+              isPrivate: false
+              description: ""
+              sortKey: -1724926552609
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "trackingUserId": "67321f3a7f80eb30448b1279",
+                    "websiteUuid": "d364dcdc-e618-45bd-b395-8653579884fe",
+                    "total": 2185.85,
+                    "orderNumber": "hr-REST-API-test-31-01-2025-e",
+                    "email": "customer@example.com",
+                    "customerId": "123456789",
+                		"products":[
+                				{
+                					"productNumber": "14814386389327",
+                					"quantity": 1,
+                					"lineTotal": 785.95 
+                				},
+                				{
+                					"productNumber": "14814386717007",
+                					"quantity": 2,
+                					"lineTotal": 699.95
+                				}
+                		]
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/serve/collect/conversion
+            name: Conversion tracking [URLS]
+            meta:
+              id: req_4e26024016894ba6b2e3c905a17003f2
+              created: 1731336495146
+              modified: 1749209921911
+              isPrivate: false
+              description: ""
+              sortKey: -1724926357041.5
+            method: POST
+            body:
+              mimeType: application/json
+              text: >-
+                {
+                    "trackingUserId": "67321f3a7f80eb30448b1279",
+                    "websiteUuid": "d364dcdc-e618-45bd-b395-8653579884fe",
+                    "total": 2185.85,
+                    "orderNumber": "hr-REST-API-test-31-01-2025-f",
+                    "email": "customer@example.com",
+                    "customerId": "123456789",
+                		"products":[
+                				{
+                					"url": "https://www.hr-api-test.dk/products/the-compare-at-price-snowboard",
+                					"quantity": 1,
+                					"lineTotal": 785.95 
+                				},
+                				{
+                					"url": "https://www.hr-api-test.dk/products/the-complete-snowboard",
+                					"quantity": 2,
+                					"lineTotal": 699.95
+                				}
+                		]
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+        scripts:
+          afterResponse: ""
+          preRequest: ""
+      - name: Feeds
+        meta:
+          id: fld_2237632fcd87498bb9f4b9bd23553edf
+          created: 1731336495148
+          modified: 1731336495148
+          sortKey: -1725269002588
+          description: ""
+        children:
+          - name: Product feeds
+            meta:
+              id: fld_d44707897cfe4d80a9e464e29f7ea281
+              created: 1731336495149
+              modified: 1731336495149
+              sortKey: -1725269026937
+              description: ""
+            children:
+              - url: https://core.helloretail.com/api/websites/d364dcdc-e618-45bd-b395-8653579884fe/productfeedruns/11388?apiKey={API-KEY}
+                name: Queue specific product feed (defaults to delta feed run if enabled)
+                meta:
+                  id: req_60c48a9b1b26497b865ee2cedad53f38
+                  created: 1731336495150
+                  modified: 1731337685954
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1725269124152
+                method: POST
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/api/websites/d364dcdc-e618-45bd-b395-8653579884fe/productfeedruns/11388?apiKey={API-KEY}&full=true
+                name: Queue specific product feed (force full feed run, even if delta runs are
+                  enabled)
+                meta:
+                  id: req_110af4a6fc6346d4998036c193262060
+                  created: 1731336495152
+                  modified: 1731337695036
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1725097838380.5
+                method: POST
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+            scripts:
+              afterResponse: ""
+              preRequest: ""
+        scripts:
+          afterResponse: ""
+          preRequest: ""
+      - name: Managing Product Data (CRUD operations)
+        meta:
+          id: fld_5c30df77f12744bda055550f9c6843f4
+          created: 1731336495155
+          modified: 1731336495155
+          sortKey: -1725269750050
+          description: ""
+        children:
+          - url: https://core.helloretail.com/api/websites/d364dcdc-e618-45bd-b395-8653579884fe/products?apiKey={API-KEY}
+            name: Create product
+            meta:
+              id: req_edb264d4fe8c4eddb8057139d46b0e10
+              created: 1731336495156
+              modified: 1736512363202
+              isPrivate: false
+              description: ""
+              sortKey: -1725269842713
+            method: POST
+            body:
+              mimeType: application/json
+              text: >-
+                {
+                		"data": {
+                				"id": "https://www.hr-api-test.dk/products/test-product-created-through-CRUD-operations/",
+                				"type": "products",
+                				"attributes": {
+                						"title": "Test product created through CRUD operations",
+                						"productNumber": 123456789,
+                						"variantProductNumbers": [123456789,987654321,12345,9876],
+                						"imgUrl": "https://cdn.shopify.com/s/files/1/0888/5076/0015/files/snowboard_wax_360x.png?v=1731077218",
+                						"oldPrice": 1227,
+                						"price": 1337,
+                						"priceExVat": 1000,
+                						"oldPriceExVat": 800,
+                						"currency": "dkk",
+                						"brand":"Adidas",
+                						"hierarchies": [
+                								["Shoes", "Sneakers"],
+                								["Men","Sportswear"],
+                								["Women","Sportswear"]
+                						],
+                						"description":"These shoes are incredible, everyone should own a pair!",
+                						"keywords": "these shoes are cool white unisex sport Digge loo digge ley",
+                						"inStock": true,
+                						"url": "https://www.hr-api-test.dk/products/test-product-created-through-CRUD-operations/",
+                						"ean": 123456789,
+                "created": "2023-06-15 19:44:54",
+                						"extraData": {
+                								"color": "white"
+                						},
+                						"extraDataList": {
+                								"sizes": ["36", "37", "38", "39", "40", "41", "42"]
+                						}
+                				}
+                		}
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/api/websites/d364dcdc-e618-45bd-b395-8653579884fe/products?id=https%3A%2F%2Fwww.hr-api-test.dk%2Fproducts%2Ftest-product-created-through-CRUD-operations%2F&apiKey={API-KEY}
+            name: Update product
+            meta:
+              id: req_e793611bfe1f447fa2c0e5574adb8825
+              created: 1731336495159
+              modified: 1736512362917
+              isPrivate: false
+              description: ""
+              sortKey: -1725269842663
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: >-
+                {
+                		"data": {
+                				"id": "https://www.hr-api-test.dk/products/test-product-created-through-CRUD-operations-CHANGED-THROUGH-CRUD-UPDATE/",
+                				"type": "products",
+                				"attributes": {
+                						"title": "Test product created through CRUD operations - UPDATED TITLE",
+                						"productNumber": 123456789,
+                						"variantProductNumbers": [123456789,987654321,12345,9876],
+                						"imgUrl": "https://test.orcanice.com/woo/wp-content/uploads/2022/12/luma-stability-ball-pink-100x100.jpg",
+                						"oldPrice": 1227,
+                						"price": 1337,
+                						"priceExVat": 1000,
+                						"oldPriceExVat": 800,
+                						"currency": "dkk",
+                						"brand":"Adidas",
+                						"hierarchies": [
+                								["Shoes", "Sneakers"],
+                								["Men","Sportswear"],
+                								["Women","Sportswear"]
+                						],
+                						"description":"These shoes are incredible, everyone should own a pair!",
+                						"keywords": "these shoes are cool white unisex sport Digge loo digge ley",
+                						"inStock": true,
+                						"url": "https://www.hr-api-test.dk/products/test-product-created-through-CRUD-operations-CHANGED-THROUGH-CRUD-UPDATE/",
+                						"ean": 123456789,
+                "created": "2023-06-15 19:44:54",
+                						"extraData": {
+                								"color": "white"
+                						},
+                						"extraDataList": {
+                								"sizes": ["36", "37", "38", "39", "40", "41", "42"]
+                						}
+                				}
+                		}
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/api/websites/d364dcdc-e618-45bd-b395-8653579884fe/products?id=https%3A%2F%2Fwww.hr-api-test.dk%2Fproducts%2Ftest-product-created-through-CRUD-operations%2F&apiKey={API-KEY}
+            name: Get product
+            meta:
+              id: req_a533275e0261482b8a92350241001def
+              created: 1731336495160
+              modified: 1731337415439
+              isPrivate: false
+              description: ""
+              sortKey: -1725269842613
+            method: GET
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/api/websites/d364dcdc-e618-45bd-b395-8653579884fe/products?id=https%3A%2F%2Fwww.hr-api-test.dk%2Fproducts%2Ftest-product-created-through-CRUD-operations%2F&apiKey={API-KEY}
+            name: Delete product
+            meta:
+              id: req_f1c994e7979f4120845ab496d1b9c74f
+              created: 1731336495162
+              modified: 1731337434002
+              isPrivate: false
+              description: ""
+              sortKey: -1725269842563
+            method: DELETE
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+        scripts:
+          afterResponse: ""
+          preRequest: ""
+      - name: Customer Bias
+        meta:
+          id: fld_b7d5e24e421f470ba9cd6fdcfde747fa
+          created: 1731336495164
+          modified: 1731336495164
+          sortKey: -1725271766236
+          description: ""
+        children:
+          - url: https://core.helloretail.com/serve/customer/bias
+            name: Get Customer Bias
+            meta:
+              id: req_0e206ba0833d4239ab3dad6dc21ee216
+              created: 1731336495165
+              modified: 1733224173499
+              isPrivate: false
+              description: ""
+              sortKey: -1725271796393
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                			"websiteUuid": "d364dcdc-e618-45bd-b395-8653579884fe",
+                			"trackingUserId": "67321f3a7f80eb30448b1279",
+                			"fields": ["brand", "extraDataList.tags"],
+                			"numberOfValues": 2
+                	}
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+        scripts:
+          afterResponse: ""
+          preRequest: ""
+      - name: Product Intelligence
+        meta:
+          id: fld_1dd9e905d2d74e81afb32faba38f43c6
+          created: 1731336495168
+          modified: 1731336495168
+          sortKey: -1728545177969
+          description: ""
+        children:
+          - url: https://core.helloretail.com/pi/graphql?apiKey={API-KEY}
+            name: Product Intelligence
+            meta:
+              id: req_e457521c93ae40b98f8e9661e95ce861
+              created: 1731336495168
+              modified: 1733224179783
+              isPrivate: false
+              description: ""
+              sortKey: -1728545240490
+            method: POST
+            body:
+              mimeType: application/graphql
+              text: '{"query":"query {\n    productInsight(\n            url:
+                \"https://test.orcanice.com/woo/index.php/product/strive-shoulder-pack/\",\n            website:
+                \"95e2c728-c2c2-4aa7-a01f-844e7a987eda\")
+                {\n        productLifetimeValue\n        retentionRate\n        isRecurrent\n        overallRecurrence\n        recurringPeriodWeekly
+                {\n            start\n            end\n        }\n        returnsPeriodWeekly
+                {\n            start\n            end\n        }\n        recurrenceDataWeekly
+                {\n            week\n            probability\n        }\n        discountData
+                {\n            percentageRangeFrom\n            percentageRangeTo\n            probability\n        }\n    }\n}"}'
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+        scripts:
+          afterResponse: ""
+          preRequest: ""
+      - name: Platform plugin endpoint examples
+        meta:
+          id: fld_9a59c546cbc041c5813bd80afeafea37
+          created: 1736938842981
+          modified: 1736938842981
+          sortKey: -1736938842981
+          description: ""
+        children:
+          - name: Magento 2
+            meta:
+              id: fld_66ff18a766af4d8894234fe03d253c56
+              created: 1736938861874
+              modified: 1736938861874
+              sortKey: -1736938861874
+              description: ""
+            children:
+              - url: https://www.domain-name.dk/rest/V1/awext/info
+                name: Version and extraattributes information
+                meta:
+                  id: req_38d8296acf6948b6bc4c6738f7ce0881
+                  created: 1736938871579
+                  modified: 1736943607478
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1736938871579
+                method: GET
+                headers:
+                  - name: Authorization
+                    value: Bearer tok_m2_{ your Magento 2 token }
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+            scripts:
+              afterResponse: ""
+              preRequest: ""
+          - name: Magento 1
+            meta:
+              id: fld_f7ac66ddeae9468a81df49c808910028
+              created: 1736943552598
+              modified: 1736943552598
+              sortKey: -1736943552598
+              description: ""
+            children:
+              - url: https://www.domain-name.dk/awext/index/info
+                name: Version and extraattributes information
+                meta:
+                  id: req_d59f46d0484b4b838f188be34aaa6db3
+                  created: 1736943555077
+                  modified: 1736944020263
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1736943555077
+                method: GET
+                headers:
+                  - name: Authorization
+                    value: Bearer tok_{ your Magento 2 token }
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+            scripts:
+              afterResponse: ""
+              preRequest: ""
+          - name: WooCommerce
+            meta:
+              id: fld_09d492cfffe04063b0bf7d9a80cff475
+              created: 1736943891578
+              modified: 1736943891578
+              sortKey: -1736943891578
+              description: ""
+            children:
+              - url: https://www.domain-name.dk/?feed=addwish_info
+                name: Version and extraattributes information
+                meta:
+                  id: req_8d38da86b0904890bb7b6e70c0f1e947
+                  created: 1736943894206
+                  modified: 1736944051954
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1736943894206
+                method: GET
+                headers:
+                  - name: Authorization
+                    value: Bearer tok_wc_{ Your WooCommerce token }
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+            scripts:
+              afterResponse: ""
+              preRequest: ""
+        scripts:
+          afterResponse: ""
+          preRequest: ""
+      - name: Configuring Solutions
+        meta:
+          id: fld_5a69a47c493f4cb0a0375a129ad5c8c5
+          created: 1749628550788
+          modified: 1749628550788
+          sortKey: -1749628550788
+          description: ""
+        children:
+          - name: Configuring Pages
+            meta:
+              id: fld_d07f0ad5a40f4092a56c9758c3809cc2
+              created: 1749634630079
+              modified: 1750148283097
+              sortKey: -1749634630079
+              description: ""
+            children:
+              - url: https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/latest/{pageKey}?apiKey={apiKey}
+                name: Fetch latest page configuration
+                meta:
+                  id: req_708608f4e07f46b1a0ca8f3e1cd4cc9d
+                  created: 1749628554360
+                  modified: 1749634769767
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1749628554360
+                method: GET
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/{versionId}?apiKey={apiKey}
+                name: Update page configuration [Personalized_Boosts]
+                meta:
+                  id: req_5ca16f1da87541d29a007356dd426503
+                  created: 1749628728687
+                  modified: 1750149300380
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1749628554310
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                    		"data": {
+                    				"type": "page",
+                    				"attributes": {
+                    						"state": "DRAFT",
+                    						"personalized_boosts": [
+                    								{
+                    										"field": "product.hierarchy",
+                    										"boost": 2
+                    								},
+                    								{
+                    										"field": "product.brand",
+                    										"boost": 2
+                    								},
+                    								{
+                    										"field": "product.extraData.isAccessory",
+                    										"boost": 2
+                    								},
+                    								{
+                    										"field": "product.pi.budgetZone",
+                                      	"boost": 3
+                    								},
+                    								{
+                    										"field": "product.pi.productCluster",
+                                      	"boost": 4
+                    								}
+                    						]
+                    				}
+                    		}
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/{versionId}?apiKey={apiKey}
+                name: Update page configuration [product_boosts]
+                meta:
+                  id: req_bcffb1eb4b71402bae1df18600fa32de
+                  created: 1749631608432
+                  modified: 1749634805321
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1749628554260
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                    		"data": {
+                    				"type": "page",
+                    				"attributes": {
+                    						"state": "DRAFT",
+                    						"product_boosts": [
+                    								{
+                    										"field": "brand",
+                    										"value": "Nike",
+                    										"boost": 4
+                    								},
+                    								{
+                    										"field": "extraDataList.tags",
+                    										"value": "Snow",
+                    										"boost": 4
+                    								},
+                    								{
+                    										"field": "inStock",
+                    										"value": "false",
+                    										"boost": -1
+                    								}
+                    						]
+                    				}
+                    		}
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/{versionId}?apiKey={apiKey}
+                name: Update page configuration [url_overrides]
+                meta:
+                  id: req_efe24ed135e94104a0da382de6e7df7c
+                  created: 1749632093272
+                  modified: 1749634807401
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1749628554210
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                    		"data": {
+                    				"type": "page",
+                    				"attributes": {
+                    						"state": "DRAFT",
+                    						"url_overrides": [
+                    								{
+                    									"url": "/women/shoes/special-tags",
+                    									"fixedProducts": [],
+                    									"productBoosts": [
+                    										{
+                    											"field": "extraDataList.tags",
+                    											"value": "Sport",
+                    											"boost": 3
+                    										},
+                    										{
+                    											"field": "inStock",
+                    											"value": "false",
+                    											"boost": -1
+                    										}
+                    									],
+                    									"showFilteredProducts": true,
+                    									"productScoreBoost": 1.5
+                    								}
+                    						]
+                    				}
+                    		}
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/{versionId}?apiKey={apiKey}
+                name: Update page configuration [show_out_of_stock_products]
+                meta:
+                  id: req_7f69babd1f5547f197debf746654257b
+                  created: 1749632214307
+                  modified: 1749634895567
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1749628554160
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                    		"data": {
+                    				"type": "page",
+                    				"attributes": {
+                    						"state": "DRAFT",
+                    						"show_out_of_stock_products": false
+                    				}
+                    		}
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+            scripts:
+              afterResponse: ""
+              preRequest: ""
+          - name: Configuring Search
+            meta:
+              id: fld_73f85eec1ce1431c9d25c26bd14b7cb5
+              created: 1750148304503
+              modified: 1750148304503
+              sortKey: -1750148304503
+              description: ""
+            children:
+              - url: https://core.helloretail.com/graphql?apiKey={apiKey}
+                name: Update Search configuration [personalizedFields]
+                meta:
+                  id: req_ae2681aee3bb4c9fb6b02f9e3d41d3e4
+                  created: 1750148404857
+                  modified: 1750149440679
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1750148404857
+                method: POST
+                body:
+                  mimeType: application/graphql
+                  text: '{"query":"mutation UpdateSearchPersonalization
+                    {\n  updateSearchAlgorithmPersonalization(\n    personalization:
+                    {\n      algorithmId: \"8013\"\n      personalizedFields:
+                    [\n        {\n          field:
+                    \"product.pi.budgetZone\"\n          boostValue:
+                    5\n        }\n        {\n          field:
+                    \"product.pi.productCluster\"\n          boostValue:
+                    3\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\tfield:
+                    \"product.hierarchy\"\n\t\t\t\t\tboostValue:
+                    3\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\tfield:
+                    \"product.extraData.weight\"\n\t\t\t\t\tboostValue:
+                    3\n\t\t\t\t}\n      ]\n    }\n  )
+                    {\n    allowedFields\n    availableFields\n    personalizedFields
+                    {\n      field\n      boostValue\n    }\n  }\n}","operationName":"UpdateSearchPersonalization"}'
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/graphql?apiKey={apiKey}
+                name: Update Search configuration [Clear all personalizedFields]
+                meta:
+                  id: req_8d2e55d869004f83ae73b0e188cc01d7
+                  created: 1750149340178
+                  modified: 1750149423557
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1749888479608.5
+                method: POST
+                body:
+                  mimeType: application/graphql
+                  text: '{"query":"mutation UpdateSearchPersonalization
+                    {\n  updateSearchAlgorithmPersonalization(\n    personalization:
+                    {\n      algorithmId: \"8013\"\n      personalizedFields:
+                    []\n    }\n  )
+                    {\n    allowedFields\n    availableFields\n    personalizedFields
+                    {\n      field\n      boostValue\n    }\n  }\n}","operationName":"UpdateSearchPersonalization"}'
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+            scripts:
+              afterResponse: ""
+              preRequest: ""
+        scripts:
+          afterResponse: ""
+          preRequest: ""
+    scripts:
+      afterResponse: ""
+      preRequest: ""
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755861427869
+    modified: 1762847781535
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755861427868
+    modified: 1762860450986
+    isPrivate: false
