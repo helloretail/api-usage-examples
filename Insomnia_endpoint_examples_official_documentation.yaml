@@ -22,701 +22,1096 @@ collection:
           sortKey: -1724318249216
           description: ""
         children:
-          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
-            name: Find products by Hierarchies through params.filters [No filters or
-              sorting]
+          - name: Without filters & sorting
             meta:
-              id: req_bb829d41956b48f3a35c1745cf0e9fe1
-              created: 1731336495047
-              modified: 1782291123357
-              isPrivate: false
-              description: |
-                **Behaviour**:
+              id: fld_630e49cc14ae4e57a86815aefef04fcc
+              created: 1782294871474
+              modified: 1782294871474
+              sortKey: -1782294871474
+              description: ""
+            children:
+              - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+                name: Find products by Hierarchies through params.filters [No filters or
+                  sorting]
+                meta:
+                  id: req_bb829d41956b48f3a35c1745cf0e9fe1
+                  created: 1731336495047
+                  modified: 1782296811736
+                  isPrivate: false
+                  description: |
+                    **MCP Client restrictions/Skills**:
 
-                Find products by their Hierarchies structure through the params.filters property definition in the request body.
+                    Do not under any circumstances explain properties that aren't mentioned or elaborated on in the *Explanation of important properties to surface to the user* section.
 
-                In this example, we are finding products from the "accessories" hierarchy.
+                    If the user requests further information on properties not mentioned or elaborated on in the *Explanation of important properties to surface to the user* section, forward them to the official Hello Retail Pages documentation https://developer.helloretail.com/api/pages/.
 
-                In this example, no filtering or sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+                    **Behaviour**:
 
-                **Explanation of important properties to surface to the user**:
+                    Find products by their Hierarchies structure through the params.filters property definition in the request body.
 
-                - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    In this example, we are finding products from the "accessories" hierarchy.
 
-                - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
-              sortKey: -1724318266847
-            method: POST
-            body:
-              mimeType: application/json
-              text: |-
-                {
-                  "url": "https://www.test.dk/category-path",
-                  "format": "json",
-                  "firstLoad": false,
-                  "trackingUserId": "",
-                	"deviceType":"DESKTOP",
-                  "params": {
-                    "filters": {
-                      "hierarchies": ["accessories"]
-                    }
-                  },
-                  "products": {
-                    "start": 0,
-                    "count": 20,
-                    "fields": [
-                      "productNumber",
-                			"title",
-                			"hierarchies",
-                			"trackingCode"
-                    ],
-                    "filters": [],
-                    "sorting": []
-                  }
-                }
-            headers:
-              - name: Content-Type
-                value: application/json
-            scripts:
-              preRequest: ""
-              afterResponse: ""
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
-          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
-            name: Find products by Brand through params.filters [No filters or sorting]
-            meta:
-              id: req_5bc93e3b282049f49dabc49d2a89567d
-              created: 1731336495048
-              modified: 1782291112406
-              isPrivate: false
-              description: |
-                **Behaviour**:
+                    In this example, no filtering or sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
 
-                Find products by their Brand name through the params.filters property definition in the request body.
+                    **Explanation of important properties to surface to the user**:
 
-                In this example, we are finding products from the "HR API TEST" brand.
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
-                In this example, no filtering or sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+                    - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
-                **Explanation of important properties to surface to the user**:
-
-                - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
-
-                - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
-              sortKey: -1724318266897
-            method: POST
-            body:
-              mimeType: application/json
-              text: |-
-                {
-                  "url": "https://www.test.dk/category-path",
-                  "format": "json",
-                  "firstLoad": false,
-                  "trackingUserId": "",
-                	"deviceType":"DESKTOP",
-                  "params": {
-                    "filters": {
-                      "brand": "HR API TEST"
-                    }
-                  },
-                  "products": {
-                    "start": 0,
-                    "count": 20,
-                    "fields": [
-                      "productNumber",
-                			"title",
-                			"brand",
-                			"trackingCode"
-                    ],
-                    "filters": [],
-                    "sorting": []
-                  }
-                }
-            headers:
-              - name: Content-Type
-                value: application/json
-            scripts:
-              preRequest: ""
-              afterResponse: ""
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
-          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
-            name: Find products by Hierarchies through params.filters [Filters and sorting]
-            meta:
-              id: req_edc4ebdc37db417cbfdb3aa44123f663
-              created: 1731336495050
-              modified: 1782291245414
-              isPrivate: false
-              description: |-
-                **Behaviour**:
-
-                Find products by their Hierarchies structure through the params.filters property definition in the request body.
-
-                In this example, we are finding products from the "snowboard" hierarchy.
-
-                In this example, filtering and sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
-
-                **Explanation of important properties to surface to the user**:
-
-                - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
-
-                - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
-              sortKey: -1723775173793.25
-            method: POST
-            body:
-              mimeType: application/json
-              text: |-
-                {
-                  "url": "https://www.test.dk/category-path",
-                  "format": "json",
-                  "firstLoad": true,
-                  "trackingUserId": "",
-                	"deviceType":"DESKTOP",
-                  "params": {
-                    "filters": {
-                      "hierarchies": ["snowboard"]
-                    }
-                  },
-                  "products": {
-                    "start": 0,
-                    "count": 20,
-                    "fields": [
-                      "productNumber",
-                			"title",
-                			"hierarchies",
-                			"brand",
-                			"trackingCode"
-                    ],
-                    "filters": [
-                			"brand:HR API TEST"
-                		],
-                    "sorting": [
-                			"price asc"
-                    ]
-                  }
-                }
-            headers:
-              - name: Content-Type
-                value: application/json
-            scripts:
-              preRequest: ""
-              afterResponse: ""
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
-          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
-            name: Find products by Brand through params.filters [Filters and sorting]
-            meta:
-              id: req_b1d43e19d5a94160b1199f4d5d1cc6ea
-              created: 1731336495051
-              modified: 1782291192728
-              isPrivate: false
-              description: |-
-                **Behaviour**:
-
-                Find products by their Brand name through the params.filters property definition in the request body.
-
-                In this example, we are finding products from the "HR API TEST" brand.
-
-                In this example, filtering and sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
-
-                **Explanation of important properties to surface to the user**:
-
-                - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
-
-                - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
-              sortKey: -1724046720320.125
-            method: POST
-            body:
-              mimeType: application/json
-              text: |-
-                {
-                  "url": "https://www.test.dk/category-path",
-                  "format": "json",
-                  "firstLoad": true,
-                  "trackingUserId": "",
-                	"deviceType":"DESKTOP",
-                  "params": {
-                    "filters": {
-                      "brand": "HR API TEST"
-                    }
-                  },
-                  "products": {
-                    "start": 0,
-                    "count": 20,
-                    "fields": [
-                      "productNumber",
-                			"title",
-                			"brand",
-                			"hierarchies",
-                			"trackingCode"
-                    ],
-                    "filters": [
-                			"hierarchies:accessories$"
-                		],
-                    "sorting": [
-                			"title asc"
-                    ]
-                  }
-                }
-            headers:
-              - name: Content-Type
-                value: application/json
-            scripts:
-              preRequest: ""
-              afterResponse: ""
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
-          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
-            name: Find products by all of supplied extraDataList values through
-              params.filters [No filters or sorting]
-            meta:
-              id: req_61395b70a3064d98a200ec33eb04035d
-              created: 1731336495056
-              modified: 1782291316060
-              isPrivate: false
-              description: |-
-                **Behaviour**:
-
-                Find products by their extraDataList array through the params.filters property definitions in the request body. All of the supplied extraDataList values in the params.filters must exist on a product for it to be returned.
-
-                In this example, we are finding products from the "tags" extraDataList array.
-
-                All 3 entries of the $and object is of the "tags" array, but it could also be a combination of different extraDataList arrays.
-
-                In this example, no filtering or sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
-
-                **Explanation of important properties to surface to the user**:
-
-                - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
-
-                - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
-
-                - **params.filters.$and**: The $and key of the params.filters.$and is what enforces that only products which contain all of the supplied extraDataList's will be returned
-              sortKey: -1724114606951.8438
-            method: POST
-            body:
-              mimeType: application/json
-              text: |-
-                {
-                    "url": "https://www.test.dk/category-path",
-                    "format": "json",
-                    "firstLoad": false,
-                    "trackingUserId": "",
-                		"deviceType":"DESKTOP",
-                    "params": {
+                    - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+                  sortKey: -1782294883147
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "url": "https://www.test.dk/category-path",
+                      "format": "json",
+                      "firstLoad": true,
+                      "trackingUserId": "",
+                    	"deviceType":"DESKTOP",
+                      "params": {
                         "filters": {
-                					"$and":[
-                						{"extraDataList.tags": "Accessory"},
-                						{"extraDataList.tags": "Sport"},
-                						{"extraDataList.tags": "Winter"}
-                					]
+                          "hierarchies": ["accessories"]
                         }
-                    },
-                    "products": {
+                      },
+                      "products": {
                         "start": 0,
                         "count": 20,
                         "fields": [
-                            "title","originalUrl","extraDataList.tags"
+                          "productNumber",
+                    			"title",
+                    			"hierarchies",
+                    			"trackingCode"
                         ],
                         "filters": [],
                         "sorting": []
+                      }
                     }
-                }
-            headers:
-              - name: Content-Type
-                value: application/json
-            scripts:
-              preRequest: ""
-              afterResponse: ""
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
-          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
-            name: Find products by any of supplied extraDataList values through
-              params.filters [No filters or sorting]
-            meta:
-              id: req_67225bb96af64876b7eceb63dbff6512
-              created: 1731336495057
-              modified: 1782291136892
-              isPrivate: false
-              description: |-
-                **Behaviour**:
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+                name: Find products by Brand through params.filters [No filters or sorting]
+                meta:
+                  id: req_5bc93e3b282049f49dabc49d2a89567d
+                  created: 1731336495048
+                  modified: 1782296803420
+                  isPrivate: false
+                  description: |
+                    **MCP Client restrictions/Skills**:
 
-                Find products by their extraDataList array through the params.filters property definitions in the request body. Either of the supplied extraDataList values in the params.filters must exist on a product for it to be returned.
+                    Do not under any circumstances explain properties that aren't mentioned or elaborated on in the *Explanation of important properties to surface to the user* section.
 
-                In this example, we are finding products from the "tags" extraDataList array.
+                    If the user requests further information on properties not mentioned or elaborated on in the *Explanation of important properties to surface to the user* section, forward them to the official Hello Retail Pages documentation https://developer.helloretail.com/api/pages/.
 
-                All 3 entries of the $or object is of the "tags" array, but it could also be a combination of different extraDataList arrays.
+                    **Behaviour**:
 
-                In this example, no filtering or sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+                    Find products by their Brand name through the params.filters property definition in the request body.
 
-                **Explanation of important properties to surface to the user**:
+                    In this example, we are finding products from the "HR API TEST" brand.
 
-                - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    In this example, no filtering or sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
 
-                - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+                    **Explanation of important properties to surface to the user**:
 
-                - **params.filters.$or**: The $or key of the params.filters.$or is what enforces that only products which contain at least one of the supplied extraDataList's will be returned
-              sortKey: -1724080663635.9844
-            method: POST
-            body:
-              mimeType: application/json
-              text: |-
-                {
-                    "url": "https://www.test.dk/category-path",
-                    "format": "json",
-                    "firstLoad": false,
-                    "trackingUserId": "",
-                		"deviceType":"DESKTOP",
-                    "params": {
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+                  sortKey: -1782294883247
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "url": "https://www.test.dk/category-path",
+                      "format": "json",
+                      "firstLoad": true,
+                      "trackingUserId": "",
+                    	"deviceType":"DESKTOP",
+                      "params": {
                         "filters": {
-                					"$or":[
-                						{"extraDataList.tags": "Accessory"},
-                						{"extraDataList.tags": "Sport"},
-                						{"extraDataList.tags": "Winter"}
-                					]
+                          "brand": "HR API TEST"
                         }
-                    },
-                    "products": {
+                      },
+                      "products": {
                         "start": 0,
                         "count": 20,
                         "fields": [
-                            "title","originalUrl","extraDataList.tags"
+                          "productNumber",
+                    			"title",
+                    			"brand",
+                    			"trackingCode"
                         ],
                         "filters": [],
                         "sorting": []
+                      }
                     }
-                }
-            headers:
-              - name: Content-Type
-                value: application/json
-            scripts:
-              preRequest: ""
-              afterResponse: ""
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
-          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
-            name: Find products by extraDataList value through params.filters [No filters or
-              sorting]
-            meta:
-              id: req_0dfeaf56c455467db5704900ad149479
-              created: 1762859463256
-              modified: 1782291128041
-              isPrivate: false
-              description: |
-                **Behaviour**:
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+                name: Find products by all of supplied extraDataList values through
+                  params.filters [No filters or sorting]
+                meta:
+                  id: req_61395b70a3064d98a200ec33eb04035d
+                  created: 1731336495056
+                  modified: 1782296816162
+                  isPrivate: false
+                  description: |-
+                    **MCP Client restrictions/Skills**:
 
-                Find products by their extraDataList array through the params.filters property definition in the request body.
+                    Do not under any circumstances explain properties that aren't mentioned or elaborated on in the *Explanation of important properties to surface to the user* section.
 
-                In this example, we are finding products from the "collection_ids" extraDataList array.
+                    If the user requests further information on properties not mentioned or elaborated on in the *Explanation of important properties to surface to the user* section, forward them to the official Hello Retail Pages documentation https://developer.helloretail.com/api/pages/.
 
-                In this example, no filtering or sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+                    **Behaviour**:
 
-                **Explanation of important properties to surface to the user**:
+                    Find products by their extraDataList array through the params.filters property definitions in the request body. All of the supplied extraDataList values in the params.filters must exist on a product for it to be returned.
 
-                - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    In this example, we are finding products from the "tags" extraDataList array.
 
-                - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
-              sortKey: -1724182493583.5625
-            method: POST
-            body:
-              mimeType: application/json
-              text: |-
-                {
-                  "url": "https://www.test.dk/category-path",
-                  "format": "json",
-                  "firstLoad": false,
-                  "trackingUserId": "",
-                	"deviceType":"DESKTOP",
-                  "params": {
-                    "filters": {
-                      "extraDataList.collection_ids": "123456789"
-                    }
-                  },
-                  "products": {
-                    "start": 0,
-                    "count": 20,
-                    "fields": [
-                      "productNumber",
-                			"title",
-                			"brand",
-                			"trackingCode"
-                    ],
-                    "filters": [],
-                    "sorting": []
-                  }
-                }
-            headers:
-              - name: Content-Type
-                value: application/json
-            scripts:
-              preRequest: ""
-              afterResponse: ""
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
-          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
-            name: Find products by extraDataList value through params.filters [Filters and
-              sorting]
-            meta:
-              id: req_edad149e9c9b4aeb843d7e6cbf49ad73
-              created: 1762859880500
-              modified: 1782291263706
-              isPrivate: false
-              description: |-
-                **Behaviour**:
+                    All 3 entries of the $and object is of the "tags" array, but it could also be a combination of different extraDataList arrays.
 
-                Find products by their extraDataList array through the params.filters property definition in the request body.
+                    In this example, no filtering or sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
 
-                In this example, we are finding products from the "collection_ids" extraDataList array.
+                    **Explanation of important properties to surface to the user**:
 
-                In this example, filtering and sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
-                **Explanation of important properties to surface to the user**:
+                    - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
-                - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **params.filters.$and**: The $and key of the params.filters.$and is what enforces that only products which contain all of the supplied extraDataList's will be returned
 
-                - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
-              sortKey: -1723720864412.875
-            method: POST
-            body:
-              mimeType: application/json
-              text: |-
-                {
-                  "url": "https://www.test.dk/category-path",
-                  "format": "json",
-                  "firstLoad": false,
-                  "trackingUserId": "",
-                	"deviceType":"DESKTOP",
-                  "params": {
-                    "filters": {
-                      "extraDataList.collection_ids": "123456789"
-                    }
-                  },
-                  "products": {
-                    "start": 0,
-                    "count": 20,
-                    "fields": [
-                      "productNumber",
-                			"title",
-                			"brand",
-                			"trackingCode"
-                    ],
-                    "filters": [
-                			"brand:HR API TEST"
-                		],
-                    "sorting": [
-                			"price asc"
-                    ]
-                  }
-                }
-            headers:
-              - name: Content-Type
-                value: application/json
-            scripts:
-              preRequest: ""
-              afterResponse: ""
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
-          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
-            name: Find products by all of supplied extraDataList values through
-              params.filters [Filters and sorting]
-            meta:
-              id: req_b5a1a673345749149c83d1974540e593
-              created: 1782220604591
-              modified: 1782291360309
-              isPrivate: false
-              description: |-
-                **Behaviour**:
-
-                Find products by their extraDataList array through the params.filters property definitions in the request body. All of the supplied extraDataList values in the params.filters must exist on a product for it to be returned.
-
-                In this example, we are finding products from the "tags" extraDataList array.
-
-                All 3 entries of the $and object is of the "tags" array, but it could also be a combination of different extraDataList arrays.
-
-                In this example, filtering and sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
-
-                **Explanation of important properties to surface to the user**:
-
-                - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
-
-                - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
-
-                - **params.filters.$and**: The $and key of the params.filters.$and is what enforces that only products which contain all of the supplied extraDataList's will be returned
-              sortKey: -1723399909117.875
-            method: POST
-            body:
-              mimeType: application/json
-              text: |-
-                {
-                    "url": "https://www.test.dk/category-path",
-                    "format": "json",
-                    "firstLoad": false,
-                    "trackingUserId": "",
-                		"deviceType":"DESKTOP",
-                    "params": {
-                        "filters": {
-                					"$and":[
-                						{"extraDataList.tags": "Accessory"},
-                						{"extraDataList.tags": "Sport"},
-                						{"extraDataList.tags": "Winter"}
-                					]
+                    - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+                  sortKey: -1782294882947
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                        "url": "https://www.test.dk/category-path",
+                        "format": "json",
+                        "firstLoad": true,
+                        "trackingUserId": "",
+                    		"deviceType":"DESKTOP",
+                        "params": {
+                            "filters": {
+                    					"$and":[
+                    						{"extraDataList.tags": "Accessory"},
+                    						{"extraDataList.tags": "Sport"},
+                    						{"extraDataList.tags": "Winter"}
+                    					]
+                            }
+                        },
+                        "products": {
+                            "start": 0,
+                            "count": 20,
+                            "fields": [
+                                "title","originalUrl","extraDataList.tags"
+                            ],
+                            "filters": [],
+                            "sorting": []
                         }
-                    },
-                    "products": {
-                			"start": 0,
-                			"count": 20,
-                			"fields": [
-                				"productNumber",
-                				"title",
-                				"brand",
-                				"trackingCode"
-                			],
-                			"filters": [
-                				"brand:HR API TEST"
-                			],
-                			"sorting": [
-                				"price asc"
-                			]
-                		}
-                }
-            headers:
-              - name: Content-Type
-                value: application/json
-            scripts:
-              preRequest: ""
-              afterResponse: ""
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
-          - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
-            name: Find products by any of supplied extraDataList values through
-              params.filters [Filters and sorting]
-            meta:
-              id: req_d08cd71179ca4a3c9881151a3b7b8021
-              created: 1782221009998
-              modified: 1782291415610
-              isPrivate: false
-              description: |-
-                **Behaviour**:
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+                name: Find products by any of supplied extraDataList values through
+                  params.filters [No filters or sorting]
+                meta:
+                  id: req_67225bb96af64876b7eceb63dbff6512
+                  created: 1731336495057
+                  modified: 1782296818335
+                  isPrivate: false
+                  description: |-
+                    **MCP Client restrictions/Skills**:
 
-                Find products by their extraDataList array through the params.filters property definitions in the request body. Either of the supplied extraDataList values in the params.filters must exist on a product for it to be returned.
+                    Do not under any circumstances explain properties that aren't mentioned or elaborated on in the *Explanation of important properties to surface to the user* section.
 
-                In this example, we are finding products from the "tags" extraDataList array.
+                    If the user requests further information on properties not mentioned or elaborated on in the *Explanation of important properties to surface to the user* section, forward them to the official Hello Retail Pages documentation https://developer.helloretail.com/api/pages/.
 
-                All 3 entries of the $or object is of the "tags" array, but it could also be a combination of different extraDataList arrays.
+                    **Behaviour**:
 
-                In this example, filtering and sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+                    Find products by their extraDataList array through the params.filters property definitions in the request body. Either of the supplied extraDataList values in the params.filters must exist on a product for it to be returned.
 
-                **Explanation of important properties to surface to the user**:
+                    In this example, we are finding products from the "tags" extraDataList array.
 
-                - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    All 3 entries of the $or object is of the "tags" array, but it could also be a combination of different extraDataList arrays.
 
-                - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+                    In this example, no filtering or sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
 
-                - **params.filters.$or**: The $or key of the params.filters.$or is what enforces that only products which contain at least one of the supplied extraDataList's will be returned
-              sortKey: -1723399909017.875
-            method: POST
-            body:
-              mimeType: application/json
-              text: |-
-                {
-                    "url": "https://www.test.dk/category-path",
-                    "format": "json",
-                    "firstLoad": false,
-                    "trackingUserId": "",
-                		"deviceType":"DESKTOP",
-                    "params": {
-                        "filters": {
-                					"$or":[
-                						{"extraDataList.tags": "Accessory"},
-                						{"extraDataList.tags": "Sport"},
-                						{"extraDataList.tags": "Winter"}
-                					]
+                    **Explanation of important properties to surface to the user**:
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **params.filters.$or**: The $or key of the params.filters.$or is what enforces that only products which contain at least one of the supplied extraDataList's will be returned
+
+                    - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+                  sortKey: -1782294882847
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                        "url": "https://www.test.dk/category-path",
+                        "format": "json",
+                        "firstLoad": true,
+                        "trackingUserId": "",
+                    		"deviceType":"DESKTOP",
+                        "params": {
+                            "filters": {
+                    					"$or":[
+                    						{"extraDataList.tags": "Accessory"},
+                    						{"extraDataList.tags": "Sport"},
+                    						{"extraDataList.tags": "Winter"}
+                    					]
+                            }
+                        },
+                        "products": {
+                            "start": 0,
+                            "count": 20,
+                            "fields": [
+                                "title","originalUrl","extraDataList.tags"
+                            ],
+                            "filters": [],
+                            "sorting": []
                         }
-                    },
-                    "products": {
-                			"start": 0,
-                			"count": 20,
-                			"fields": [
-                				"productNumber",
-                				"title",
-                				"brand",
-                				"trackingCode"
-                			],
-                			"filters": [
-                				"brand:HR API TEST"
-                			],
-                			"sorting": [
-                				"price asc"
-                			]
-                		}
-                }
-            headers:
-              - name: Content-Type
-                value: application/json
-            scripts:
-              preRequest: ""
-              afterResponse: ""
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+                name: Find products by extraDataList value through params.filters [No filters or
+                  sorting]
+                meta:
+                  id: req_0dfeaf56c455467db5704900ad149479
+                  created: 1762859463256
+                  modified: 1782296813924
+                  isPrivate: false
+                  description: |
+                    **MCP Client restrictions/Skills**:
+
+                    Do not under any circumstances explain properties that aren't mentioned or elaborated on in the *Explanation of important properties to surface to the user* section.
+
+                    If the user requests further information on properties not mentioned or elaborated on in the *Explanation of important properties to surface to the user* section, forward them to the official Hello Retail Pages documentation https://developer.helloretail.com/api/pages/.
+
+                    **Behaviour**:
+
+                    Find products by their extraDataList array through the params.filters property definition in the request body.
+
+                    In this example, we are finding products from the "collection_ids" extraDataList array.
+
+                    In this example, no filtering or sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution are shown on.
+                  sortKey: -1782294883047
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "url": "https://www.test.dk/category-path",
+                      "format": "json",
+                      "firstLoad": true,
+                      "trackingUserId": "",
+                    	"deviceType":"DESKTOP",
+                      "params": {
+                        "filters": {
+                          "extraDataList.collection_ids": "123456789"
+                        }
+                      },
+                      "products": {
+                        "start": 0,
+                        "count": 20,
+                        "fields": [
+                          "productNumber",
+                    			"title",
+                    			"brand",
+                    			"trackingCode"
+                        ],
+                        "filters": [],
+                        "sorting": []
+                      }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+                name: Find products on sale through params.filters [No filters or sorting]
+                meta:
+                  id: req_6c7290740cb04a72ad95c15b5c4ba7f8
+                  created: 1782295272268
+                  modified: 1782296807054
+                  isPrivate: false
+                  description: |
+                    **MCP Client restrictions/Skills**:
+
+                    Do not under any circumstances explain properties that aren't mentioned or elaborated on in the *Explanation of important properties to surface to the user* section.
+
+                    If the user requests further information on properties not mentioned or elaborated on in the *Explanation of important properties to surface to the user* section, forward them to the official Hello Retail Pages documentation https://developer.helloretail.com/api/pages/.
+
+                    **Behaviour**:
+
+                    Find products that are on sale through the params.filters property definition in the request body.
+
+                    In this example, we are finding products that Hello Retail has been informed are on sale.
+
+                    In this example, no filtering or sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+                  sortKey: -1782294883197
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "url": "https://www.test.dk/category-path",
+                      "format": "json",
+                      "firstLoad": true,
+                      "trackingUserId": "",
+                    	"deviceType":"DESKTOP",
+                      "params": {
+                        "filters": {
+                          "isOnSale": "true"
+                        }
+                      },
+                      "products": {
+                        "start": 0,
+                        "count": 20,
+                        "fields": [
+                          "productNumber",
+                    			"title",
+                    			"brand",
+                    			"trackingCode"
+                        ],
+                        "filters": [],
+                        "sorting": []
+                      }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+                name: Find products by extraData value through params.filters [No filters or
+                  sorting]
+                meta:
+                  id: req_2c9e56cd320a454cb6dd2c8bb334f108
+                  created: 1782297358605
+                  modified: 1782297395963
+                  isPrivate: false
+                  description: |
+                    **MCP Client restrictions/Skills**:
+
+                    Do not under any circumstances explain properties that aren't mentioned or elaborated on in the *Explanation of important properties to surface to the user* section.
+
+                    If the user requests further information on properties not mentioned or elaborated on in the *Explanation of important properties to surface to the user* section, forward them to the official Hello Retail Pages documentation https://developer.helloretail.com/api/pages/.
+
+                    **Behaviour**:
+
+                    Find products by their extraData through the params.filters property definition in the request body.
+
+                    In this example, we are finding products from the "isAccessory" extraData simple.
+
+                    In this example, no filtering or sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution are shown on.
+                  sortKey: -1782294883097
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "url": "https://www.test.dk/category-path",
+                      "format": "json",
+                      "firstLoad": true,
+                      "trackingUserId": "",
+                    	"deviceType":"DESKTOP",
+                      "params": {
+                        "filters": {
+                          "extraData.isAccessory": "true"
+                        }
+                      },
+                      "products": {
+                        "start": 0,
+                        "count": 20,
+                        "fields": [
+                          "productNumber",
+                    			"title",
+                    			"brand",
+                    			"trackingCode"
+                        ],
+                        "filters": [],
+                        "sorting": []
+                      }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - name: With filters & sorting
+            meta:
+              id: fld_f4110fd6da4746838f6783557bbc24c4
+              created: 1782294979955
+              modified: 1782295020411
+              sortKey: -1782294871574
+              description: ""
+            children:
+              - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+                name: Find products by Hierarchies through params.filters [Filters and sorting]
+                meta:
+                  id: req_edc4ebdc37db417cbfdb3aa44123f663
+                  created: 1731336495050
+                  modified: 1782296711054
+                  isPrivate: false
+                  description: |-
+                    **MCP Client restrictions/Skills**:
+
+                    Do not under any circumstances explain properties that aren't mentioned or elaborated on in the *Explanation of important properties to surface to the user* section.
+
+                    If the user requests further information on properties not mentioned or elaborated on in the *Explanation of important properties to surface to the user* section, forward them to the official Hello Retail Pages documentation https://developer.helloretail.com/api/pages/.
+
+                    **Behaviour**:
+
+                    Find products by their Hierarchies structure through the params.filters property definition in the request body.
+
+                    In this example, we are finding products from the "snowboard" hierarchy.
+
+                    In this example, filtering and sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+                  sortKey: -1782294988471
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "url": "https://www.test.dk/category-path",
+                      "format": "json",
+                      "firstLoad": true,
+                      "trackingUserId": "",
+                    	"deviceType":"DESKTOP",
+                      "params": {
+                        "filters": {
+                          "hierarchies": ["snowboard"]
+                        }
+                      },
+                      "products": {
+                        "start": 0,
+                        "count": 20,
+                        "fields": [
+                          "productNumber",
+                    			"title",
+                    			"hierarchies",
+                    			"brand",
+                    			"trackingCode"
+                        ],
+                        "filters": [
+                    			"brand:HR API TEST"
+                    		],
+                        "sorting": [
+                    			"price asc"
+                        ]
+                      }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+                name: Find products by Brand through params.filters [Filters and sorting]
+                meta:
+                  id: req_b1d43e19d5a94160b1199f4d5d1cc6ea
+                  created: 1731336495051
+                  modified: 1782296679090
+                  isPrivate: false
+                  description: |-
+                    **MCP Client restrictions/Skills**:
+
+                    Do not under any circumstances explain properties that aren't mentioned or elaborated on in the *Explanation of important properties to surface to the user* section.
+
+                    If the user requests further information on properties not mentioned or elaborated on in the *Explanation of important properties to surface to the user* section, forward them to the official Hello Retail Pages documentation https://developer.helloretail.com/api/pages/.
+
+                    **Behaviour**:
+
+                    Find products by their Brand name through the params.filters property definition in the request body.
+
+                    In this example, we are finding products from the "HR API TEST" brand.
+
+                    In this example, filtering and sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+                  sortKey: -1782294988571
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "url": "https://www.test.dk/category-path",
+                      "format": "json",
+                      "firstLoad": true,
+                      "trackingUserId": "",
+                    	"deviceType":"DESKTOP",
+                      "params": {
+                        "filters": {
+                          "brand": "HR API TEST"
+                        }
+                      },
+                      "products": {
+                        "start": 0,
+                        "count": 20,
+                        "fields": [
+                          "productNumber",
+                    			"title",
+                    			"brand",
+                    			"hierarchies",
+                    			"trackingCode"
+                        ],
+                        "filters": [
+                    			"hierarchies:accessories$"
+                    		],
+                        "sorting": [
+                    			"title asc"
+                        ]
+                      }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+                name: Find products by extraDataList value through params.filters [Filters and
+                  sorting]
+                meta:
+                  id: req_edad149e9c9b4aeb843d7e6cbf49ad73
+                  created: 1762859880500
+                  modified: 1782296793422
+                  isPrivate: false
+                  description: |-
+                    **MCP Client restrictions/Skills**:
+
+                    Do not under any circumstances explain properties that aren't mentioned or elaborated on in the *Explanation of important properties to surface to the user* section.
+
+                    If the user requests further information on properties not mentioned or elaborated on in the *Explanation of important properties to surface to the user* section, forward them to the official Hello Retail Pages documentation https://developer.helloretail.com/api/pages/.
+
+                    **Behaviour**:
+
+                    Find products by their extraDataList array through the params.filters property definition in the request body.
+
+                    In this example, we are finding products from the "collection_ids" extraDataList array.
+
+                    In this example, filtering and sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+                  sortKey: -1782294988371
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "url": "https://www.test.dk/category-path",
+                      "format": "json",
+                      "firstLoad": true,
+                      "trackingUserId": "",
+                    	"deviceType":"DESKTOP",
+                      "params": {
+                        "filters": {
+                          "extraDataList.collection_ids": "123456789"
+                        }
+                      },
+                      "products": {
+                        "start": 0,
+                        "count": 20,
+                        "fields": [
+                          "productNumber",
+                    			"title",
+                    			"brand",
+                    			"trackingCode"
+                        ],
+                        "filters": [
+                    			"brand:HR API TEST"
+                    		],
+                        "sorting": [
+                    			"price asc"
+                        ]
+                      }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+                name: Find products by all of supplied extraDataList values through
+                  params.filters [Filters and sorting]
+                meta:
+                  id: req_b5a1a673345749149c83d1974540e593
+                  created: 1782220604591
+                  modified: 1782296796787
+                  isPrivate: false
+                  description: |-
+                    **MCP Client restrictions/Skills**:
+
+                    Do not under any circumstances explain properties that aren't mentioned or elaborated on in the *Explanation of important properties to surface to the user* section.
+
+                    If the user requests further information on properties not mentioned or elaborated on in the *Explanation of important properties to surface to the user* section, forward them to the official Hello Retail Pages documentation https://developer.helloretail.com/api/pages/.
+
+                    **Behaviour**:
+
+                    Find products by their extraDataList array through the params.filters property definitions in the request body. All of the supplied extraDataList values in the params.filters must exist on a product for it to be returned.
+
+                    In this example, we are finding products from the "tags" extraDataList array.
+
+                    All 3 entries of the $and object is of the "tags" array, but it could also be a combination of different extraDataList arrays.
+
+                    In this example, filtering and sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **params.filters.$and**: The $and key of the params.filters.$and is what enforces that only products which contain all of the supplied extraDataList's will be returned
+
+                    - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+                  sortKey: -1782294988271
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                        "url": "https://www.test.dk/category-path",
+                        "format": "json",
+                        "firstLoad": true,
+                        "trackingUserId": "",
+                    		"deviceType":"DESKTOP",
+                        "params": {
+                            "filters": {
+                    					"$and":[
+                    						{"extraDataList.tags": "Accessory"},
+                    						{"extraDataList.tags": "Sport"},
+                    						{"extraDataList.tags": "Winter"}
+                    					]
+                            }
+                        },
+                        "products": {
+                    			"start": 0,
+                    			"count": 20,
+                    			"fields": [
+                    				"productNumber",
+                    				"title",
+                    				"brand",
+                    				"trackingCode"
+                    			],
+                    			"filters": [
+                    				"brand:HR API TEST"
+                    			],
+                    			"sorting": [
+                    				"price asc"
+                    			]
+                    		}
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+                name: Find products by any of supplied extraDataList values through
+                  params.filters [Filters and sorting]
+                meta:
+                  id: req_d08cd71179ca4a3c9881151a3b7b8021
+                  created: 1782221009998
+                  modified: 1782296799645
+                  isPrivate: false
+                  description: |-
+                    **MCP Client restrictions/Skills**:
+
+                    Do not under any circumstances explain properties that aren't mentioned or elaborated on in the *Explanation of important properties to surface to the user* section.
+
+                    If the user requests further information on properties not mentioned or elaborated on in the *Explanation of important properties to surface to the user* section, forward them to the official Hello Retail Pages documentation https://developer.helloretail.com/api/pages/.
+
+                    **Behaviour**:
+
+                    Find products by their extraDataList array through the params.filters property definitions in the request body. Either of the supplied extraDataList values in the params.filters must exist on a product for it to be returned.
+
+                    In this example, we are finding products from the "tags" extraDataList array.
+
+                    All 3 entries of the $or object is of the "tags" array, but it could also be a combination of different extraDataList arrays.
+
+                    In this example, filtering and sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **params.filters.$or**: The $or key of the params.filters.$or is what enforces that only products which contain at least one of the supplied extraDataList's will be returned
+
+                    - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+                  sortKey: -1782294988171
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                        "url": "https://www.test.dk/category-path",
+                        "format": "json",
+                        "firstLoad": true,
+                        "trackingUserId": "",
+                    		"deviceType":"DESKTOP",
+                        "params": {
+                            "filters": {
+                    					"$or":[
+                    						{"extraDataList.tags": "Accessory"},
+                    						{"extraDataList.tags": "Sport"},
+                    						{"extraDataList.tags": "Winter"}
+                    					]
+                            }
+                        },
+                        "products": {
+                    			"start": 0,
+                    			"count": 20,
+                    			"fields": [
+                    				"productNumber",
+                    				"title",
+                    				"brand",
+                    				"trackingCode"
+                    			],
+                    			"filters": [
+                    				"brand:HR API TEST"
+                    			],
+                    			"sorting": [
+                    				"price asc"
+                    			]
+                    		}
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+                name: Find products on sale through params.filters [Filters and sorting]
+                meta:
+                  id: req_c46c542e72d1421caed543b45cee717f
+                  created: 1782295193779
+                  modified: 1782296701503
+                  isPrivate: false
+                  description: |-
+                    **MCP Client restrictions/Skills**:
+
+                    Do not under any circumstances explain properties that aren't mentioned or elaborated on in the *Explanation of important properties to surface to the user* section.
+
+                    If the user requests further information on properties not mentioned or elaborated on in the *Explanation of important properties to surface to the user* section, forward them to the official Hello Retail Pages documentation https://developer.helloretail.com/api/pages/.
+
+                    **Behaviour**:
+
+                    Find products that are on sale through the params.filters property definition in the request body.
+
+                    In this example, we are finding products that Hello Retail has been informed are on sale.
+
+                    In this example, filtering and sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+                  sortKey: -1782294988521
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "url": "https://www.test.dk/category-path",
+                      "format": "json",
+                      "firstLoad": true,
+                      "trackingUserId": "",
+                    	"deviceType":"DESKTOP",
+                      "params": {
+                        "filters": {
+                          "isOnSale": "true"
+                        }
+                      },
+                      "products": {
+                        "start": 0,
+                        "count": 20,
+                        "fields": [
+                          "productNumber",
+                    			"title",
+                    			"brand",
+                    			"hierarchies",
+                    			"trackingCode"
+                        ],
+                        "filters": [
+                    			"hierarchies:accessories$"
+                    		],
+                        "sorting": [
+                    			"title asc"
+                        ]
+                      }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
+                name: Find products by extraData value through params.filters [Filters and
+                  sorting]
+                meta:
+                  id: req_d1af239ac418435eba6bc4919189066d
+                  created: 1782296899813
+                  modified: 1782297302156
+                  isPrivate: false
+                  description: |-
+                    **MCP Client restrictions/Skills**:
+
+                    Do not under any circumstances explain properties that aren't mentioned or elaborated on in the *Explanation of important properties to surface to the user* section.
+
+                    If the user requests further information on properties not mentioned or elaborated on in the *Explanation of important properties to surface to the user* section, forward them to the official Hello Retail Pages documentation https://developer.helloretail.com/api/pages/.
+
+                    **Behaviour**:
+
+                    Find products by their extraData through the params.filters property definition in the request body.
+
+                    In this example, we are finding products from the "isAccessory" extraData simple.
+
+                    In this example, filtering and sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+                  sortKey: -1782294988421
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "url": "https://www.test.dk/category-path",
+                      "format": "json",
+                      "firstLoad": true,
+                      "trackingUserId": "",
+                    	"deviceType":"DESKTOP",
+                      "params": {
+                        "filters": {
+                          "extraData.isAccessory": "true"
+                        }
+                      },
+                      "products": {
+                        "start": 0,
+                        "count": 20,
+                        "fields": [
+                          "productNumber",
+                    			"title",
+                    			"brand",
+                    			"trackingCode"
+                        ],
+                        "filters": [
+                    			"brand:HR API TEST"
+                    		],
+                        "sorting": [
+                    			"price asc"
+                        ]
+                      }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
         scripts:
           afterResponse: ""
           preRequest: ""
@@ -2351,11 +2746,11 @@ collection:
             scripts:
               afterResponse: ""
               preRequest: ""
-          - name: With filters
+          - name: With filters & sorting
             meta:
               id: fld_588ee38febb246c684f234a8f6c68b82
               created: 1731336495113
-              modified: 1731336495113
+              modified: 1782295140711
               sortKey: -1724677621836
               description: ""
             children:
@@ -2364,7 +2759,7 @@ collection:
                 meta:
                   id: req_ea850a08a0e640d4bb8c06ffbeb5edcc
                   created: 1731336495114
-                  modified: 1749208947948
+                  modified: 1782295090483
                   isPrivate: false
                   description: ""
                   sortKey: -1724680253307
@@ -2383,7 +2778,8 @@ collection:
                             "start":0,
                             "count":10,
                             "fields":["title","originalUrl","trackingCode"],
-                    				"filters": ["brand:HR API TEST"]
+                    				"filters": ["brand:HR API TEST"],
+                    				"sorting": ["price asc"]
                         }
                     }
                 headers:
@@ -2405,7 +2801,7 @@ collection:
                 meta:
                   id: req_0ad5a2645f1f4b3f9d04cf228bf2b342
                   created: 1731336495115
-                  modified: 1749208950577
+                  modified: 1782295101987
                   isPrivate: false
                   description: ""
                   sortKey: -1724680253257
@@ -2424,7 +2820,8 @@ collection:
                             "start":0,
                             "count":10,
                             "fields":["title","originalUrl","trackingCode"],
-                    				"filters": ["brand:HR API TEST"]
+                    				"filters": ["brand:HR API TEST"],
+                    				"sorting": ["price asc"]
                         },
                         "categories": {
                             "start":0,
@@ -2452,7 +2849,7 @@ collection:
                 meta:
                   id: req_7af65e9701c5466abd306a71efe408da
                   created: 1731336495117
-                  modified: 1749208953375
+                  modified: 1782295107139
                   isPrivate: false
                   description: ""
                   sortKey: -1724680253207
@@ -2471,7 +2868,8 @@ collection:
                             "start":0,
                             "count":10,
                             "fields":["title","originalUrl","trackingCode"],
-                    				"filters": ["brand:Hydrogen Vendor"]
+                    				"filters": ["brand:Hydrogen Vendor"],
+                    				"sorting": ["price asc"]
                         },
                         "categories": {
                             "start":0,
@@ -2505,7 +2903,7 @@ collection:
                 meta:
                   id: req_04c208b8fe724004890a2c8e66bed650
                   created: 1731336495118
-                  modified: 1749208956160
+                  modified: 1782295111199
                   isPrivate: false
                   description: ""
                   sortKey: -1724680253157
@@ -2524,7 +2922,8 @@ collection:
                             "start":0,
                             "count":10,
                             "fields":["title","originalUrl","trackingCode"],
-                    				"filters": ["brand:Hydrogen Vendor"]
+                    				"filters": ["brand:Hydrogen Vendor"],
+                    				"sorting": ["price asc"]
                         },
                         "categories": {
                             "start":0,
@@ -2564,7 +2963,7 @@ collection:
                 meta:
                   id: req_cccaddfa62944790afd5931eef8bfe96
                   created: 1731336495119
-                  modified: 1749208959125
+                  modified: 1782295114734
                   isPrivate: false
                   description: ""
                   sortKey: -1724680253107
@@ -2583,7 +2982,8 @@ collection:
                             "start":0,
                             "count":10,
                             "fields":["title","originalUrl","trackingCode"],
-                    				"filters": ["brand:Hydrogen Vendor"]
+                    				"filters": ["brand:Hydrogen Vendor"],
+                    				"sorting": ["price asc"]
                         },
                         "categories": {
                             "start":0,
@@ -2608,58 +3008,6 @@ collection:
                             "count":10,
                             "fields":["title", "originalUrl","trackingCode"],
                     				"filters":["extraDataList.category:Home page"]
-                        }
-                    }
-                headers:
-                  - name: Content-Type
-                    value: application/json
-                scripts:
-                  preRequest: ""
-                  afterResponse: ""
-                settings:
-                  renderRequestBody: true
-                  encodeUrl: true
-                  followRedirects: global
-                  cookies:
-                    send: true
-                    store: true
-                  rebuildPath: true
-            scripts:
-              afterResponse: ""
-              preRequest: ""
-          - name: With sorting
-            meta:
-              id: fld_2be35da25d4a465e8cb3ebba9652b0b2
-              created: 1731336495121
-              modified: 1731336495121
-              sortKey: -1724676062055.5
-              description: ""
-            children:
-              - url: https://core.helloretail.com/serve/search/
-                name: "Search: products"
-                meta:
-                  id: req_435a4fba11fa41218e4c711064af1f2b
-                  created: 1731336495123
-                  modified: 1749208966490
-                  isPrivate: false
-                  description: ""
-                  sortKey: -1724680253307
-                method: POST
-                body:
-                  mimeType: application/json
-                  text: >-
-                    {
-                        "query": "*",
-                        "key": "fd33f6d4-ca71-4fbf-b096-451e4872594f",
-                        "trackingUserId":"67321f3a7f80eb30448b1279",
-                    		"format": "json",
-                    		"deviceType":"DESKTOP",
-                        "products": {
-                            "returnFilters": false,
-                            "start":0,
-                            "count":10,
-                            "fields":["title","originalUrl","trackingCode","price"],
-                    				"sorting": ["price asc"]
                         }
                     }
                 headers:
