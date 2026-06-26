@@ -36,9 +36,9 @@ collection:
                 meta:
                   id: req_bb829d41956b48f3a35c1745cf0e9fe1
                   created: 1731336495047
-                  modified: 1782307259546
+                  modified: 1782467393028
                   isPrivate: false
-                  description: |
+                  description: |-
                     **Claude Skill**:
 
                     #pages
@@ -58,6 +58,8 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294883147
                 method: POST
                 body:
@@ -106,7 +108,7 @@ collection:
                 meta:
                   id: req_5bc93e3b282049f49dabc49d2a89567d
                   created: 1731336495048
-                  modified: 1782307252081
+                  modified: 1782467368441
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -128,6 +130,8 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294883247
                 method: POST
                 body:
@@ -177,7 +181,7 @@ collection:
                 meta:
                   id: req_61395b70a3064d98a200ec33eb04035d
                   created: 1731336495056
-                  modified: 1782307270157
+                  modified: 1782467403227
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -203,6 +207,8 @@ collection:
                     - **params.filters.$and**: The $and key of the params.filters.$and is what enforces that only products which contain all of the supplied extraDataList's will be returned
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294882947
                 method: POST
                 body:
@@ -253,7 +259,7 @@ collection:
                 meta:
                   id: req_67225bb96af64876b7eceb63dbff6512
                   created: 1731336495057
-                  modified: 1782307273239
+                  modified: 1782467406484
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -279,6 +285,8 @@ collection:
                     - **params.filters.$or**: The $or key of the params.filters.$or is what enforces that only products which contain at least one of the supplied extraDataList's will be returned
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294882847
                 method: POST
                 body:
@@ -329,7 +337,7 @@ collection:
                 meta:
                   id: req_0dfeaf56c455467db5704900ad149479
                   created: 1762859463256
-                  modified: 1782307266741
+                  modified: 1782467400345
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -351,6 +359,8 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution are shown on.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294883047
                 method: POST
                 body:
@@ -399,7 +409,7 @@ collection:
                 meta:
                   id: req_6c7290740cb04a72ad95c15b5c4ba7f8
                   created: 1782295272268
-                  modified: 1782307255928
+                  modified: 1782467388235
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -421,6 +431,8 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294883197
                 method: POST
                 body:
@@ -470,7 +482,7 @@ collection:
                 meta:
                   id: req_2c9e56cd320a454cb6dd2c8bb334f108
                   created: 1782297358605
-                  modified: 1782307262908
+                  modified: 1782467396670
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -492,6 +504,8 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution are shown on.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294883097
                 method: POST
                 body:
@@ -548,7 +562,7 @@ collection:
                 meta:
                   id: req_edc4ebdc37db417cbfdb3aa44123f663
                   created: 1731336495050
-                  modified: 1782307232071
+                  modified: 1782467336064
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -570,6 +584,12 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.sorting**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294988471
                 method: POST
                 body:
@@ -623,7 +643,7 @@ collection:
                 meta:
                   id: req_b1d43e19d5a94160b1199f4d5d1cc6ea
                   created: 1731336495051
-                  modified: 1782307216920
+                  modified: 1782467308495
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -645,6 +665,12 @@ collection:
                     - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.sorting**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294988571
                 method: POST
                 body:
@@ -699,7 +725,7 @@ collection:
                 meta:
                   id: req_edad149e9c9b4aeb843d7e6cbf49ad73
                   created: 1762859880500
-                  modified: 1782307239116
+                  modified: 1782467342561
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -721,6 +747,12 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.sorting**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294988371
                 method: POST
                 body:
@@ -774,7 +806,7 @@ collection:
                 meta:
                   id: req_b5a1a673345749149c83d1974540e593
                   created: 1782220604591
-                  modified: 1782307242538
+                  modified: 1782467345962
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -800,6 +832,12 @@ collection:
                     - **params.filters.$and**: The $and key of the params.filters.$and is what enforces that only products which contain all of the supplied extraDataList's will be returned
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.sorting**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294988271
                 method: POST
                 body:
@@ -857,7 +895,7 @@ collection:
                 meta:
                   id: req_d08cd71179ca4a3c9881151a3b7b8021
                   created: 1782221009998
-                  modified: 1782307245695
+                  modified: 1782467349238
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -883,6 +921,12 @@ collection:
                     - **params.filters.$or**: The $or key of the params.filters.$or is what enforces that only products which contain at least one of the supplied extraDataList's will be returned
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.sorting**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294988171
                 method: POST
                 body:
@@ -939,7 +983,7 @@ collection:
                 meta:
                   id: req_c46c542e72d1421caed543b45cee717f
                   created: 1782295193779
-                  modified: 1782307228182
+                  modified: 1782467329319
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -961,6 +1005,12 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.sorting**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294988521
                 method: POST
                 body:
@@ -1015,7 +1065,7 @@ collection:
                 meta:
                   id: req_d1af239ac418435eba6bc4919189066d
                   created: 1782296899813
-                  modified: 1782307235418
+                  modified: 1782467339474
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1037,6 +1087,12 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.sorting**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294988421
                 method: POST
                 body:
