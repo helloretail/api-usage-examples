@@ -1165,574 +1165,547 @@ collection:
               sortKey: -1724672335099
               description: ""
             children:
-              - name: Front page | 404 page
+              - url: https://core.helloretail.com/serve/recoms?apiLogTag=something
+                name: Find products to show on a front page or 404 page [Single recommendation -
+                  no context data]
                 meta:
-                  id: fld_2f814d7c1f62421699c008d23f9bc2a7
-                  created: 1731336495062
-                  modified: 1731336495062
-                  sortKey: -1724673510918
-                  description: ""
-                children:
-                  - url: https://core.helloretail.com/serve/recoms?apiLogTag=something
-                    name: Find products to show on a front page or 404 page [Single recommendation -
-                      no context data]
-                    meta:
-                      id: req_0a1e2c385bc142b6be0ebd123b864155
-                      created: 1731336495063
-                      modified: 1782812276178
-                      isPrivate: false
-                      description: |-
-                        **Claude Skill**:
+                  id: req_0a1e2c385bc142b6be0ebd123b864155
+                  created: 1731336495063
+                  modified: 1782821586249
+                  isPrivate: false
+                  description: |-
+                    **Claude Skill**:
 
-                        #recommendations
+                    #recommendations
 
-                        **Behaviour**:
+                    **Behaviour**:
 
-                        Find products to show on the front page from a single recommendation. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
+                    Find products to show on the front page from a single recommendation. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
 
-                        In this example we are fetching products to show on the front page from a single recommendation. Recommendation configurations meant to be shown on the front page typically require no data forwarded as part of the *context* object, because the typical front page recommendation configuration does not need to show products that relate to certain product (such as a product page recommendation), or adhere to a specific category id (such as a category page recommendation).
+                    In this example we are fetching products to show on the front page from a single recommendation. Recommendation configurations meant to be shown on the front page typically require no data forwarded as part of the *context* object, because the typical front page recommendation configuration does not need to show products that relate to certain product (such as a product page recommendation), or adhere to a specific category id (such as a category page recommendation).
 
-                        **Explanation of important properties to surface to the user**:
+                    **Explanation of important properties to surface to the user**:
 
-                        - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
+                    - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
-                        - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
-                        - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+                    - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
 
-                        - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
+                    - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
 
-                        - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
-                      sortKey: -1724672351151
-                    method: POST
-                    body:
-                      mimeType: application/json
-                      text: |-
-                        {
-                        		"trackingUserId":"",
-                        		"requests":[
-                        				{
-                        						"key": "k67361182d053e038d07a4efe",
-                        						"format":"json",
-                        						"fields": ["title","originalUrl","trackingCode"],
-                        						"deviceType":"DESKTOP",
-                        						"context": {}
-                        				}
-                        		]
-                        }
-                    headers:
-                      - name: Content-Type
-                        value: application/json
-                    scripts:
-                      preRequest: ""
-                      afterResponse: ""
-                    settings:
-                      renderRequestBody: true
-                      encodeUrl: true
-                      followRedirects: global
-                      cookies:
-                        send: true
-                        store: true
-                      rebuildPath: true
-                  - url: https://core.helloretail.com/serve/recoms
-                    name: Find products to show on a front page or 404 page [Multiple recommendation
-                      - no context data]
-                    meta:
-                      id: req_a29687612fa849c6b73c832639222603
-                      created: 1731336495064
-                      modified: 1782805813866
-                      isPrivate: false
-                      description: |-
-                        **Claude Skill**:
-
-                        #recommendations
-
-                        **Behaviour**:
-
-                        Find products to show on the front page from multiple recommendations. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
-
-                        In this example we are fetching products to show on the front page from multiple recommendations. Recommendation configurations meant to be shown on the front page typically require no data forwarded as part of the *context* object, because the typical front page recommendation configuration does not need to show products that relate to certain product (such as a product page recommendation), or adhere to a specific category id (such as a category page recommendation).
-
-                        **Explanation of important properties to surface to the user**:
-
-                        - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
-
-                        - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
-
-                        - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
-
-                        - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
-
-                        - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
-                      sortKey: -1724672351101
-                    method: POST
-                    body:
-                      mimeType: application/json
-                      text: |-
-                        {
-                        		"trackingUserId":"",
-                        		"requests":[
-                        				{
-                        						"key": "k67361182d053e038d07a4efe",
-                        						"format":"json",
-                        						"fields": ["title","originalUrl","trackingCode"],
-                        						"deviceType":"DESKTOP",
-                        						"context": {}
-                        				},
-                        				{
-                        						"key": "k67361182d053e038d07a4ef8",
-                        						"format":"json",
-                        						"fields": ["title","originalUrl","trackingCode"],
-                        						"deviceType":"DESKTOP",
-                        						"context": {}
-                        				},
-                        				{
-                        						"key": "k67361182d053e038d07a4ef2",
-                        						"format":"json",
-                        						"fields": ["title","originalUrl","trackingCode"],
-                        						"deviceType":"DESKTOP",
-                        						"context": {}
-                        				}
-                        		]
-                        }
-                    headers:
-                      - name: Content-Type
-                        value: application/json
-                    scripts:
-                      preRequest: ""
-                      afterResponse: ""
-                    settings:
-                      renderRequestBody: true
-                      encodeUrl: true
-                      followRedirects: global
-                      cookies:
-                        send: true
-                        store: true
-                      rebuildPath: true
+                    - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
+                  sortKey: -1724673511018
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                    		"trackingUserId":"",
+                    		"requests":[
+                    				{
+                    						"key": "k67361182d053e038d07a4efe",
+                    						"format":"json",
+                    						"fields": ["title","originalUrl","trackingCode"],
+                    						"deviceType":"DESKTOP",
+                    						"context": {}
+                    				}
+                    		]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
                 scripts:
-                  afterResponse: ""
                   preRequest: ""
-              - name: Product page | Cart page | Upsell
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/recoms
+                name: Find products to show on a front page or 404 page [Multiple recommendation
+                  - no context data]
                 meta:
-                  id: fld_35306e36652c4dcd8916f3eecdb0f6fb
-                  created: 1731336495067
-                  modified: 1731336495067
-                  sortKey: -1724606540229.0625
-                  description: ""
-                children:
-                  - url: https://core.helloretail.com/serve/recoms
-                    name: Find products to show on a product page, cart page, or slide-out cart
-                      [Single recommendation -
-                      context.urls/context.productNumbers]
-                    meta:
-                      id: req_02106cf08f7a41c2b056bc6b1c426853
-                      created: 1731336495068
-                      modified: 1782810312746
-                      isPrivate: false
-                      description: |-
-                        **Claude Skill**:
+                  id: req_a29687612fa849c6b73c832639222603
+                  created: 1731336495064
+                  modified: 1782821592240
+                  isPrivate: false
+                  description: |-
+                    **Claude Skill**:
 
-                        #recommendations
+                    #recommendations
 
-                        **Behaviour**:
+                    **Behaviour**:
 
-                        Find products to show on the product page, cart page, or slide-out cart from a single recommendation. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
+                    Find products to show on the front page from multiple recommendations. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
 
-                        In this example we are fetching products to show on the product page, cart page, or slide-out cart from a single recommendation. Recommendation configurations meant to be shown on the product page, cart page, or slide-out cart require either a *productNumbers* or *urls* array to exist in the *context* object of each request entry. The *productNumbers* or *urls* array serves to ensure that the recommendation being requested knows which product page it should find products in relation to.
+                    In this example we are fetching products to show on the front page from multiple recommendations. Recommendation configurations meant to be shown on the front page typically require no data forwarded as part of the *context* object, because the typical front page recommendation configuration does not need to show products that relate to certain product (such as a product page recommendation), or adhere to a specific category id (such as a category page recommendation).
 
-                        **Explanation of important properties to surface to the user**:
+                    **Explanation of important properties to surface to the user**:
 
-                        - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
+                    - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
-                        - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
-                        - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+                    - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
 
-                        - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
+                    - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
 
-                        - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
-                      sortKey: -1724539569540.125
-                    method: POST
-                    body:
-                      mimeType: application/json
-                      text: >-
-                        {
-                        		"trackingUserId":"",
-                        		"requests":[
-                        				{
-                        						"key": "k67361182d053e038d07a4eec",
-                        						"format":"json",
-                        						"fields": ["title","originalUrl","trackingCode"],
-                        						"deviceType":"DESKTOP",
-                        						"context": {
-                        							"urls":["https://www.hr-api-test.dk/products/selling-plans-ski-wax"],
-                        							"productNumbers":["14814386553167"]
-                        						}
-                        				}
-                        		]
-                        }
-                    headers:
-                      - name: Content-Type
-                        value: application/json
-                    scripts:
-                      preRequest: ""
-                      afterResponse: ""
-                    settings:
-                      renderRequestBody: true
-                      encodeUrl: true
-                      followRedirects: global
-                      cookies:
-                        send: true
-                        store: true
-                      rebuildPath: true
-                  - url: https://core.helloretail.com/serve/recoms
-                    name: Find products to show on a product page, cart page, or slide-out cart
-                      [Multiple recommendation -
-                      context.urls/context.productNumbers]
-                    meta:
-                      id: req_0121c0f3385b4c4396fb5937ce8074e0
-                      created: 1731336495072
-                      modified: 1782810318725
-                      isPrivate: false
-                      description: |-
-                        **Claude Skill**:
-
-                        #recommendations
-
-                        **Behaviour**:
-
-                        Find products to show on the product page, cart page, or slide-out cart from multiple recommendations. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
-
-                        In this example we are fetching products to show on the product page, cart page, or slide-out cart from multiple recommendations. Recommendation configurations meant to be shown on the product page, cart page, or slide-out cart require either a *productNumbers* or *urls* array to exist in the *context* object of each request entry. The *productNumbers* or *urls* array serves to ensure that the recommendations being requested knows which product page it should find products in relation to.
-
-                        **Explanation of important properties to surface to the user**:
-
-                        - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
-
-                        - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
-
-                        - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
-
-                        - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
-
-                        - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
-                      sortKey: -1724517439225.8125
-                    method: POST
-                    body:
-                      mimeType: application/json
-                      text: >-
-                        {
-                        		"trackingUserId":"",
-                        		"requests":[
-                        				{
-                        						"key": "k67361182d053e038d07a4eec",
-                        						"format":"json",
-                        						"fields": ["title","originalUrl","trackingCode"],
-                        						"deviceType":"DESKTOP",
-                        						"context": {
-                        							"urls":["https://www.hr-api-test.dk/products/selling-plans-ski-wax"],
-                        							"productNumbers":["14814386553167"]
-                        						}
-                        				},
-                        				{
-                        						"key": "k67361182d053e038d07a4ee5",
-                        						"format":"json",
-                        						"fields": ["title","originalUrl","trackingCode"],
-                        						"deviceType":"DESKTOP",
-                        						"context": {
-                        							"urls":["https://www.hr-api-test.dk/products/selling-plans-ski-wax"],
-                        							"productNumbers":["14814386553167"]
-                        						}
-                        				}
-                        		]
-                        }
-                    headers:
-                      - name: Content-Type
-                        value: application/json
-                    scripts:
-                      preRequest: ""
-                      afterResponse: ""
-                    settings:
-                      renderRequestBody: true
-                      encodeUrl: true
-                      followRedirects: global
-                      cookies:
-                        send: true
-                        store: true
-                      rebuildPath: true
+                    - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
+                  sortKey: -1724673511118
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                    		"trackingUserId":"",
+                    		"requests":[
+                    				{
+                    						"key": "k67361182d053e038d07a4efe",
+                    						"format":"json",
+                    						"fields": ["title","originalUrl","trackingCode"],
+                    						"deviceType":"DESKTOP",
+                    						"context": {}
+                    				},
+                    				{
+                    						"key": "k67361182d053e038d07a4ef8",
+                    						"format":"json",
+                    						"fields": ["title","originalUrl","trackingCode"],
+                    						"deviceType":"DESKTOP",
+                    						"context": {}
+                    				},
+                    				{
+                    						"key": "k67361182d053e038d07a4ef2",
+                    						"format":"json",
+                    						"fields": ["title","originalUrl","trackingCode"],
+                    						"deviceType":"DESKTOP",
+                    						"context": {}
+                    				}
+                    		]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
                 scripts:
-                  afterResponse: ""
                   preRequest: ""
-              - name: Category page
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/recoms
+                name: Find products to show on a product page, cart page, or slide-out cart
+                  [Single recommendation - context.urls/context.productNumbers]
                 meta:
-                  id: fld_8c3d0fa557d1463f996b82903ead0ff6
-                  created: 1731336495074
-                  modified: 1731336495074
-                  sortKey: -1724550924620.2812
-                  description: ""
-                children:
-                  - url: https://core.helloretail.com/serve/recoms
-                    name: Find products to show on a category page [Single recommendation -
-                      context.hierarchies]
-                    meta:
-                      id: req_e39484492b154403bafe1d60b801b7cd
-                      created: 1731336495075
-                      modified: 1782812323239
-                      isPrivate: false
-                      description: |
-                        **Claude Skill**:
+                  id: req_02106cf08f7a41c2b056bc6b1c426853
+                  created: 1731336495068
+                  modified: 1782821601172
+                  isPrivate: false
+                  description: |-
+                    **Claude Skill**:
 
-                        #recommendations
+                    #recommendations
 
-                        **Behaviour**:
+                    **Behaviour**:
 
-                        Find products to show on the category page from a single recommendation. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
+                    Find products to show on the product page, cart page, or slide-out cart from a single recommendation. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
 
-                        In this example we are fetching products to show on the category page from a single recommendation. Recommendation configurations meant to be shown on the category page requires information about the breadcrumb path in the form of *hierarchies* to exist in the *context* object of each request entry. The *hierarchies* serves to ensure that the recommendation being requested knows which category from which it should find products.
+                    In this example we are fetching products to show on the product page, cart page, or slide-out cart from a single recommendation. Recommendation configurations meant to be shown on the product page, cart page, or slide-out cart require either a *productNumbers* or *urls* array to exist in the *context* object of each request entry. The *productNumbers* or *urls* array serves to ensure that the recommendation being requested knows which product page it should find products in relation to.
 
-                        **Explanation of important properties to surface to the user**:
+                    **Explanation of important properties to surface to the user**:
 
-                        - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
+                    - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
-                        - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
-                        - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+                    - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
 
-                        - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
+                    - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
 
-                        - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
-
-                        - **context.hierarchies**: Hierarchies is Hello Retail's internal "categories" structure. Hierarchies should be supplied as an array of arrays, where the inner array represents a complete breadcrumb path. Multiple inner arrays can be supplied, each representing a standalone complete breadcrumb path at which products can be found: [["snowboard","accessories"],["ski","accessories"]]
-                      sortKey: -1724539569515.125
-                    method: POST
-                    body:
-                      mimeType: application/json
-                      text: |-
-                        {
-                        		"trackingUserId":"",
-                        		"requests":[
-                        				{
-                        						"key": "k67361182d053e038d07a4ede",
-                        						"format":"json",
-                        						"fields": ["title","originalUrl","trackingCode"],
-                        						"deviceType":"DESKTOP",
-                        						"context": {
-                        							"hierarchies": [["snowboard","accessories"]]
-                        						}
-                        				}
-                        		]
-                        }
-                    headers:
-                      - name: Content-Type
-                        value: application/json
-                    scripts:
-                      preRequest: ""
-                      afterResponse: ""
-                    settings:
-                      renderRequestBody: true
-                      encodeUrl: true
-                      followRedirects: global
-                      cookies:
-                        send: true
-                        store: true
-                      rebuildPath: true
+                    - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
+                  sortKey: -1724640025623.5312
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: >-
+                    {
+                    		"trackingUserId":"",
+                    		"requests":[
+                    				{
+                    						"key": "k67361182d053e038d07a4eec",
+                    						"format":"json",
+                    						"fields": ["title","originalUrl","trackingCode"],
+                    						"deviceType":"DESKTOP",
+                    						"context": {
+                    							"urls":["https://www.hr-api-test.dk/products/selling-plans-ski-wax"],
+                    							"productNumbers":["14814386553167"]
+                    						}
+                    				}
+                    		]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
                 scripts:
-                  afterResponse: ""
                   preRequest: ""
-              - name: Other
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/recoms
+                name: Find products to show on a product page, cart page, or slide-out cart
+                  [Multiple recommendation -
+                  context.urls/context.productNumbers]
                 meta:
-                  id: fld_4cc782fa5c7d4ecfbc169df6ea07129e
-                  created: 1731336495077
-                  modified: 1731336495077
-                  sortKey: -1724523116815.8906
-                  description: ""
-                children:
-                  - url: https://core.helloretail.com/serve/recoms
-                    name: single recommendation [context data required - CUSTOM]
-                    meta:
-                      id: req_702ad286f58a4950b07767a0d0da172a
-                      created: 1731336495078
-                      modified: 1749209780893
-                      isPrivate: false
-                      description: ""
-                      sortKey: -1724495309011.5
-                    method: POST
-                    body:
-                      mimeType: application/json
-                      text: |-
-                        {
-                        		"trackingUserId":"",
-                        		"requests":[
-                        				{
-                        						"key": "k673613c085074171ef9f9d9d",
-                        						"format":"json",
-                        						"fields": ["title","originalUrl","trackingCode"],
-                        						"deviceType":"DESKTOP",
-                        						"context": {
-                        								"brand": "HR API TEST",
-                        								"extraData":{
-                        										"isAccessory": "true"
-                        								},
-                        								"extraDataList": {
-                        										"tags": ["Sport"]
-                        								}
-                        						}
-                        				}
-                        		]
-                        }
-                    headers:
-                      - name: Content-Type
-                        value: application/json
-                    scripts:
-                      preRequest: ""
-                      afterResponse: ""
-                    settings:
-                      renderRequestBody: true
-                      encodeUrl: true
-                      followRedirects: global
-                      cookies:
-                        send: true
-                        store: true
-                      rebuildPath: true
-                  - url: https://core.helloretail.com/serve/recoms
-                    name: multiple recommendations [context data required - CUSTOM]
-                    meta:
-                      id: req_88736439b604492daf1c5cdf1b947cfb
-                      created: 1731336495079
-                      modified: 1749209792595
-                      isPrivate: false
-                      description: ""
-                      sortKey: -1724406787954.25
-                    method: POST
-                    body:
-                      mimeType: application/json
-                      text: |-
-                        {
-                        		"trackingUserId":"",
-                        		"requests":[
-                        				{
-                        						"key": "k673613c085074171ef9f9d9d",
-                        						"format":"json",
-                        						"fields": ["title","originalUrl","trackingCode"],
-                        						"deviceType":"DESKTOP",
-                        						"context": {
-                        								"brand": "HR API TEST",
-                        								"extraData":{
-                        										"isAccessory": "true"
-                        								},
-                        								"extraDataList": {
-                        										"tags": ["Sport"]
-                        								}
-                        						}
-                        				},
-                        				{
-                        						"key": "k67361554bb6f1c28c79aa6f6",
-                        						"format":"json",
-                        						"fields": ["title","originalUrl","trackingCode"],
-                        						"deviceType":"DESKTOP",
-                        						"context": {
-                        								"brand": "Hydrogen Vendor",
-                        								"extraData":{
-                        										"isAccessory": "true"
-                        								},
-                        								"extraDataList": {
-                        										"tags": ["Winter"]
-                        								}
-                        						}
-                        				}
-                        		]
-                        }
-                    headers:
-                      - name: Content-Type
-                        value: application/json
-                    scripts:
-                      preRequest: ""
-                      afterResponse: ""
-                    settings:
-                      renderRequestBody: true
-                      encodeUrl: true
-                      followRedirects: global
-                      cookies:
-                        send: true
-                        store: true
-                      rebuildPath: true
+                  id: req_0121c0f3385b4c4396fb5937ce8074e0
+                  created: 1731336495072
+                  modified: 1782821603185
+                  isPrivate: false
+                  description: |-
+                    **Claude Skill**:
+
+                    #recommendations
+
+                    **Behaviour**:
+
+                    Find products to show on the product page, cart page, or slide-out cart from multiple recommendations. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
+
+                    In this example we are fetching products to show on the product page, cart page, or slide-out cart from multiple recommendations. Recommendation configurations meant to be shown on the product page, cart page, or slide-out cart require either a *productNumbers* or *urls* array to exist in the *context* object of each request entry. The *productNumbers* or *urls* array serves to ensure that the recommendations being requested knows which product page it should find products in relation to.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+
+                    - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
+
+                    - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
+                  sortKey: -1724623282926.2969
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: >-
+                    {
+                    		"trackingUserId":"",
+                    		"requests":[
+                    				{
+                    						"key": "k67361182d053e038d07a4eec",
+                    						"format":"json",
+                    						"fields": ["title","originalUrl","trackingCode"],
+                    						"deviceType":"DESKTOP",
+                    						"context": {
+                    							"urls":["https://www.hr-api-test.dk/products/selling-plans-ski-wax"],
+                    							"productNumbers":["14814386553167"]
+                    						}
+                    				},
+                    				{
+                    						"key": "k67361182d053e038d07a4ee5",
+                    						"format":"json",
+                    						"fields": ["title","originalUrl","trackingCode"],
+                    						"deviceType":"DESKTOP",
+                    						"context": {
+                    							"urls":["https://www.hr-api-test.dk/products/selling-plans-ski-wax"],
+                    							"productNumbers":["14814386553167"]
+                    						}
+                    				}
+                    		]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
                 scripts:
-                  afterResponse: ""
                   preRequest: ""
-              - name: Brand page
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/recoms
+                name: Find products to show on a category page [Single recommendation -
+                  context.hierarchies]
                 meta:
-                  id: fld_f588b174e0734b06adc0917e485d0cf9
-                  created: 1782814645639
-                  modified: 1782814645639
-                  sortKey: -1724537020718.086
-                  description: ""
-                children:
-                  - url: https://core.helloretail.com/serve/recoms
-                    name: Find products to show on a brand page [Single recommendation -
-                      context.brand]
-                    meta:
-                      id: req_f12cc78e95bc41e99f80d196a9ef3de7
-                      created: 1782814645651
-                      modified: 1782815036788
-                      isPrivate: false
-                      description: |
-                        **Claude Skill**:
+                  id: req_e39484492b154403bafe1d60b801b7cd
+                  created: 1731336495075
+                  modified: 1782821610147
+                  isPrivate: false
+                  description: |
+                    **Claude Skill**:
 
-                        #recommendations
+                    #recommendations
 
-                        **Behaviour**:
+                    **Behaviour**:
 
-                        Find products to show on the brand page from a single recommendation. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
+                    Find products to show on the category page from a single recommendation. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
 
-                        In this example we are fetching products to show on the brand page from a single recommendation. Recommendation configurations meant to be shown on the brand page requires information about the *brand* in the *context* object of each request entry. The *brand* serves to ensure that the recommendation only return products from the supplied brand.
+                    In this example we are fetching products to show on the category page from a single recommendation. Recommendation configurations meant to be shown on the category page requires information about the breadcrumb path in the form of *hierarchies* to exist in the *context* object of each request entry. The *hierarchies* serves to ensure that the recommendation being requested knows which category from which it should find products.
 
-                        **Explanation of important properties to surface to the user**:
+                    **Explanation of important properties to surface to the user**:
 
-                        - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
+                    - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
-                        - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
-                        - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+                    - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
 
-                        - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
+                    - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
 
-                        - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
-                      sortKey: -1724539569515.125
-                    method: POST
-                    body:
-                      mimeType: application/json
-                      text: |-
-                        {
-                        		"trackingUserId":"",
-                        		"requests":[
-                        				{
-                        						"key": "k6a43990dc649e826d127ec32",
-                        						"format":"json",
-                        						"fields": ["title","originalUrl","trackingCode"],
-                        						"deviceType":"DESKTOP",
-                        						"context": {
-                        							"brand": "HR API TEST"
-                        						}
-                        				}
-                        		]
-                        }
-                    headers:
-                      - name: Content-Type
-                        value: application/json
-                    scripts:
-                      preRequest: ""
-                      afterResponse: ""
-                    settings:
-                      renderRequestBody: true
-                      encodeUrl: true
-                      followRedirects: global
-                      cookies:
-                        send: true
-                        store: true
-                      rebuildPath: true
+                    - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
+
+                    - **context.hierarchies**: Hierarchies is Hello Retail's internal "categories" structure. Hierarchies should be supplied as an array of arrays, where the inner array represents a complete breadcrumb path. Multiple inner arrays can be supplied, each representing a standalone complete breadcrumb path at which products can be found: [["snowboard","accessories"],["ski","accessories"]]
+                  sortKey: -1724587103773.289
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                    		"trackingUserId":"",
+                    		"requests":[
+                    				{
+                    						"key": "k67361182d053e038d07a4ede",
+                    						"format":"json",
+                    						"fields": ["title","originalUrl","trackingCode"],
+                    						"deviceType":"DESKTOP",
+                    						"context": {
+                    							"hierarchies": [["snowboard","accessories"]]
+                    						}
+                    				}
+                    		]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
                 scripts:
-                  afterResponse: ""
                   preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/recoms
+                name: Find products to show on a custom (extraData) page [Single recommendation
+                  - context.extraData]
+                meta:
+                  id: req_702ad286f58a4950b07767a0d0da172a
+                  created: 1731336495078
+                  modified: 1782823557035
+                  isPrivate: false
+                  description: |
+                    **Claude Skill**:
+
+                    #recommendations
+
+                    **Behaviour**:
+
+                    Find products to show on a custom page from a single recommendation. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
+
+                    In this example we are fetching products to show on a custom page from a single recommendation. Recommendation configurations meant to be shown on a custom page requires information about the constraints you want the recommendation to adhere to.
+
+                    This example relies on the use of *extraData* context, where you supply a custom string or boolean value as context.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+
+                    - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
+
+                    - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
+
+                    - **context.extraData.**: extraData is a way of supplying the Hello Retail Recommendation with a string or boolean value that should be used as context, but which key does not conform to any of Hello Retail's native predefined string or boolean properties.
+                  sortKey: -1724552325888.2383
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                    		"trackingUserId":"",
+                    		"requests":[
+                    				{
+                    						"key": "k673613c085074171ef9f9d9d",
+                    						"format":"json",
+                    						"fields": ["title","originalUrl","trackingCode"],
+                    						"deviceType":"DESKTOP",
+                    						"context": {
+                    								"extraData":{
+                    										"isAccessory": "true"
+                    								}
+                    						}
+                    				}
+                    		]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/recoms
+                name: Find products to show on a brand page [Single recommendation -
+                  context.brand]
+                meta:
+                  id: req_f12cc78e95bc41e99f80d196a9ef3de7
+                  created: 1782814645651
+                  modified: 1782822206381
+                  isPrivate: false
+                  description: |
+                    **Claude Skill**:
+
+                    #recommendations
+
+                    **Behaviour**:
+
+                    Find products to show on the brand page from a single recommendation. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
+
+                    In this example we are fetching products to show on the brand page from a single recommendation. Recommendation configurations meant to be shown on the brand page requires information about the *brand* in the *context* object of each request entry. The *brand* serves to ensure that the recommendation only return products from the supplied brand.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+
+                    - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
+
+                    - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
+                  sortKey: -1724562062245.6875
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                    		"trackingUserId":"",
+                    		"requests":[
+                    				{
+                    						"key": "k6a43990dc649e826d127ec32",
+                    						"format":"json",
+                    						"fields": ["title","originalUrl","trackingCode"],
+                    						"deviceType":"DESKTOP",
+                    						"context": {
+                    							"brand": "HR API TEST"
+                    						}
+                    				}
+                    		]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/recoms
+                name: Find products to show on a custom (extraDataList) page [Single
+                  recommendation - context.extraDataList]
+                meta:
+                  id: req_2c63c036e1db4b648450e9999f6dd73b
+                  created: 1782822582937
+                  modified: 1782823628848
+                  isPrivate: false
+                  description: |
+                    **Claude Skill**:
+
+                    #recommendations
+
+                    **Behaviour**:
+
+                    Find products to show on a custom page from a single recommendation. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
+
+                    In this example we are fetching products to show on a custom page from a single recommendation. Recommendation configurations meant to be shown on a custom page requires information about the constraints you want the recommendation to adhere to.
+
+                    This example relies on the use of *extraDataList* context, where you supply a custom array value as context.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+
+                    - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
+
+                    - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
+
+                    - **context.extraDataList.**: extraDataList is a way of supplying the Hello Retail Recommendation with an array value that should be used as context, but which key does not conform to any of Hello Retail's native predefined array properties.
+                  sortKey: -1724547457709.5137
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                    		"trackingUserId":"",
+                    		"requests":[
+                    				{
+                    						"key": "k6a43b5ed7cfd1b3354535f3a",
+                    						"format":"json",
+                    						"fields": ["title","originalUrl","trackingCode"],
+                    						"deviceType":"DESKTOP",
+                    						"context": {
+                    								"extraDataList":{
+                    										"tags": ["Sport"]
+                    								}
+                    						}
+                    				}
+                    		]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
             scripts:
               afterResponse: ""
               preRequest: ""
