@@ -1659,6 +1659,80 @@ collection:
                 scripts:
                   afterResponse: ""
                   preRequest: ""
+              - name: Brand page
+                meta:
+                  id: fld_f588b174e0734b06adc0917e485d0cf9
+                  created: 1782814645639
+                  modified: 1782814645639
+                  sortKey: -1724537020718.086
+                  description: ""
+                children:
+                  - url: https://core.helloretail.com/serve/recoms
+                    name: Find products to show on a brand page [Single recommendation -
+                      context.brand]
+                    meta:
+                      id: req_f12cc78e95bc41e99f80d196a9ef3de7
+                      created: 1782814645651
+                      modified: 1782815036788
+                      isPrivate: false
+                      description: |
+                        **Claude Skill**:
+
+                        #recommendations
+
+                        **Behaviour**:
+
+                        Find products to show on the brand page from a single recommendation. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
+
+                        In this example we are fetching products to show on the brand page from a single recommendation. Recommendation configurations meant to be shown on the brand page requires information about the *brand* in the *context* object of each request entry. The *brand* serves to ensure that the recommendation only return products from the supplied brand.
+
+                        **Explanation of important properties to surface to the user**:
+
+                        - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
+
+                        - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                        - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+
+                        - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
+
+                        - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
+                      sortKey: -1724539569515.125
+                    method: POST
+                    body:
+                      mimeType: application/json
+                      text: |-
+                        {
+                        		"trackingUserId":"",
+                        		"requests":[
+                        				{
+                        						"key": "k6a43990dc649e826d127ec32",
+                        						"format":"json",
+                        						"fields": ["title","originalUrl","trackingCode"],
+                        						"deviceType":"DESKTOP",
+                        						"context": {
+                        							"brand": "HR API TEST"
+                        						}
+                        				}
+                        		]
+                        }
+                    headers:
+                      - name: Content-Type
+                        value: application/json
+                    scripts:
+                      preRequest: ""
+                      afterResponse: ""
+                    settings:
+                      renderRequestBody: true
+                      encodeUrl: true
+                      followRedirects: global
+                      cookies:
+                        send: true
+                        store: true
+                      rebuildPath: true
+                scripts:
+                  afterResponse: ""
+                  preRequest: ""
             scripts:
               afterResponse: ""
               preRequest: ""
