@@ -1171,7 +1171,7 @@ collection:
                 meta:
                   id: req_0a1e2c385bc142b6be0ebd123b864155
                   created: 1731336495063
-                  modified: 1782821586249
+                  modified: 1782912181135
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1180,9 +1180,9 @@ collection:
 
                     **Behaviour**:
 
-                    Find products to show on the front page from a single recommendation. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
+                    Find products to show on the front page or 404 page from a single recommendation. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
 
-                    In this example we are fetching products to show on the front page from a single recommendation. Recommendation configurations meant to be shown on the front page typically require no data forwarded as part of the *context* object, because the typical front page recommendation configuration does not need to show products that relate to certain product (such as a product page recommendation), or adhere to a specific category id (such as a category page recommendation).
+                    In this example we are fetching products to show on the front page or 404 page from a single recommendation. Recommendation configurations meant to be shown on the front page or 404 page typically require no data forwarded as part of the *context* object, because the typical front page or 404 page recommendation configuration does not need to show products that relate to certain product (such as a product page recommendation), or adhere to a specific category id (such as a category page recommendation).
 
                     **Explanation of important properties to surface to the user**:
 
@@ -1232,7 +1232,7 @@ collection:
                 meta:
                   id: req_a29687612fa849c6b73c832639222603
                   created: 1731336495064
-                  modified: 1782821592240
+                  modified: 1782912274236
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1241,9 +1241,9 @@ collection:
 
                     **Behaviour**:
 
-                    Find products to show on the front page from multiple recommendations. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
+                    Find products to show on the front page or 404 page from multiple recommendations. Returned products are defined by the algorithm of the recommendation configuration in the Hello Retail dashboard.
 
-                    In this example we are fetching products to show on the front page from multiple recommendations. Recommendation configurations meant to be shown on the front page typically require no data forwarded as part of the *context* object, because the typical front page recommendation configuration does not need to show products that relate to certain product (such as a product page recommendation), or adhere to a specific category id (such as a category page recommendation).
+                    In this example we are fetching products to show on the front page or 404 page from multiple recommendations. Recommendation configurations meant to be shown on the front page or 404 page typically require no data forwarded as part of the *context* object, because the typical front page or 404 page recommendation configuration does not need to show products that relate to certain product (such as a product page recommendation), or adhere to a specific category id (such as a category page recommendation).
 
                     **Explanation of important properties to surface to the user**:
 
@@ -1256,7 +1256,7 @@ collection:
                     - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
 
                     - **key**: Specify the recommendation configuration from the Hello Retail dashboard, that you want to derive products through.
-                  sortKey: -1724673511118
+                  sortKey: -1724656768320.7656
                 method: POST
                 body:
                   mimeType: application/json
@@ -1717,142 +1717,6 @@ collection:
               sortKey: -1724672341044
               description: ""
             children:
-              - name: Front page | 404 page
-                meta:
-                  id: fld_a04646602fa349a4bf008a9174043e9a
-                  created: 1731336495083
-                  modified: 1731336495083
-                  sortKey: -1724674502275
-                  description: ""
-                children:
-                  - url: https://core.helloretail.com/serve/recoms
-                    name: multiple recommendations [no context data]
-                    meta:
-                      id: req_3f9c9fc1f1ca4159a53dc0cc3e2ac387
-                      created: 1731336495084
-                      modified: 1749209239464
-                      isPrivate: false
-                      description: ""
-                      sortKey: -1724673485377
-                    method: POST
-                    body:
-                      mimeType: application/json
-                      text: |-
-                        {
-                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
-                        		"trackingUserId":"",
-                        		"requests":[
-                        				{
-                        						"trackingKey":"frontpage-1",
-                        						"fields":["title","originalUrl","trackingCode"],
-                        						"hideAdditionalVariants":true,
-                        						"count":8,
-                        						"deviceType":"DESKTOP",
-                        						"context": {},
-                        						"sources":[
-                        								{
-                        										"type":"TOP",
-                        										"limit":4
-                        								},
-                        								{
-                        										"type":"MOST_BOUGHT",
-                        										"limit":3
-                        								},
-                        								{
-                        										"type":"TOP"
-                        								}
-                        						]
-                        				},
-                        				{
-                        						"trackingKey":"frontpage-2",
-                        						"fields":["title","originalUrl","trackingCode"],
-                        						"hideAdditionalVariants":true,
-                        						"count":8,
-                        						"context": {},
-                        						"deviceType":"DESKTOP",
-                        						"sources":[
-                        								{
-                        										"type":"MOST_BOUGHT",
-                        										"limit":4
-                        								},
-                        								{
-                        										"type":"TOP"
-                        								}
-                        						]
-                        				}
-                        		]
-                        }
-                    headers:
-                      - name: Content-Type
-                        value: application/json
-                    scripts:
-                      preRequest: ""
-                      afterResponse: ""
-                    settings:
-                      renderRequestBody: true
-                      encodeUrl: true
-                      followRedirects: global
-                      cookies:
-                        send: true
-                        store: true
-                      rebuildPath: true
-                  - url: https://core.helloretail.com/serve/recoms
-                    name: single recommendation [no context data]
-                    meta:
-                      id: req_cf516601b2834cf9abab306b1f7e9dc6
-                      created: 1731336495086
-                      modified: 1749209227253
-                      isPrivate: false
-                      description: ""
-                      sortKey: -1724673485427
-                    method: POST
-                    body:
-                      mimeType: application/json
-                      text: |-
-                        {
-                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
-                        		"trackingUserId":"",
-                        		"requests":[
-                        				{
-                        						"trackingKey":"frontpage-1",
-                        						"fields":["title","originalUrl","trackingCode"],
-                        						"hideAdditionalVariants":true,
-                        						"count":8,
-                        						"deviceType":"DESKTOP",
-                        						"context": {},
-                        						"sources":[
-                        								{
-                        										"type":"TOP",
-                        										"limit":4
-                        								},
-                        								{
-                        										"type":"MOST_BOUGHT",
-                        										"limit":3
-                        								},
-                        								{
-                        										"type":"TOP"
-                        								}
-                        						]
-                        				}
-                        		]
-                        }
-                    headers:
-                      - name: Content-Type
-                        value: application/json
-                    scripts:
-                      preRequest: ""
-                      afterResponse: ""
-                    settings:
-                      renderRequestBody: true
-                      encodeUrl: true
-                      followRedirects: global
-                      cookies:
-                        send: true
-                        store: true
-                      rebuildPath: true
-                scripts:
-                  afterResponse: ""
-                  preRequest: ""
               - name: Product page | Cart page | Upsell
                 meta:
                   id: fld_35c220b0f1c74d57b62e694f50dfc1f3
@@ -2513,6 +2377,199 @@ collection:
                 scripts:
                   afterResponse: ""
                   preRequest: ""
+              - url: https://core.helloretail.com/serve/recoms
+                name: Find products to show on a front page or 404 page [Multiple recommendation
+                  - no context data]
+                meta:
+                  id: req_3f9c9fc1f1ca4159a53dc0cc3e2ac387
+                  created: 1731336495084
+                  modified: 1782912275296
+                  isPrivate: false
+                  description: |-
+                    **Claude Skill**:
+
+                    #recommendations
+
+                    **Behaviour**:
+
+                    Find products to show on the front page or 404 page from multiple recommendations. Returned products are defined by the entries of the *sources* array within a given *requests* array entry. *sources* is an array of objects, where each object represents an algorithm step that accepts a number of properties to further narrow the product scope of that specific algorithm step.
+
+                    In this example we are fetching products to show on the front page or 404 page from multiple recommendations. Unmanaged recommendation requests meant to be shown on the front page or 404 page typically require no data forwarded as part of the *context* object, because the typical front page or 404 page recommendation configuration does not need to show products that relate to certain product (such as a product page recommendation), or adhere to a specific category id (such as a category page recommendation).
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **websiteUuid**: Required property in Unmanaged recommendation requests, which helps the Hello Retail recommendation system understand which Hello Retail dashboard the request should point to.
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
+
+                    - **trackingKey**: Required property in Unmanaged recommendation requests, which specify under what name the resulting analytics from this recommendation should be stored under, in the Hello Retail dashboard.
+
+                    - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+
+                    - **hideAdditionalVariants**: A property that controls whether more than one product from the same grouping key can be returned.
+
+                    - **count**: A property that controls how many products in total this recommendation is allowed to return across all of the listed algorithm entries.
+
+                    - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
+
+                    - **sources**: Array of algorithm entries for the recommendation to consider.
+
+                    - **type**: Specify the desired algorithm for the given entry. See available algorithm specifications here https://developer.helloretail.com/api/recoms/#product-source-types
+
+                    - **limit**: Specify desired limit on how many products a given algorithm entry is allowed to return.
+                  sortKey: -1724674502325
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                    		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                    		"trackingUserId":"",
+                    		"requests":[
+                    				{
+                    						"trackingKey":"frontpage-1",
+                    						"fields":["title","originalUrl","trackingCode"],
+                    						"hideAdditionalVariants":true,
+                    						"count":8,
+                    						"deviceType":"DESKTOP",
+                    						"context": {},
+                    						"sources":[
+                    								{
+                    										"type":"TOP",
+                    										"limit":4
+                    								},
+                    								{
+                    										"type":"MOST_BOUGHT",
+                    										"limit":3
+                    								},
+                    								{
+                    										"type":"TOP"
+                    								}
+                    						]
+                    				},
+                    				{
+                    						"trackingKey":"frontpage-2",
+                    						"fields":["title","originalUrl","trackingCode"],
+                    						"hideAdditionalVariants":true,
+                    						"count":8,
+                    						"context": {},
+                    						"deviceType":"DESKTOP",
+                    						"sources":[
+                    								{
+                    										"type":"MOST_BOUGHT",
+                    										"limit":4
+                    								},
+                    								{
+                    										"type":"TOP"
+                    								}
+                    						]
+                    				}
+                    		]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/recoms
+                name: Find products to show on a front page or 404 page [Single recommendation -
+                  no context data]
+                meta:
+                  id: req_cf516601b2834cf9abab306b1f7e9dc6
+                  created: 1731336495086
+                  modified: 1782912185528
+                  isPrivate: false
+                  description: |-
+                    **Claude Skill**:
+
+                    #recommendations
+
+                    **Behaviour**:
+
+                    Find products to show on the front page or 404 page from a single recommendation. Returned products are defined by the entries of the *sources* array within a given *requests* array entry. *sources* is an array of objects, where each object represents an algorithm step that accepts a number of properties to further narrow the product scope of that specific algorithm step.
+
+                    In this example we are fetching products to show on the front page or 404 page from a single recommendation. Unmanaged recommendation requests meant to be shown on the front page or 404 page typically require no data forwarded as part of the *context* object, because the typical front page or 404 page recommendation configuration does not need to show products that relate to certain product (such as a product page recommendation), or adhere to a specific category id (such as a category page recommendation).
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **websiteUuid**: Required property in Unmanaged recommendation requests, which helps the Hello Retail recommendation system understand which Hello Retail dashboard the request should point to.
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
+
+                    - **trackingKey**: Required property in Unmanaged recommendation requests, which specify under what name the resulting analytics from this recommendation should be stored under, in the Hello Retail dashboard.
+
+                    - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+
+                    - **hideAdditionalVariants**: A property that controls whether more than one product from the same grouping key can be returned.
+
+                    - **count**: A property that controls how many products in total this recommendation is allowed to return across all of the listed algorithm entries.
+
+                    - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
+
+                    - **sources**: Array of algorithm entries for the recommendation to consider.
+
+                    - **type**: Specify the desired algorithm for the given entry. See available algorithm specifications here https://developer.helloretail.com/api/recoms/#product-source-types
+
+                    - **limit**: Specify desired limit on how many products a given algorithm entry is allowed to return.
+                  sortKey: -1724674502375
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                    		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                    		"trackingUserId":"",
+                    		"requests":[
+                    				{
+                    						"trackingKey":"frontpage-1",
+                    						"fields":["title","originalUrl","trackingCode"],
+                    						"hideAdditionalVariants":true,
+                    						"count":8,
+                    						"deviceType":"DESKTOP",
+                    						"context": {},
+                    						"sources":[
+                    								{
+                    										"type":"TOP",
+                    										"limit":4
+                    								},
+                    								{
+                    										"type":"MOST_BOUGHT",
+                    										"limit":3
+                    								},
+                    								{
+                    										"type":"TOP"
+                    								}
+                    						]
+                    				}
+                    		]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
             scripts:
               afterResponse: ""
               preRequest: ""
