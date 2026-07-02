@@ -36,7 +36,7 @@ collection:
                 meta:
                   id: req_53e4e16ed6fa475fab0f786b5acfec30
                   created: 1731336495047
-                  modified: 1782467393028
+                  modified: 1782986716705
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -58,6 +58,8 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **params.filters**: The base filters in the params property are used to determine the gross list of products that the *products.filters* are applied to.
 
                     - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294883147
@@ -108,7 +110,7 @@ collection:
                 meta:
                   id: req_8ec1c81851c847fb99795563fe3f894c
                   created: 1731336495048
-                  modified: 1782467368441
+                  modified: 1782986708929
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -130,6 +132,8 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **params.filters**: The base filters in the params property are used to determine the gross list of products that the *products.filters* are applied to.
 
                     - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294883247
@@ -181,7 +185,7 @@ collection:
                 meta:
                   id: req_9c5e747c5ab046949f31604955a2b84a
                   created: 1731336495056
-                  modified: 1782467403227
+                  modified: 1782986728379
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -207,6 +211,8 @@ collection:
                     - **params.filters.$and**: The $and key of the params.filters.$and is what enforces that only products which contain all of the supplied extraDataList's will be returned
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **params.filters**: The base filters in the params property are used to determine the gross list of products that the *products.filters* are applied to.
 
                     - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294882947
@@ -259,7 +265,7 @@ collection:
                 meta:
                   id: req_7c410e61f51a4db5b69df23e21a16c05
                   created: 1731336495057
-                  modified: 1782467406484
+                  modified: 1782986732288
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -285,6 +291,8 @@ collection:
                     - **params.filters.$or**: The $or key of the params.filters.$or is what enforces that only products which contain at least one of the supplied extraDataList's will be returned
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **params.filters**: The base filters in the params property are used to determine the gross list of products that the *products.filters* are applied to.
 
                     - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294882847
@@ -337,7 +345,7 @@ collection:
                 meta:
                   id: req_2f45dce60998459da1646c71721c193b
                   created: 1762859463256
-                  modified: 1782467400345
+                  modified: 1782986724790
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -359,6 +367,8 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution are shown on.
+
+                    - **params.filters**: The base filters in the params property are used to determine the gross list of products that the *products.filters* are applied to.
 
                     - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294883047
@@ -409,7 +419,7 @@ collection:
                 meta:
                   id: req_67f8193aed4c45bdb5c1faaa64ae3578
                   created: 1782295272268
-                  modified: 1782467388235
+                  modified: 1782986713454
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -431,6 +441,8 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **params.filters**: The base filters in the params property are used to determine the gross list of products that the *products.filters* are applied to.
 
                     - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294883197
@@ -482,7 +494,7 @@ collection:
                 meta:
                   id: req_e9da0eb4eac24a889e9b3ed54d7c07bc
                   created: 1782297358605
-                  modified: 1782467396670
+                  modified: 1782986721009
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -504,6 +516,8 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution are shown on.
+
+                    - **params.filters**: The base filters in the params property are used to determine the gross list of products that the *products.filters* are applied to.
 
                     - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1782294883097
@@ -565,7 +579,7 @@ collection:
                 meta:
                   id: req_6989a7ed17b3455796e73f83b5c3fb61
                   created: 1731336495050
-                  modified: 1782467336064
+                  modified: 1782986649569
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -587,6 +601,8 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **params.filters**: The base filters in the params property are used to determine the gross list of products that the *products.filters* are applied to.
 
                     - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
 
@@ -646,7 +662,7 @@ collection:
                 meta:
                   id: req_7fb85cacf8914df898e3870489e74fae
                   created: 1731336495051
-                  modified: 1782467308495
+                  modified: 1782986616834
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -668,6 +684,8 @@ collection:
                     - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **params.filters**: The base filters in the params property are used to determine the gross list of products that the *products.filters* are applied to.
 
                     - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
 
@@ -728,7 +746,7 @@ collection:
                 meta:
                   id: req_eb9c3e071d8642438574c61d79b2d26c
                   created: 1762859880500
-                  modified: 1782467342561
+                  modified: 1782986659923
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -750,6 +768,8 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **params.filters**: The base filters in the params property are used to determine the gross list of products that the *products.filters* are applied to.
 
                     - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
 
@@ -809,7 +829,7 @@ collection:
                 meta:
                   id: req_61717122bdf144cd90b059783f92a160
                   created: 1782220604591
-                  modified: 1782467345962
+                  modified: 1782986664857
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -835,6 +855,8 @@ collection:
                     - **params.filters.$and**: The $and key of the params.filters.$and is what enforces that only products which contain all of the supplied extraDataList's will be returned
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **params.filters**: The base filters in the params property are used to determine the gross list of products that the *products.filters* are applied to.
 
                     - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
 
@@ -898,7 +920,7 @@ collection:
                 meta:
                   id: req_23eb86c6c6a44d8eb20847457993da08
                   created: 1782221009998
-                  modified: 1782467349238
+                  modified: 1782986670122
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -924,6 +946,8 @@ collection:
                     - **params.filters.$or**: The $or key of the params.filters.$or is what enforces that only products which contain at least one of the supplied extraDataList's will be returned
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **params.filters**: The base filters in the params property are used to determine the gross list of products that the *products.filters* are applied to.
 
                     - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
 
@@ -986,7 +1010,7 @@ collection:
                 meta:
                   id: req_922db3c86b854761aa7ba64231a88bee
                   created: 1782295193779
-                  modified: 1782467329319
+                  modified: 1782986640673
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1008,6 +1032,8 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **params.filters**: The base filters in the params property are used to determine the gross list of products that the *products.filters* are applied to.
 
                     - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
 
@@ -1068,7 +1094,7 @@ collection:
                 meta:
                   id: req_e9ea70e27ed741a58c5b6cb89079c87c
                   created: 1782296899813
-                  modified: 1782467339474
+                  modified: 1782986653927
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1090,6 +1116,8 @@ collection:
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
+
+                    - **params.filters**: The base filters in the params property are used to determine the gross list of products that the *products.filters* are applied to.
 
                     - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
 
