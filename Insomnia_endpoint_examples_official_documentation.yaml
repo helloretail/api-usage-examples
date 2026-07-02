@@ -2516,7 +2516,7 @@ collection:
                 meta:
                   id: req_cbea2d387e3a4df88e3398b0ebda5d8c
                   created: 1731336495106
-                  modified: 1782990620191
+                  modified: 1782991804926
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2587,7 +2587,7 @@ collection:
                 meta:
                   id: req_865ec1376a7c4b2fba67fb49e833befc
                   created: 1731336495107
-                  modified: 1782990759742
+                  modified: 1782991810403
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2665,7 +2665,7 @@ collection:
                 meta:
                   id: req_2dae086e9ec344c8affbe59c89dcc59d
                   created: 1731336495109
-                  modified: 1782990784252
+                  modified: 1782991816536
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2743,7 +2743,7 @@ collection:
                 meta:
                   id: req_c94e5ed07f8b4748ae70df3878eb234a
                   created: 1731336495110
-                  modified: 1782990808950
+                  modified: 1782991819876
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2821,7 +2821,7 @@ collection:
                 meta:
                   id: req_1851d0c21c164cfa9dde6e1c349dc134
                   created: 1731336495111
-                  modified: 1782990934336
+                  modified: 1782991823676
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2983,13 +2983,42 @@ collection:
               description: ""
             children:
               - url: https://core.helloretail.com/serve/search/
-                name: "Search: products"
+                name: Find products by search term
                 meta:
                   id: req_6311428ec4ea4c5da0ce20288f8707e9
                   created: 1731336495114
-                  modified: 1782295090483
+                  modified: 1782991909302
                   isPrivate: false
-                  description: ""
+                  description: |-
+                    **Claude Skill**:
+
+                    #search
+
+                    **Behaviour**:
+
+                    Find results by search term.
+
+                    In this example, we are finding only products, based on the supplied search term and filters.
+
+                    In this example, filtering and sorting options are applied in the products object, which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **query**: The term to search for across product feeds and content feeds.
+
+                    - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
+
+                    - **start & count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.sorting**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
                   sortKey: -1724680253307
                 method: POST
                 body:
@@ -3002,7 +3031,7 @@ collection:
                     		"format": "json",
                     		"deviceType":"DESKTOP",
                         "products": {
-                            "returnFilters": false,
+                            "returnFilters": true,
                             "start":0,
                             "count":10,
                             "fields":["title","originalUrl","trackingCode"],
@@ -3025,13 +3054,44 @@ collection:
                     store: true
                   rebuildPath: true
               - url: https://core.helloretail.com/serve/search/
-                name: "Search: products, categories"
+                name: Find products and categories by search term
                 meta:
                   id: req_e63d0fbca3444e9aa21eb6745e9ab5ab
                   created: 1731336495115
-                  modified: 1782295101987
+                  modified: 1782992036655
                   isPrivate: false
-                  description: ""
+                  description: |-
+                    **Claude Skill**:
+
+                    #search
+
+                    **Behaviour**:
+
+                    Find results by search term.
+
+                    In this example, we are finding both products and categories, based on the supplied search term and filters.
+
+                    In this example, filtering and sorting options are applied in the products and categories object (sorting only available in products object), which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **query**: The term to search for across product feeds and content feeds.
+
+                    - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
+
+                    - **start & count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.sorting**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+
+                    - **categories**: Returns results from the category content feed data Hello Retail has indexed from a category data feed supplied to Hello Retail.
                   sortKey: -1724680253257
                 method: POST
                 body:
@@ -3044,14 +3104,14 @@ collection:
                     		"format": "json",
                     		"deviceType":"DESKTOP",
                         "products": {
-                            "returnFilters": false,
+                            "returnFilters": true,
                             "start":0,
                             "count":10,
                             "fields":["title","originalUrl","trackingCode"],
                     				"filters": ["brand:HR API TEST"],
                     				"sorting": ["price asc"]
                         },
-                        "categories": {
+                    		"categories": {
                             "start":0,
                             "count":10,
                             "fields":["title", "originalUrl","trackingCode","hierarchy"],
@@ -3073,13 +3133,44 @@ collection:
                     store: true
                   rebuildPath: true
               - url: https://core.helloretail.com/serve/search/
-                name: "Search: products, categories, brands"
+                name: Find products and brands by search term
                 meta:
                   id: req_6e92fe35833745e0a3d3f0eb229eab0e
                   created: 1731336495117
-                  modified: 1782295107139
+                  modified: 1782992235215
                   isPrivate: false
-                  description: ""
+                  description: |-
+                    **Claude Skill**:
+
+                    #search
+
+                    **Behaviour**:
+
+                    Find results by search term.
+
+                    In this example, we are finding both products and brands, based on the supplied search term and filters.
+
+                    In this example, filtering and sorting options are applied in the products and brands object (sorting only available in products object), which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **query**: The term to search for across product feeds and content feeds.
+
+                    - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
+
+                    - **start & count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.sorting**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+
+                    - **brands**: Returns results from the brands content feed data Hello Retail has indexed from a brands data feed supplied to Hello Retail.
                   sortKey: -1724680253207
                 method: POST
                 body:
@@ -3092,20 +3183,14 @@ collection:
                     		"format": "json",
                     		"deviceType":"DESKTOP",
                         "products": {
-                            "returnFilters": false,
+                            "returnFilters": true,
                             "start":0,
                             "count":10,
                             "fields":["title","originalUrl","trackingCode"],
-                    				"filters": ["brand:Hydrogen Vendor"],
+                    				"filters": ["brand:HR API TEST"],
                     				"sorting": ["price asc"]
                         },
-                        "categories": {
-                            "start":0,
-                            "count":10,
-                            "fields":["title", "originalUrl","trackingCode"],
-                    				"filters":["extraDataList.category:Home page"]
-                        },
-                        "brands": {
+                    		"brands": {
                             "start":0,
                             "count":10,
                             "fields":["title", "originalUrl","trackingCode"],
@@ -3127,18 +3212,49 @@ collection:
                     store: true
                   rebuildPath: true
               - url: https://core.helloretail.com/serve/search/
-                name: "Search: products, categories, brands, sitePages"
+                name: Find products and sitePages by search term
                 meta:
                   id: req_6923ecefe5e24b7a9001e02ffd460ac5
                   created: 1731336495118
-                  modified: 1782295111199
+                  modified: 1782992342815
                   isPrivate: false
-                  description: ""
+                  description: |-
+                    **Claude Skill**:
+
+                    #search
+
+                    **Behaviour**:
+
+                    Find results by search term.
+
+                    In this example, we are finding both products and site pages, based on the supplied search term and filters.
+
+                    In this example, filtering and sorting options are applied in the products and sitePages object (sorting only available in products object), which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **query**: The term to search for across product feeds and content feeds.
+
+                    - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
+
+                    - **start & count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.sorting**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+
+                    - **sitePages**: Returns results from the site pages content feed data Hello Retail has indexed from a site pages data feed supplied to Hello Retail.
                   sortKey: -1724680253157
                 method: POST
                 body:
                   mimeType: application/json
-                  text: >-
+                  text: |-
                     {
                         "query": "*",
                         "key": "fd33f6d4-ca71-4fbf-b096-451e4872594f",
@@ -3146,26 +3262,14 @@ collection:
                     		"format": "json",
                     		"deviceType":"DESKTOP",
                         "products": {
-                            "returnFilters": false,
+                            "returnFilters": true,
                             "start":0,
                             "count":10,
                             "fields":["title","originalUrl","trackingCode"],
-                    				"filters": ["brand:Hydrogen Vendor"],
+                    				"filters": ["brand:HR API TEST"],
                     				"sorting": ["price asc"]
                         },
-                        "categories": {
-                            "start":0,
-                            "count":10,
-                            "fields":["title", "originalUrl","trackingCode"],
-                    				"filters":["extraDataList.category:Home page"]
-                        },
-                        "brands": {
-                            "start":0,
-                            "count":10,
-                            "fields":["title", "originalUrl","trackingCode"],
-                    				"filters":["extraDataList.category:Automated Collection"]
-                        },
-                        "sitePages": {
+                    		"sitePages": {
                             "start":0,
                             "count":10,
                             "fields":["title", "originalUrl","trackingCode"],
@@ -3187,18 +3291,49 @@ collection:
                     store: true
                   rebuildPath: true
               - url: https://core.helloretail.com/serve/search/
-                name: "Search: products, categories, brands, sitePages, blogPosts"
+                name: Find products and blogPosts by search term
                 meta:
                   id: req_57bc40e49fe84b21b99eff876e3865f7
                   created: 1731336495119
-                  modified: 1782295114734
+                  modified: 1782992453608
                   isPrivate: false
-                  description: ""
+                  description: |-
+                    **Claude Skill**:
+
+                    #search
+
+                    **Behaviour**:
+
+                    Find results by search term.
+
+                    In this example, we are finding both products and blog posts, based on the supplied search term and filters.
+
+                    In this example, filtering and sorting options are applied in the products and blogPosts object (sorting only available in products object), which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **query**: The term to search for across product feeds and content feeds.
+
+                    - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
+
+                    - **start & count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.sorting**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+
+                    - **blogPosts**: Returns results from the blog post content feed data Hello Retail has indexed from a blog post data feed supplied to Hello Retail.
                   sortKey: -1724680253107
                 method: POST
                 body:
                   mimeType: application/json
-                  text: >-
+                  text: |-
                     {
                         "query": "*",
                         "key": "fd33f6d4-ca71-4fbf-b096-451e4872594f",
@@ -3206,37 +3341,96 @@ collection:
                     		"format": "json",
                     		"deviceType":"DESKTOP",
                         "products": {
-                            "returnFilters": false,
+                            "returnFilters": true,
                             "start":0,
                             "count":10,
                             "fields":["title","originalUrl","trackingCode"],
-                    				"filters": ["brand:Hydrogen Vendor"],
+                    				"filters": ["brand:HR API TEST"],
                     				"sorting": ["price asc"]
                         },
-                        "categories": {
-                            "start":0,
-                            "count":10,
-                            "fields":["title", "originalUrl","trackingCode"],
-                    				"filters":["extraDataList.category:Home page"]
-                        },
-                        "brands": {
-                            "start":0,
-                            "count":10,
-                            "fields":["title", "originalUrl","trackingCode"],
-                    				"filters":["extraDataList.category:Automated Collection"]
-                        },
-                        "sitePages": {
-                            "start":0,
-                            "count":10,
-                            "fields":["title", "originalUrl","trackingCode"],
-                    				"filters":["extraDataList.category:Hydrogen"]
-                        },
-                        "blogPosts": {
+                    		"blogPosts": {
                             "start":0,
                             "count":10,
                             "fields":["title", "originalUrl","trackingCode"],
                     				"filters":["extraDataList.category:Home page"]
                         }
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/search/
+                name: Find products and redirects by search term
+                meta:
+                  id: req_67f4da91bbef4e589f5b2b4443d8cfc9
+                  created: 1782991833628
+                  modified: 1782992600100
+                  isPrivate: false
+                  description: |-
+                    **Claude Skill**:
+
+                    #search
+
+                    **Behaviour**:
+
+                    Find results by search term.
+
+                    In this example, we are finding products and redirects, based on the supplied search term and filters.
+
+                    In this example, filtering and sorting options are applied in the products object (redirects do not support filters or sorting), which is the part of the request body where the customer/visitor selected filters and sorting should be added.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **query**: The term to search for across product feeds and content feeds.
+
+                    - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
+
+                    - **start & count**: These are used in conjunction to achieve the desired pagination.
+
+                    - **products.filters**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.sorting**: Only values that have been mapped through the Hello Retail ETL in the Hello Retail dashboard, and indexed through the Hello Retail *Data fields* dashboard section, will be recognized and utilized.
+
+                    - **products.fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+
+                    - **redirects**: Returns redirect links matching the search term. Redirect links are defined within the Hello Retail dashboard search configuration.
+                  sortKey: -1724680253007
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                        "query": "*",
+                        "key": "fd33f6d4-ca71-4fbf-b096-451e4872594f",
+                        "trackingUserId":"67321f3a7f80eb30448b1279",
+                    		"format": "json",
+                    		"deviceType":"DESKTOP",
+                        "products": {
+                            "returnFilters": true,
+                            "start":0,
+                            "count":10,
+                            "fields":["title","originalUrl","trackingCode"],
+                    				"filters": ["brand:HR API TEST"],
+                    				"sorting": ["price asc"]
+                        },
+                    		"redirects": {
+                    				"start": 0,
+                    				"count": 2
+                    		}
                     }
                 headers:
                   - name: Content-Type
