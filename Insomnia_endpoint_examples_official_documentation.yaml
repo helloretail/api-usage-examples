@@ -1307,7 +1307,7 @@ collection:
                 meta:
                   id: req_02106cf08f7a41c2b056bc6b1c426853
                   created: 1731336495068
-                  modified: 1782821601172
+                  modified: 1782981551586
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1372,7 +1372,7 @@ collection:
                 meta:
                   id: req_0121c0f3385b4c4396fb5937ce8074e0
                   created: 1731336495072
-                  modified: 1782821603185
+                  modified: 1782981842003
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1717,255 +1717,6 @@ collection:
               sortKey: -1724672341044
               description: ""
             children:
-              - name: Product page | Cart page | Upsell
-                meta:
-                  id: fld_35c220b0f1c74d57b62e694f50dfc1f3
-                  created: 1731336495088
-                  modified: 1731336495088
-                  sortKey: -1724674502225
-                  description: ""
-                children:
-                  - url: https://core.helloretail.com/serve/recoms
-                    name: single recommendation [context object utilized - URLS]
-                    meta:
-                      id: req_1639412317b04c1589ed82e8f473aa9b
-                      created: 1731336495089
-                      modified: 1749209417759
-                      isPrivate: false
-                      description: ""
-                      sortKey: -1724672918289
-                    method: POST
-                    body:
-                      mimeType: application/json
-                      text: >-
-                        {
-                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
-                        		"trackingUserId":"",
-                        		"requests":[
-                        				{
-                        						"trackingKey":"productpage-1",
-                        						"fields":["title","originalUrl","trackingCode"],
-                        						"hideAdditionalVariants":true,
-                        						"count":8,
-                        						"deviceType":"DESKTOP",
-                        						"context": {
-                        							 "urls":["https://www.hr-api-test.dk/products/the-collection-snowboard-hydrogen"]
-                        						},
-                        						"sources":[
-                        								{
-                        										"type":"ALTERNATIVES"
-                        								}
-                        						]
-                        				}
-                        		]
-                        }
-                    headers:
-                      - name: Content-Type
-                        value: application/json
-                    scripts:
-                      preRequest: ""
-                      afterResponse: ""
-                    settings:
-                      renderRequestBody: true
-                      encodeUrl: true
-                      followRedirects: global
-                      cookies:
-                        send: true
-                        store: true
-                      rebuildPath: true
-                  - url: https://core.helloretail.com/serve/recoms
-                    name: single recommendation [context object utilized - PRODUCTNUMBERS]
-                    meta:
-                      id: req_a93bdce319114aa0bb2328633ed49871
-                      created: 1731336495091
-                      modified: 1749209341208
-                      isPrivate: false
-                      description: ""
-                      sortKey: -1724672847396.75
-                    method: POST
-                    body:
-                      mimeType: application/json
-                      text: |-
-                        {
-                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
-                        		"trackingUserId":"",
-                        		"requests":[
-                        				{
-                        						"trackingKey":"productpage-1",
-                        						"fields":["title","originalUrl","trackingCode"],
-                        						"hideAdditionalVariants":true,
-                        						"count":8,
-                        						"deviceType":"DESKTOP",
-                        						"context": {
-                        							 "productNumbers":["14814386880847"]
-                        						},
-                        						"sources":[
-                        								{
-                        										"type":"ALTERNATIVES"
-                        								}
-                        						]
-                        				}
-                        		]
-                        }
-                    headers:
-                      - name: Content-Type
-                        value: application/json
-                    scripts:
-                      preRequest: ""
-                      afterResponse: ""
-                    settings:
-                      renderRequestBody: true
-                      encodeUrl: true
-                      followRedirects: global
-                      cookies:
-                        send: true
-                        store: true
-                      rebuildPath: true
-                  - url: https://core.helloretail.com/serve/recoms
-                    name: multiple recommendations [context object utilized - URLS]
-                    meta:
-                      id: req_cdf6978491104a098880888e2d95ba36
-                      created: 1731336495092
-                      modified: 1749209284312
-                      isPrivate: false
-                      description: ""
-                      sortKey: -1724672776504.5
-                    method: POST
-                    body:
-                      mimeType: application/json
-                      text: >-
-                        {
-                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
-                        		"trackingUserId":"",
-                        		"requests":[
-                        				{
-                        						"trackingKey":"productpage-1",
-                        						"fields":["title","originalUrl","trackingCode"],
-                        						"hideAdditionalVariants":true,
-                        						"count":8,
-                        						"deviceType":"DESKTOP",
-                        						"context": {
-                        							 "urls":["https://www.hr-api-test.dk/products/the-collection-snowboard-liquid"]
-                        						},
-                        						"sources":[
-                        								{
-                        										"type":"ALTERNATIVES",
-                        										"limit":4
-                        								},
-                        								{
-                        										"type":"TOP"
-                        								}
-                        						]
-                        				},
-                        				{
-                        						"trackingKey":"productpage-2",
-                        						"fields":["title","originalUrl","trackingCode"],
-                        						"hideAdditionalVariants":true,
-                        						"count":8,
-                        						"deviceType":"DESKTOP",
-                        						"context": {
-                        							 "urls":["https://www.hr-api-test.dk/products/the-collection-snowboard-liquid"]
-                        						},
-                        						"sources":[
-                        								{
-                        										"type":"BOUGHT_TOGETHER",
-                        										"limit":4
-                        								},
-                        								{
-                        										"type":"TOP"
-                        								}
-                        						]
-                        				}
-                        		]
-                        }
-                    headers:
-                      - name: Content-Type
-                        value: application/json
-                    scripts:
-                      preRequest: ""
-                      afterResponse: ""
-                    settings:
-                      renderRequestBody: true
-                      encodeUrl: true
-                      followRedirects: global
-                      cookies:
-                        send: true
-                        store: true
-                      rebuildPath: true
-                  - url: https://core.helloretail.com/serve/recoms
-                    name: multiple recommendations [context object utilized - PRODUCTNUMBERS]
-                    meta:
-                      id: req_98d23ed969984d5582b9141373d35999
-                      created: 1731336495094
-                      modified: 1749209416414
-                      isPrivate: false
-                      description: ""
-                      sortKey: -1724672563827.75
-                    method: POST
-                    body:
-                      mimeType: application/json
-                      text: |-
-                        {
-                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
-                        		"trackingUserId":"",
-                        		"requests":[
-                        				{
-                        						"trackingKey":"productpage-1",
-                        						"fields":["title","originalUrl","trackingCode"],
-                        						"hideAdditionalVariants":true,
-                        						"count":8,
-                        						"deviceType":"DESKTOP",
-                        						"context": {
-                        							 "productNumbers":["14814386880847"]
-                        						},
-                        						"sources":[
-                        								{
-                        										"type":"ALTERNATIVES",
-                        										"limit":4
-                        								},
-                        								{
-                        										"type":"TOP"
-                        								}
-                        						]
-                        				},
-                        				{
-                        						"trackingKey":"productpage-2",
-                        						"fields":["title","originalUrl","trackingCode"],
-                        						"hideAdditionalVariants":true,
-                        						"count":8,
-                        						"deviceType":"DESKTOP",
-                        						"context": {
-                        							 "productNumbers":["14814386880847"]
-                        						},
-                        						"sources":[
-                        								{
-                        										"type":"BOUGHT_TOGETHER",
-                        										"limit":4
-                        								},
-                        								{
-                        										"type":"TOP"
-                        								}
-                        						]
-                        				}
-                        		]
-                        }
-                    headers:
-                      - name: Content-Type
-                        value: application/json
-                    scripts:
-                      preRequest: ""
-                      afterResponse: ""
-                    settings:
-                      renderRequestBody: true
-                      encodeUrl: true
-                      followRedirects: global
-                      cookies:
-                        send: true
-                        store: true
-                      rebuildPath: true
-                scripts:
-                  afterResponse: ""
-                  preRequest: ""
               - name: Category page
                 meta:
                   id: fld_c8aa0b3dd3d84f09abbeb5cc2b580a2e
@@ -1974,55 +1725,6 @@ collection:
                   sortKey: -1724674502175
                   description: ""
                 children:
-                  - url: https://core.helloretail.com/serve/recoms
-                    name: single recommendation [context object omitted - HIERARCHIES]
-                    meta:
-                      id: req_88f0de0fb05e46e995a75e45519b4273
-                      created: 1731336495097
-                      modified: 1749209526205
-                      isPrivate: false
-                      description: ""
-                      sortKey: -1724672882842.875
-                    method: POST
-                    body:
-                      mimeType: application/json
-                      text: |-
-                        {
-                        		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
-                        		"trackingUserId":"",
-                        		"requests":[
-                        				{
-                        						"trackingKey":"categorypage-1",
-                        						"fields":["title","originalUrl","trackingCode"],
-                        						"hideAdditionalVariants":true,
-                        						"count":8,
-                        						"deviceType":"DESKTOP",
-                        						"context": {},
-                        						"sources":[
-                        								{
-                        										"type":"TOP",
-                        										"filters": {
-                        											"hierarchies":{"$in":[["Snowboard"]]}
-                        										}
-                        								}
-                        						]
-                        				}
-                        		]
-                        }
-                    headers:
-                      - name: Content-Type
-                        value: application/json
-                    scripts:
-                      preRequest: ""
-                      afterResponse: ""
-                    settings:
-                      renderRequestBody: true
-                      encodeUrl: true
-                      followRedirects: global
-                      cookies:
-                        send: true
-                        store: true
-                      rebuildPath: true
                   - url: https://core.helloretail.com/serve/recoms
                     name: single recommendation [context object utilized - HIERARCHIES]
                     meta:
@@ -2548,6 +2250,201 @@ collection:
                     								{
                     										"type":"MOST_BOUGHT",
                     										"limit":3
+                    								},
+                    								{
+                    										"type":"TOP"
+                    								}
+                    						]
+                    				}
+                    		]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/recoms
+                name: Find products to show on a product page, cart page, or slide-out cart
+                  [Single recommendation - context.urls/context.productNumbers]
+                meta:
+                  id: req_1639412317b04c1589ed82e8f473aa9b
+                  created: 1731336495089
+                  modified: 1782981767857
+                  isPrivate: false
+                  description: |-
+                    **Claude Skill**:
+
+                    #recommendations
+
+                    **Behaviour**:
+
+                    Find products to show on the product page, cart page, or slide-out cart from a single recommendation. Returned products are defined by the entries of the *sources* array within a given *requests* array entry. *sources* is an array of objects, where each object represents an algorithm step that accepts a number of properties to further narrow the product scope of that specific algorithm step.
+
+                    In this example we are fetching products to show on the product page, cart page, or slide-out cart page from a single recommendation. Unmanaged recommendation requests meant to be shown on the product page, cart page, or slide-out cart require either a *productNumbers* or *urls* array to exist in the *context* object of each request entry. The *productNumbers* or *urls* array serves to ensure that the recommendation being requested knows which product page it should find products in relation to.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **websiteUuid**: Required property in Unmanaged recommendation requests, which helps the Hello Retail recommendation system understand which Hello Retail dashboard the request should point to.
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
+
+                    - **trackingKey**: Required property in Unmanaged recommendation requests, which specify under what name the resulting analytics from this recommendation should be stored under, in the Hello Retail dashboard.
+
+                    - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+
+                    - **hideAdditionalVariants**: A property that controls whether more than one product from the same grouping key can be returned.
+
+                    - **count**: A property that controls how many products in total this recommendation is allowed to return across all of the listed algorithm entries.
+
+                    - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
+
+                    - **sources**: Array of algorithm entries for the recommendation to consider.
+
+                    - **type**: Specify the desired algorithm for the given entry. See available algorithm specifications here https://developer.helloretail.com/api/recoms/#product-source-types
+
+                    - **limit**: Specify desired limit on how many products a given algorithm entry is allowed to return.
+                  sortKey: -1724674502275
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: >-
+                    {
+                    		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                    		"trackingUserId":"",
+                    		"requests":[
+                    				{
+                    						"trackingKey":"productpage-1",
+                    						"fields":["title","originalUrl","trackingCode"],
+                    						"hideAdditionalVariants":true,
+                    						"count":8,
+                    						"deviceType":"DESKTOP",
+                    						"context": {
+                    							 "urls":["https://www.hr-api-test.dk/products/the-collection-snowboard-hydrogen"],
+                    							 "productNumbers":["14814386880847"]
+                    						},
+                    						"sources":[
+                    								{
+                    										"type":"ALTERNATIVES",
+                    										"limit":3
+                    								},
+                    								{
+                    										"type":"RELATED"
+                    								}
+                    						]
+                    				}
+                    		]
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                scripts:
+                  preRequest: ""
+                  afterResponse: ""
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://core.helloretail.com/serve/recoms
+                name: Find products to show on a product page, cart page, or slide-out cart
+                  [Multiple recommendation -
+                  context.urls/context.productNumbers]
+                meta:
+                  id: req_cdf6978491104a098880888e2d95ba36
+                  created: 1731336495092
+                  modified: 1782981902292
+                  isPrivate: false
+                  description: |-
+                    **Claude Skill**:
+
+                    #recommendations
+
+                    **Behaviour**:
+
+                    Find products to show on the product page, cart page, or slide-out cart from multiple recommendations. Returned products are defined by the entries of the *sources* array within a given *requests* array entry. *sources* is an array of objects, where each object represents an algorithm step that accepts a number of properties to further narrow the product scope of that specific algorithm step.
+
+                    In this example we are fetching products to show on the product page, cart page, or slide-out cart page from multiple recommendations. Unmanaged recommendation requests meant to be shown on the product page, cart page, or slide-out cart require either a *productNumbers* or *urls* array to exist in the *context* object of each request entry. The *productNumbers* or *urls* array serves to ensure that the recommendation being requested knows which product page it should find products in relation to.
+
+                    **Explanation of important properties to surface to the user**:
+
+                    - **websiteUuid**: Required property in Unmanaged recommendation requests, which helps the Hello Retail recommendation system understand which Hello Retail dashboard the request should point to.
+
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                    - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
+
+                    - **trackingKey**: Required property in Unmanaged recommendation requests, which specify under what name the resulting analytics from this recommendation should be stored under, in the Hello Retail dashboard.
+
+                    - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
+
+                    - **hideAdditionalVariants**: A property that controls whether more than one product from the same grouping key can be returned.
+
+                    - **count**: A property that controls how many products in total this recommendation is allowed to return across all of the listed algorithm entries.
+
+                    - **context**: Supply contextual information that the Hello Retail Recommendation's algorithm steps and filter options can utilize in order to narrow the scope of which products the recommendation is allowed to return.
+
+                    - **sources**: Array of algorithm entries for the recommendation to consider.
+
+                    - **type**: Specify the desired algorithm for the given entry. See available algorithm specifications here https://developer.helloretail.com/api/recoms/#product-source-types
+
+                    - **limit**: Specify desired limit on how many products a given algorithm entry is allowed to return.
+                  sortKey: -1724674502250
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: >-
+                    {
+                    		"websiteUuid":"d364dcdc-e618-45bd-b395-8653579884fe",
+                    		"trackingUserId":"",
+                    		"requests":[
+                    				{
+                    						"trackingKey":"productpage-1",
+                    						"fields":["title","originalUrl","trackingCode"],
+                    						"hideAdditionalVariants":true,
+                    						"count":8,
+                    						"deviceType":"DESKTOP",
+                    						"context": {
+                    							 "urls":["https://www.hr-api-test.dk/products/the-collection-snowboard-hydrogen"],
+                    							 "productNumbers":["14814386880847"]
+                    						},
+                    						"sources":[
+                    								{
+                    										"type":"ALTERNATIVES",
+                    										"limit":4
+                    								},
+                    								{
+                    										"type":"TOP"
+                    								}
+                    						]
+                    				},
+                    				{
+                    						"trackingKey":"productpage-2",
+                    						"fields":["title","originalUrl","trackingCode"],
+                    						"hideAdditionalVariants":true,
+                    						"count":8,
+                    						"deviceType":"DESKTOP",
+                    						"context": {
+                    							 "urls":["https://www.hr-api-test.dk/products/the-collection-snowboard-hydrogen"],
+                    							 "productNumbers":["14814386880847"]
+                    						},
+                    						"sources":[
+                    								{
+                    										"type":"BOUGHT_TOGETHER",
+                    										"limit":4
                     								},
                     								{
                     										"type":"TOP"
@@ -3855,19 +3752,20 @@ collection:
               sortKey: -1736938861874
               description: ""
             children:
-              - url: https://www.domain-name.dk/rest/V1/awext/info
+              - url: https://legeakademiet.dk/rest/V1/brand-feed
                 name: Version and extraattributes information
                 meta:
                   id: req_cbd5207e0c2b4dcd8cf9b58b393eadb0
                   created: 1736938871579
-                  modified: 1736943607478
+                  modified: 1782976229379
                   isPrivate: false
                   description: ""
                   sortKey: -1736938871579
                 method: GET
                 headers:
                   - name: Authorization
-                    value: Bearer tok_m2_{ your Magento 2 token }
+                    value: Bearer tok_m2_LtV9IQBHy5AK9jjS5fucuMj9cuIpBXs4
+                    id: pair_9d2f01c14b88448787ade9d3b0e951c4
                 scripts:
                   preRequest: ""
                   afterResponse: ""
