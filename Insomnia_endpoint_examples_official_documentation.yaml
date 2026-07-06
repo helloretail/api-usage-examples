@@ -110,7 +110,7 @@ collection:
                 meta:
                   id: req_8ec1c81851c847fb99795563fe3f894c
                   created: 1731336495048
-                  modified: 1782986708929
+                  modified: 1783340833558
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -3665,33 +3665,66 @@ collection:
                 store: true
               rebuildPath: true
           - url: https://core.helloretail.com/serve/collect/conversion
-            name: Conversion tracking [PRODUCTNUMBERS]
+            name: Track conversion by trackingUerId
             meta:
               id: req_d08a93a2aaaf4c06987cb4b3591abcea
               created: 1731336495144
-              modified: 1738329030237
+              modified: 1783342999633
               isPrivate: false
-              description: ""
+              description: |+
+                **Claude Skill**:
+
+                #tracking
+
+                **Behaviour**:
+
+                Informs the Hello Retail system of a completed purchase.
+
+                The customer has just completed their purchase, and are now being directed to the "thank you for your purchase" page. This should trigger a conversion tracking request towards Hello Retail, including the customers *trackingUserId*.
+
+                **Explanation of important properties to surface to the user**:
+
+                - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+
+                - **websiteUuid**: Required property in conversion tracking requests, which helps the Hello Retail system understand which Hello Retail dashboard the request should point to.
+
+                - **total**: The total value of the combined conversion.
+
+                - **orderNumber**: Unique order number for this conversion. Must be identical to the order number provided in any order feeds.
+
+                - **email**: Email address of the customer making the order.
+
+                - **products[]**: Array of products, where each different product is its own object entry.
+
+                - **products[].productNumber**: Unique identifier Hello Retail can utilize to determine what product this is.
+
+                - **products[].url**: Unique identifier Hello Retail can utilize to determine what product this is.
+
+                - **products[].quantity**: Information about how many of a given product was purchased.
+
+                - **products[].lineTotal**: Total cost of each product entry.
+
               sortKey: -1724926552609
             method: POST
             body:
               mimeType: application/json
-              text: |-
+              text: >-
                 {
                     "trackingUserId": "67321f3a7f80eb30448b1279",
                     "websiteUuid": "d364dcdc-e618-45bd-b395-8653579884fe",
                     "total": 2185.85,
                     "orderNumber": "hr-REST-API-test-31-01-2025-e",
                     "email": "customer@example.com",
-                    "customerId": "123456789",
                 		"products":[
                 				{
                 					"productNumber": "14814386389327",
+                					"url": "https://www.hr-api-test.dk/products/the-compare-at-price-snowboard",
                 					"quantity": 1,
                 					"lineTotal": 785.95 
                 				},
                 				{
                 					"productNumber": "14814386717007",
+                					"url": "https://www.hr-api-test.dk/products/the-complete-snowboard",
                 					"quantity": 2,
                 					"lineTotal": 699.95
                 				}
@@ -3712,32 +3745,65 @@ collection:
                 store: true
               rebuildPath: true
           - url: https://core.helloretail.com/serve/collect/conversion
-            name: Conversion tracking [URLS]
+            name: Track conversion by customerId
             meta:
-              id: req_006fe197261c464692403aa34ba26b6f
-              created: 1731336495146
-              modified: 1749209921911
+              id: req_c08a9d84bd2c4e71993876216ad99517
+              created: 1783341534910
+              modified: 1783343414587
               isPrivate: false
-              description: ""
-              sortKey: -1724926357041.5
+              description: |+
+                **Claude Skill**:
+
+                #tracking
+
+                **Behaviour**:
+
+                Informs the Hello Retail system of a completed purchase.
+
+                The customer has just completed their purchase, and are now being directed to the "thank you for your purchase" page. This should trigger a conversion tracking request towards Hello Retail, including the customers *customerId*.
+
+                **Explanation of important properties to surface to the user**:
+
+                - **customerId**: A customerId is a bundling of individual trackingUserId's, on a singular customer-representing id from your own internal system. A customer might have different trackingUserId's on desktop and mobile, making Hello Retail interpret their two sessions as different customers. You now want both the desktop and mobile session of this user to be treated as the same user. The solution is to utilize the customerId system which you can read more about here https://developer.helloretail.com/sdk/tracking/set_custom_id_on_tracking_user/
+
+                - **websiteUuid**: Required property in conversion tracking requests, which helps the Hello Retail system understand which Hello Retail dashboard the request should point to.
+
+                - **total**: The total value of the combined conversion.
+
+                - **orderNumber**: Unique order number for this conversion. Must be identical to the order number provided in any order feeds.
+
+                - **email**: Email address of the customer making the order.
+
+                - **products[]**: Array of products, where each different product is its own object entry.
+
+                - **products[].productNumber**: Unique identifier Hello Retail can utilize to determine what product this is.
+
+                - **products[].url**: Unique identifier Hello Retail can utilize to determine what product this is.
+
+                - **products[].quantity**: Information about how many of a given product was purchased.
+
+                - **products[].lineTotal**: Total cost of each product entry.
+
+              sortKey: -1724926454825.25
             method: POST
             body:
               mimeType: application/json
               text: >-
                 {
-                    "trackingUserId": "67321f3a7f80eb30448b1279",
+                		"customerId": "53967",
                     "websiteUuid": "d364dcdc-e618-45bd-b395-8653579884fe",
                     "total": 2185.85,
-                    "orderNumber": "hr-REST-API-test-31-01-2025-f",
+                    "orderNumber": "hr-REST-API-test-31-01-2025-e",
                     "email": "customer@example.com",
-                    "customerId": "123456789",
                 		"products":[
                 				{
+                					"productNumber": "14814386389327",
                 					"url": "https://www.hr-api-test.dk/products/the-compare-at-price-snowboard",
                 					"quantity": 1,
                 					"lineTotal": 785.95 
                 				},
                 				{
+                					"productNumber": "14814386717007",
                 					"url": "https://www.hr-api-test.dk/products/the-complete-snowboard",
                 					"quantity": 2,
                 					"lineTotal": 699.95
