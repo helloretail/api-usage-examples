@@ -36,7 +36,7 @@ collection:
                 meta:
                   id: req_53e4e16ed6fa475fab0f786b5acfec30
                   created: 1731336495047
-                  modified: 1782986716705
+                  modified: 1783343900894
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -53,7 +53,7 @@ collection:
 
                     **Explanation of important properties to surface to the user**:
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
@@ -110,7 +110,7 @@ collection:
                 meta:
                   id: req_8ec1c81851c847fb99795563fe3f894c
                   created: 1731336495048
-                  modified: 1783340833558
+                  modified: 1783343891361
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -127,7 +127,7 @@ collection:
 
                     **Explanation of important properties to surface to the user**:
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
@@ -185,7 +185,7 @@ collection:
                 meta:
                   id: req_9c5e747c5ab046949f31604955a2b84a
                   created: 1731336495056
-                  modified: 1782986728379
+                  modified: 1783343916403
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -204,7 +204,7 @@ collection:
 
                     **Explanation of important properties to surface to the user**:
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
@@ -265,7 +265,7 @@ collection:
                 meta:
                   id: req_7c410e61f51a4db5b69df23e21a16c05
                   created: 1731336495057
-                  modified: 1782986732288
+                  modified: 1783343921425
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -284,7 +284,7 @@ collection:
 
                     **Explanation of important properties to surface to the user**:
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
@@ -345,7 +345,7 @@ collection:
                 meta:
                   id: req_2f45dce60998459da1646c71721c193b
                   created: 1762859463256
-                  modified: 1782986724790
+                  modified: 1783343910811
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -362,7 +362,7 @@ collection:
 
                     **Explanation of important properties to surface to the user**:
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
@@ -419,7 +419,7 @@ collection:
                 meta:
                   id: req_67f8193aed4c45bdb5c1faaa64ae3578
                   created: 1782295272268
-                  modified: 1782986713454
+                  modified: 1783343896339
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -436,7 +436,7 @@ collection:
 
                     **Explanation of important properties to surface to the user**:
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
@@ -494,7 +494,7 @@ collection:
                 meta:
                   id: req_e9da0eb4eac24a889e9b3ed54d7c07bc
                   created: 1782297358605
-                  modified: 1782986721009
+                  modified: 1783343905811
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -511,7 +511,7 @@ collection:
 
                     **Explanation of important properties to surface to the user**:
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
@@ -579,7 +579,7 @@ collection:
                 meta:
                   id: req_6989a7ed17b3455796e73f83b5c3fb61
                   created: 1731336495050
-                  modified: 1782986649569
+                  modified: 1783343851091
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -596,7 +596,7 @@ collection:
 
                     **Explanation of important properties to surface to the user**:
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
@@ -662,7 +662,7 @@ collection:
                 meta:
                   id: req_7fb85cacf8914df898e3870489e74fae
                   created: 1731336495051
-                  modified: 1782986616834
+                  modified: 1783343838308
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -681,7 +681,7 @@ collection:
 
                     - **url**: The url property serves the purpose of informing the Hello Retail Pages solution about which url you are currently displaying the Hello Retail Pages solution on. This is important for Hello Retail Pages to know because it is utilized to configure dynamic rules within the Hello Retail Pages dashboard based on which url the Hello Retail Pages solution is shown on.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
@@ -746,7 +746,7 @@ collection:
                 meta:
                   id: req_eb9c3e071d8642438574c61d79b2d26c
                   created: 1762859880500
-                  modified: 1782986659923
+                  modified: 1783343866749
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -763,7 +763,7 @@ collection:
 
                     **Explanation of important properties to surface to the user**:
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
@@ -829,7 +829,7 @@ collection:
                 meta:
                   id: req_61717122bdf144cd90b059783f92a160
                   created: 1782220604591
-                  modified: 1782986664857
+                  modified: 1783343873684
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -848,7 +848,7 @@ collection:
 
                     **Explanation of important properties to surface to the user**:
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
@@ -920,7 +920,7 @@ collection:
                 meta:
                   id: req_23eb86c6c6a44d8eb20847457993da08
                   created: 1782221009998
-                  modified: 1782986670122
+                  modified: 1783343880651
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -939,7 +939,7 @@ collection:
 
                     **Explanation of important properties to surface to the user**:
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
@@ -1010,7 +1010,7 @@ collection:
                 meta:
                   id: req_922db3c86b854761aa7ba64231a88bee
                   created: 1782295193779
-                  modified: 1782986640673
+                  modified: 1783343844924
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1027,7 +1027,7 @@ collection:
 
                     **Explanation of important properties to surface to the user**:
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
@@ -1094,7 +1094,7 @@ collection:
                 meta:
                   id: req_e9ea70e27ed741a58c5b6cb89079c87c
                   created: 1782296899813
-                  modified: 1782986653927
+                  modified: 1783343859514
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1111,7 +1111,7 @@ collection:
 
                     **Explanation of important properties to surface to the user**:
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **products.start & products.count**: These are used in conjunction to achieve the desired pagination.
 
@@ -1199,7 +1199,7 @@ collection:
                 meta:
                   id: req_0a1e2c385bc142b6be0ebd123b864155
                   created: 1731336495063
-                  modified: 1782912181135
+                  modified: 1783343986320
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1216,7 +1216,7 @@ collection:
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
 
@@ -1260,7 +1260,7 @@ collection:
                 meta:
                   id: req_a29687612fa849c6b73c832639222603
                   created: 1731336495064
-                  modified: 1782912274236
+                  modified: 1783343991793
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1277,7 +1277,7 @@ collection:
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
 
@@ -1335,7 +1335,7 @@ collection:
                 meta:
                   id: req_02106cf08f7a41c2b056bc6b1c426853
                   created: 1731336495068
-                  modified: 1782981551586
+                  modified: 1783343996803
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1352,7 +1352,7 @@ collection:
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
 
@@ -1400,7 +1400,7 @@ collection:
                 meta:
                   id: req_0121c0f3385b4c4396fb5937ce8074e0
                   created: 1731336495072
-                  modified: 1782981842003
+                  modified: 1783344001688
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1417,7 +1417,7 @@ collection:
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
 
@@ -1474,7 +1474,7 @@ collection:
                 meta:
                   id: req_e39484492b154403bafe1d60b801b7cd
                   created: 1731336495075
-                  modified: 1782982291102
+                  modified: 1783344007178
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -1491,7 +1491,7 @@ collection:
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
 
@@ -1539,7 +1539,7 @@ collection:
                 meta:
                   id: req_702ad286f58a4950b07767a0d0da172a
                   created: 1731336495078
-                  modified: 1782983722958
+                  modified: 1783344017909
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -1558,7 +1558,7 @@ collection:
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
 
@@ -1608,7 +1608,7 @@ collection:
                 meta:
                   id: req_f12cc78e95bc41e99f80d196a9ef3de7
                   created: 1782814645651
-                  modified: 1782982870471
+                  modified: 1783344012573
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -1625,7 +1625,7 @@ collection:
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
 
@@ -1671,7 +1671,7 @@ collection:
                 meta:
                   id: req_2c63c036e1db4b648450e9999f6dd73b
                   created: 1782822582937
-                  modified: 1782823628848
+                  modified: 1783344022429
                   isPrivate: false
                   description: |
                     **Claude Skill**:
@@ -1690,7 +1690,7 @@ collection:
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **fields**: Specify which properties you want returned on each product. Properties must be mapped through the Hello Retail ETL in the Hello Retail dashboard. It is not necessary to index properties through the Hello Retail *Data fields* section.
 
@@ -1751,7 +1751,7 @@ collection:
                 meta:
                   id: req_3f9c9fc1f1ca4159a53dc0cc3e2ac387
                   created: 1731336495084
-                  modified: 1782912275296
+                  modified: 1783343943799
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1768,7 +1768,7 @@ collection:
 
                     - **websiteUuid**: Required property in Unmanaged recommendation requests, which helps the Hello Retail recommendation system understand which Hello Retail dashboard the request should point to.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
@@ -1856,7 +1856,7 @@ collection:
                 meta:
                   id: req_cf516601b2834cf9abab306b1f7e9dc6
                   created: 1731336495086
-                  modified: 1782912185528
+                  modified: 1783343938371
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1873,7 +1873,7 @@ collection:
 
                     - **websiteUuid**: Required property in Unmanaged recommendation requests, which helps the Hello Retail recommendation system understand which Hello Retail dashboard the request should point to.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
@@ -1944,7 +1944,7 @@ collection:
                 meta:
                   id: req_1639412317b04c1589ed82e8f473aa9b
                   created: 1731336495089
-                  modified: 1782981767857
+                  modified: 1783343948633
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -1961,7 +1961,7 @@ collection:
 
                     - **websiteUuid**: Required property in Unmanaged recommendation requests, which helps the Hello Retail recommendation system understand which Hello Retail dashboard the request should point to.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
@@ -2032,7 +2032,7 @@ collection:
                 meta:
                   id: req_cdf6978491104a098880888e2d95ba36
                   created: 1731336495092
-                  modified: 1782981902292
+                  modified: 1783343954202
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2049,7 +2049,7 @@ collection:
 
                     - **websiteUuid**: Required property in Unmanaged recommendation requests, which helps the Hello Retail recommendation system understand which Hello Retail dashboard the request should point to.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
@@ -2139,7 +2139,7 @@ collection:
                 meta:
                   id: req_0f6c28a1175a4b07bbdf8f5a758f27b0
                   created: 1733222728376
-                  modified: 1782982633430
+                  modified: 1783343959328
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2156,7 +2156,7 @@ collection:
 
                     - **websiteUuid**: Required property in Unmanaged recommendation requests, which helps the Hello Retail recommendation system understand which Hello Retail dashboard the request should point to.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
@@ -2226,7 +2226,7 @@ collection:
                 meta:
                   id: req_068ae3664d804862a61d0c7fd08bcc8b
                   created: 1782982858337
-                  modified: 1782983174331
+                  modified: 1783343963720
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2243,7 +2243,7 @@ collection:
 
                     - **websiteUuid**: Required property in Unmanaged recommendation requests, which helps the Hello Retail recommendation system understand which Hello Retail dashboard the request should point to.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
@@ -2313,7 +2313,7 @@ collection:
                 meta:
                   id: req_a918bfe7c64c4a55993b59554f5d2f55
                   created: 1782983670326
-                  modified: 1782984005746
+                  modified: 1783343968406
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2332,7 +2332,7 @@ collection:
 
                     - **websiteUuid**: Required property in Unmanaged recommendation requests, which helps the Hello Retail recommendation system understand which Hello Retail dashboard the request should point to.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
@@ -2404,7 +2404,7 @@ collection:
                 meta:
                   id: req_031f63d929894b02a82a9d47be60c357
                   created: 1782984067105
-                  modified: 1782984234283
+                  modified: 1783343973775
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2423,7 +2423,7 @@ collection:
 
                     - **websiteUuid**: Required property in Unmanaged recommendation requests, which helps the Hello Retail recommendation system understand which Hello Retail dashboard the request should point to.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **requests**: This is the request array where you specify the recommendation configurations from the Hello Retail dashboard that you want to derive products from. Each individual request entry in the *requests* array must be an object with at least a *key* property.
 
@@ -2516,7 +2516,7 @@ collection:
                 meta:
                   id: req_cbea2d387e3a4df88e3398b0ebda5d8c
                   created: 1731336495106
-                  modified: 1782991804926
+                  modified: 1783344037388
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2537,7 +2537,7 @@ collection:
 
                     - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
 
@@ -2587,7 +2587,7 @@ collection:
                 meta:
                   id: req_865ec1376a7c4b2fba67fb49e833befc
                   created: 1731336495107
-                  modified: 1782991810403
+                  modified: 1783344043166
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2608,7 +2608,7 @@ collection:
 
                     - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
 
@@ -2665,7 +2665,7 @@ collection:
                 meta:
                   id: req_2dae086e9ec344c8affbe59c89dcc59d
                   created: 1731336495109
-                  modified: 1782991816536
+                  modified: 1783344047901
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2686,7 +2686,7 @@ collection:
 
                     - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
 
@@ -2743,7 +2743,7 @@ collection:
                 meta:
                   id: req_c94e5ed07f8b4748ae70df3878eb234a
                   created: 1731336495110
-                  modified: 1782991819876
+                  modified: 1783344053287
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2764,7 +2764,7 @@ collection:
 
                     - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
 
@@ -2821,7 +2821,7 @@ collection:
                 meta:
                   id: req_1851d0c21c164cfa9dde6e1c349dc134
                   created: 1731336495111
-                  modified: 1782991823676
+                  modified: 1783344058713
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2842,7 +2842,7 @@ collection:
 
                     - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
 
@@ -2899,7 +2899,7 @@ collection:
                 meta:
                   id: req_31355a3d35ab4217a6f99fc51281d832
                   created: 1739354799385
-                  modified: 1782991045892
+                  modified: 1783344063571
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -2920,7 +2920,7 @@ collection:
 
                     - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
 
@@ -2987,7 +2987,7 @@ collection:
                 meta:
                   id: req_6311428ec4ea4c5da0ce20288f8707e9
                   created: 1731336495114
-                  modified: 1782991909302
+                  modified: 1783344079161
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -3008,7 +3008,7 @@ collection:
 
                     - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
 
@@ -3058,7 +3058,7 @@ collection:
                 meta:
                   id: req_e63d0fbca3444e9aa21eb6745e9ab5ab
                   created: 1731336495115
-                  modified: 1782992036655
+                  modified: 1783344085464
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -3079,7 +3079,7 @@ collection:
 
                     - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
 
@@ -3137,7 +3137,7 @@ collection:
                 meta:
                   id: req_6e92fe35833745e0a3d3f0eb229eab0e
                   created: 1731336495117
-                  modified: 1782992235215
+                  modified: 1783344090205
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -3158,7 +3158,7 @@ collection:
 
                     - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
 
@@ -3216,7 +3216,7 @@ collection:
                 meta:
                   id: req_6923ecefe5e24b7a9001e02ffd460ac5
                   created: 1731336495118
-                  modified: 1782992342815
+                  modified: 1783344095749
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -3237,7 +3237,7 @@ collection:
 
                     - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
 
@@ -3295,7 +3295,7 @@ collection:
                 meta:
                   id: req_57bc40e49fe84b21b99eff876e3865f7
                   created: 1731336495119
-                  modified: 1782992453608
+                  modified: 1783344100506
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -3316,7 +3316,7 @@ collection:
 
                     - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
 
@@ -3374,7 +3374,7 @@ collection:
                 meta:
                   id: req_67f4da91bbef4e589f5b2b4443d8cfc9
                   created: 1782991833628
-                  modified: 1782992600100
+                  modified: 1783344104826
                   isPrivate: false
                   description: |-
                     **Claude Skill**:
@@ -3395,7 +3395,7 @@ collection:
 
                     - **key**: The search configuration key, specifying which Hello Retail Search configuration being requested.
 
-                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
+                    - **trackingUserId**: This is commonly derived from a cookie by the name of "hello_retail_id" which is automatically set by the Hello Retail SDK being initialized on the frontend. The trackingUserId is utilized to personalize responses and attribute personalization to the user. Integrations seeking to avoid the frontend Hello Retail SDK can manually create and manage trackingUserId's through the following documentation: https://developer.helloretail.com/sdk/tracking/tracking_user/#getting-the-trackinguserid-using-the-rest-api
 
                     - **returnFilters**: Specify whether you want available filter options returned in the response. Available filters are based on the returned products.
 
@@ -3665,11 +3665,11 @@ collection:
                 store: true
               rebuildPath: true
           - url: https://core.helloretail.com/serve/collect/conversion
-            name: Track conversion by trackingUerId
+            name: Track conversion by trackingUserId
             meta:
               id: req_d08a93a2aaaf4c06987cb4b3591abcea
               created: 1731336495144
-              modified: 1783342999633
+              modified: 1783343767962
               isPrivate: false
               description: |+
                 **Claude Skill**:
