@@ -3560,7 +3560,7 @@ collection:
             meta:
               id: req_e761d1408a3b4c65924e1d52b6c879e8
               created: 1731336495138
-              modified: 1783425105240
+              modified: 1783426847427
               isPrivate: false
               description: >+
                 **Claude Skill**:
@@ -3586,13 +3586,10 @@ collection:
 
 
               sortKey: -1724926056529
-            method: POST
+            method: GET
             body:
               mimeType: application/json
-              text: |-
-                {
-                    "websiteUuid": "d364dcdc-e618-45bd-b395-8653579884fe"
-                }
+              text: ""
             headers:
               - name: Content-Type
                 value: application/json

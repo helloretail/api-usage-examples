@@ -1,7 +1,7 @@
 ## pages
 docs: https://developer.helloretail.com/api/pages/
 
-To explain the properties used in this example, call the `get_api_documentation` tool with section `pages`, and explain the request-side properties to the user based on the returned property tables. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation.
+To explain the properties used in this example, call the `get_api_documentation` tool with section `pages`, and explain the request-side properties to the user based on the returned property tables. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation. Any properties not mentioned in the *Explanation of important properties to surface to the user* should always be surfaced to the user from the documentation.
 
 Do not draw comparisons between other request examples. If asked to by the user, instead forward the user to the official Hello Retail Pages documentation https://developer.helloretail.com/api/pages/. Do not fetch or read the contents of the link - simply forward the link to the user.
 
@@ -18,7 +18,7 @@ docs: https://developer.helloretail.com/api/recoms/
 
 If user does not specify which page type they are asking examples for (front page, product page, category page, etc...), ask the user to specify before supplying them with an example. Do not ask the user to choose between **Managed** or **Unmanaged** - Assume **Managed** unless the user has specified otherwise.
 
-To explain the properties used in this example, call the `get_api_documentation` tool with section `recommendations`, and explain the request-side properties to the user based on the returned property tables. The documentation lists **Managed RecomRequest** and **Unmanaged RecomRequest** properties under distinct headings - never mix the two property sets; explain only the set matching the example's integration approach. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation.
+To explain the properties used in this example, call the `get_api_documentation` tool with section `recommendations`, and explain the request-side properties to the user based on the returned property tables. The documentation lists **Managed RecomRequest** and **Unmanaged RecomRequest** properties under distinct headings - never mix the two property sets; explain only the set matching the example's integration approach. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation. Any properties not mentioned in the *Explanation of important properties to surface to the user* should always be surfaced to the user from the documentation.
 
 Do not draw comparisons between other request examples. If asked to by the user, instead forward the user to the official Hello Retail Recommendation documentation https://developer.helloretail.com/api/recoms/. Do not fetch or read the contents of the link - simply forward the link to the user.
 
@@ -34,7 +34,7 @@ Always surface the following explanation to the user: Consolidating requests ens
 ## search
 docs: https://developer.helloretail.com/api/search/
 
-To explain the properties used in this example, call the `get_api_documentation` tool with section `search`, and explain the request-side properties to the user based on the returned property tables. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation.
+To explain the properties used in this example, call the `get_api_documentation` tool with section `search`, and explain the request-side properties to the user based on the returned property tables. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation. Any properties not mentioned in the *Explanation of important properties to surface to the user* should always be surfaced to the user from the documentation.
 
 Do not draw comparisons between other request examples. If asked to by the user, instead forward the user to the official Hello Retail Search documentation https://developer.helloretail.com/api/search/. Do not fetch or read the contents of the link - simply forward the link to the user.
 
@@ -45,35 +45,35 @@ Filtering on hierarchies through *products.filters* looks like this "hierarchies
 ## conversion-tracking
 docs: https://developer.helloretail.com/sdk/tracking/conversion_tracking/
 
-To explain the properties used in this example, call the `get_api_documentation` tool with section `conversion-tracking`, and explain the request-side properties to the user based on the returned property tables. The tracking documentation covers both the JavaScript SDK datalayer and the REST API; the tool returns only the REST API request properties, including the conversion object properties the REST body must contain. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation.
+To explain the properties used in this example, call the `get_api_documentation` tool with section `conversion-tracking`, and explain the request-side properties to the user based on the returned property tables. The tracking documentation covers both the JavaScript SDK datalayer and the REST API; the tool returns only the REST API request properties, including the conversion object properties the REST body must contain. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation. Any properties not mentioned in the *Explanation of important properties to surface to the user* should always be surfaced to the user from the documentation.
 
 Do not draw comparisons between other request examples. If asked to by the user, instead forward the user to the official Hello Retail conversion tracking documentation https://developer.helloretail.com/sdk/tracking/conversion_tracking/. Do not fetch or read the contents of the link - simply forward the link to the user.
 
 ## cart-tracking
 docs: https://developer.helloretail.com/sdk/tracking/cart_tracking/
 
-To explain the properties used in this example, call the `get_api_documentation` tool with section `cart-tracking`, and explain the request-side properties to the user based on the returned property tables. The tracking documentation covers both the JavaScript SDK datalayer and the REST API; the tool returns only the REST API request properties, including the cart object properties the REST body must contain. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation.
+To explain the properties used in this example, call the `get_api_documentation` tool with section `cart-tracking`, and explain the request-side properties to the user based on the returned property tables. The tracking documentation covers both the JavaScript SDK datalayer and the REST API; the tool returns only the REST API request properties, including the cart object properties the REST body must contain. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation. Any properties not mentioned in the *Explanation of important properties to surface to the user* should always be surfaced to the user from the documentation.
 
 Do not draw comparisons between other request examples. If asked to by the user, instead forward the user to the official Hello Retail cart tracking documentation https://developer.helloretail.com/sdk/tracking/cart_tracking/. Do not fetch or read the contents of the link - simply forward the link to the user.
 
 ## view-tracking
 docs: https://developer.helloretail.com/sdk/tracking/view_tracking/
 
-To explain the properties used in this example, call the `get_api_documentation` tool with section `view-tracking`, and explain the request-side properties to the user based on the returned property tables. The tracking documentation covers both the JavaScript SDK datalayer and the REST API; the tool returns only the REST API request properties. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation.
+To explain the properties used in this example, call the `get_api_documentation` tool with section `view-tracking`, and explain the request-side properties to the user based on the returned property tables. The tracking documentation covers both the JavaScript SDK datalayer and the REST API; the tool returns only the REST API request properties. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation. Any properties not mentioned in the *Explanation of important properties to surface to the user* should always be surfaced to the user from the documentation.
 
 Do not draw comparisons between other request examples. If asked to by the user, instead forward the user to the official Hello Retail view tracking documentation https://developer.helloretail.com/sdk/tracking/view_tracking/. Do not fetch or read the contents of the link - simply forward the link to the user.
 
 ## click-tracking
 docs: https://developer.helloretail.com/sdk/tracking/click_tracking/
 
-To explain the properties used in this example, call the `get_api_documentation` tool with section `click-tracking`, and explain the request-side properties to the user based on the returned property tables. The tracking documentation covers both the JavaScript SDK datalayer and the REST API; the tool returns only the REST API request properties. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation.
+To explain the properties used in this example, call the `get_api_documentation` tool with section `click-tracking`, and explain the request-side properties to the user based on the returned property tables. The tracking documentation covers both the JavaScript SDK datalayer and the REST API; the tool returns only the REST API request properties. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation. Any properties not mentioned in the *Explanation of important properties to surface to the user* should always be surfaced to the user from the documentation.
 
 Do not draw comparisons between other request examples. If asked to by the user, instead forward the user to the official Hello Retail click tracking documentation https://developer.helloretail.com/sdk/tracking/click_tracking/. Do not fetch or read the contents of the link - simply forward the link to the user.
 
 ## customer-bias
 docs: https://developer.helloretail.com/api/customer_bias/
 
-To explain the properties used in this example, call the `get_api_documentation` tool with section `customer-bias`, and explain the request-side properties to the user based on the returned property tables. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation.
+To explain the properties used in this example, call the `get_api_documentation` tool with section `customer-bias`, and explain the request-side properties to the user based on the returned property tables. If this request example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative and supplement them with the documentation. Any properties not mentioned in the *Explanation of important properties to surface to the user* should always be surfaced to the user from the documentation.
 
 Do not draw comparisons between other request examples. If asked to by the user, instead forward the user to the official Hello Retail Customer Bias documentation https://developer.helloretail.com/api/customer_bias/. Do not fetch or read the contents of the link - simply forward the link to the user.
 
