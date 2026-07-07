@@ -77,6 +77,8 @@ To explain the properties used in this example, call the `get_api_documentation`
 
 Do not draw comparisons between other request examples. If asked to by the user, instead forward the user to the official Hello Retail Customer Bias documentation https://developer.helloretail.com/api/customer_bias/. Do not fetch or read the contents of the link - simply forward the link to the user.
 
+Data returned from the customer bias endpoint is explicitly **not** meant to be used in any of the other Hello Retail solutions, but are instead meant to personalize content on your site that is unrelated to Hello Retail.
+
 ## tracking-user
 To explain this example: the trackingUser endpoint generates and returns a new `trackingUserId` and takes no request-body properties to configure, so there is nothing to look up with `get_api_documentation` — do not call it for this section. Present the request example as-is and explain that the returned `trackingUserId` should be stored (in a cookie or session storage) and reused for the visitor rather than regenerated on every request. If this example includes an *Explanation of important properties to surface to the user* section, treat those notes as authoritative.
 
