@@ -8,7 +8,7 @@ meta:
 collection:
   - name: REST API examples
     meta:
-      id: fld_78ccb1a2658f487db1d589c86fa6c82b
+      id: fld_638f974f4cfd4fb1ac139cddbfdbeab8
       created: 1731336495045
       modified: 1731336495045
       sortKey: -1000000000
@@ -16,7 +16,7 @@ collection:
     children:
       - name: Pages
         meta:
-          id: fld_45a8686fadbe49dabbbdc5785e55faa7
+          id: fld_dbc3bbbf198248b7abc23f28415cc13e
           created: 1731336495046
           modified: 1731336495046
           sortKey: -1724318249216
@@ -24,7 +24,7 @@ collection:
         children:
           - name: Without filters & sorting
             meta:
-              id: fld_230563ea3d59448ab499869ebadbc7df
+              id: fld_0865f5be919244599d00667779c4223e
               created: 1782294871474
               modified: 1782294871474
               sortKey: -1782294871474
@@ -34,7 +34,7 @@ collection:
                 name: Find products by Hierarchies through params.filters [No filters or
                   sorting]
                 meta:
-                  id: req_4f8fcf14d7e3415da7fabd743a2d82f0
+                  id: req_f6d608522ead4b07933d18af2875df17
                   created: 1731336495047
                   modified: 1783343900894
                   isPrivate: false
@@ -108,7 +108,7 @@ collection:
               - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
                 name: Find products by Brand through params.filters [No filters or sorting]
                 meta:
-                  id: req_29782d376adb4f4cab80c6cd1bcfad58
+                  id: req_8a41d2d48e7a46ccb615d89856c86067
                   created: 1731336495048
                   modified: 1783343891361
                   isPrivate: false
@@ -183,7 +183,7 @@ collection:
                 name: Find products by all of supplied extraDataList values through
                   params.filters [No filters or sorting]
                 meta:
-                  id: req_2a78592e36724f1896b64fe41cb1fd46
+                  id: req_86cc850b62e145eda3e9761bc650f880
                   created: 1731336495056
                   modified: 1783343916403
                   isPrivate: false
@@ -263,7 +263,7 @@ collection:
                 name: Find products by any of supplied extraDataList values through
                   params.filters [No filters or sorting]
                 meta:
-                  id: req_26efe0e40fbd45748c64161501c6c02c
+                  id: req_1681dde6e2ed497eba833d6e0194ff99
                   created: 1731336495057
                   modified: 1783343921425
                   isPrivate: false
@@ -343,7 +343,7 @@ collection:
                 name: Find products by extraDataList value through params.filters [No filters or
                   sorting]
                 meta:
-                  id: req_a056490bdb754d1b88c7595c74192d8b
+                  id: req_a22374d28dfe470d97bd8c96b602a6f5
                   created: 1762859463256
                   modified: 1783343910811
                   isPrivate: false
@@ -417,7 +417,7 @@ collection:
               - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
                 name: Find products on sale through params.filters [No filters or sorting]
                 meta:
-                  id: req_b638ed82ef0d400e8c4c200896fce621
+                  id: req_9a76b4c245b34c418a3f6455f0863bba
                   created: 1782295272268
                   modified: 1783343896339
                   isPrivate: false
@@ -492,7 +492,7 @@ collection:
                 name: Find products by extraData value through params.filters [No filters or
                   sorting]
                 meta:
-                  id: req_5eb54f1723b040d2bdcd51e7cc1b9a2d
+                  id: req_6d5aff493f4b4713b4f1f47ac9636c3d
                   created: 1782297358605
                   modified: 1783343905811
                   isPrivate: false
@@ -568,7 +568,7 @@ collection:
               preRequest: ""
           - name: With filters & sorting
             meta:
-              id: fld_51f793f1e5854598b46fa795e25e5dac
+              id: fld_4c57c3815f70423dbb94838ead5be9ec
               created: 1782294979955
               modified: 1782295020411
               sortKey: -1782294871574
@@ -577,7 +577,7 @@ collection:
               - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
                 name: Find products by Hierarchies through params.filters [Filters and sorting]
                 meta:
-                  id: req_eda4f2f074fd4083bf80513c3d0fdc0a
+                  id: req_fb6cba6476fd44e18fb48cc42adaaaf0
                   created: 1731336495050
                   modified: 1783343851091
                   isPrivate: false
@@ -660,7 +660,7 @@ collection:
               - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
                 name: Find products by Brand through params.filters [Filters and sorting]
                 meta:
-                  id: req_db21e03ac4484c0bb0e86a1caf5310d2
+                  id: req_bf02666e743b4b09abe74f8e081f5086
                   created: 1731336495051
                   modified: 1783343838308
                   isPrivate: false
@@ -744,7 +744,7 @@ collection:
                 name: Find products by extraDataList value through params.filters [Filters and
                   sorting]
                 meta:
-                  id: req_08ff3204c5154f40b942e5763fddd338
+                  id: req_76236bc0d26a4e3883c4867ef1b0b347
                   created: 1762859880500
                   modified: 1783343866749
                   isPrivate: false
@@ -827,7 +827,7 @@ collection:
                 name: Find products by all of supplied extraDataList values through
                   params.filters [Filters and sorting]
                 meta:
-                  id: req_25d23052380545fca30a3a66adfdde8d
+                  id: req_17cc349a370b4d1ba76e7533ce57341d
                   created: 1782220604591
                   modified: 1783343873684
                   isPrivate: false
@@ -918,7 +918,7 @@ collection:
                 name: Find products by any of supplied extraDataList values through
                   params.filters [Filters and sorting]
                 meta:
-                  id: req_8a581d0690e5414a8df746b4b9b4005b
+                  id: req_682da02a92ec49b795abb0cd3684e0c7
                   created: 1782221009998
                   modified: 1783343880651
                   isPrivate: false
@@ -1008,7 +1008,7 @@ collection:
               - url: https://core.helloretail.com/serve/pages/673616e3bb6f1c28c79af9cc
                 name: Find products on sale through params.filters [Filters and sorting]
                 meta:
-                  id: req_89ed0b77f53e4260a7de6fef2ed6ace2
+                  id: req_d6d0c716fecd4138ace7b02d9b5d6b0a
                   created: 1782295193779
                   modified: 1783343844924
                   isPrivate: false
@@ -1092,7 +1092,7 @@ collection:
                 name: Find products by extraData value through params.filters [Filters and
                   sorting]
                 meta:
-                  id: req_cee1419a73124746aa647d64fc309391
+                  id: req_75689b9a2f8646cd94871b5000bc680a
                   created: 1782296899813
                   modified: 1783343859514
                   isPrivate: false
@@ -1179,7 +1179,7 @@ collection:
           preRequest: ""
       - name: Recoms
         meta:
-          id: fld_b41390c01fb14bc0a985d2feb1d9213c
+          id: fld_edcef13bde3c45a680ee29943a6a5978
           created: 1731336495059
           modified: 1731336495059
           sortKey: -1724318254367
@@ -1187,7 +1187,7 @@ collection:
         children:
           - name: Managed
             meta:
-              id: fld_1f8c6f75716e4f278689399323377240
+              id: fld_9eb477e1d53546eca8a45b04141c3f7a
               created: 1731336495060
               modified: 1731336495060
               sortKey: -1724672335099
@@ -1197,7 +1197,7 @@ collection:
                 name: Find products to show on a front page or 404 page [Single recommendation -
                   no context data]
                 meta:
-                  id: req_b9071135a95e414ea1289a35b7478625
+                  id: req_3fa2c2f163624e868067d5f401a7d892
                   created: 1731336495063
                   modified: 1783343986320
                   isPrivate: false
@@ -1258,7 +1258,7 @@ collection:
                 name: Find products to show on a front page or 404 page [Multiple recommendation
                   - no context data]
                 meta:
-                  id: req_2f974ab103304280a6a26226c56a1e16
+                  id: req_0d04b2efde9f4af989ecd512d3143387
                   created: 1731336495064
                   modified: 1783343991793
                   isPrivate: false
@@ -1333,7 +1333,7 @@ collection:
                 name: Find products to show on a product page, cart page, or slide-out cart
                   [Single recommendation - context.urls/context.productNumbers]
                 meta:
-                  id: req_d3f88d8c459342648e7f73204b72f241
+                  id: req_397b705e57cb4c36a6053faea76d7322
                   created: 1731336495068
                   modified: 1783343996803
                   isPrivate: false
@@ -1398,7 +1398,7 @@ collection:
                   [Multiple recommendation -
                   context.urls/context.productNumbers]
                 meta:
-                  id: req_15c9006b038b4ffdb1532144fc852360
+                  id: req_8c31fdcd030944af88fa5da2fb6c3529
                   created: 1731336495072
                   modified: 1783344001688
                   isPrivate: false
@@ -1472,7 +1472,7 @@ collection:
                 name: Find products to show on a category page [Single recommendation -
                   context.hierarchies]
                 meta:
-                  id: req_fa185c8242924a68bac3ffdb6ca743d5
+                  id: req_6a748f362e9e42f285a8b321abe423b9
                   created: 1731336495075
                   modified: 1783344007178
                   isPrivate: false
@@ -1537,7 +1537,7 @@ collection:
                 name: Find products to show on a custom (extraData) page [Single recommendation
                   - context.extraData]
                 meta:
-                  id: req_e483386214544623ab23be6219b4bb7b
+                  id: req_8e8b4f5c8a4944da9fad0407138ee809
                   created: 1731336495078
                   modified: 1783344017909
                   isPrivate: false
@@ -1606,7 +1606,7 @@ collection:
                 name: Find products to show on a brand page [Single recommendation -
                   context.brand]
                 meta:
-                  id: req_1f93a6ab9bf840d3b8a8ba6d947357b5
+                  id: req_0f7af6cdd6b14508baf7221dc4ffa3d2
                   created: 1782814645651
                   modified: 1783344012573
                   isPrivate: false
@@ -1669,7 +1669,7 @@ collection:
                 name: Find products to show on a custom (extraDataList) page [Single
                   recommendation - context.extraDataList]
                 meta:
-                  id: req_83ad4642a1b14832b09a9586f78197cb
+                  id: req_936e608ae48547078bd903f4f1c1b89f
                   created: 1782822582937
                   modified: 1783344022429
                   isPrivate: false
@@ -1739,7 +1739,7 @@ collection:
               preRequest: ""
           - name: Unmanaged
             meta:
-              id: fld_3feb67bbe35f469baef92d32ca3cf73b
+              id: fld_96081e318bae47789b6c2fd73b0f6181
               created: 1731336495082
               modified: 1731336495082
               sortKey: -1724672341044
@@ -1749,7 +1749,7 @@ collection:
                 name: Find products to show on a front page or 404 page [Multiple recommendation
                   - no context data]
                 meta:
-                  id: req_72466fd360654107b2c4cf5cf2811afe
+                  id: req_e186e63ef125491685a486c1324ad429
                   created: 1731336495084
                   modified: 1783343943799
                   isPrivate: false
@@ -1854,7 +1854,7 @@ collection:
                 name: Find products to show on a front page or 404 page [Single recommendation -
                   no context data]
                 meta:
-                  id: req_f0ffe223db1e42978bb811f77fee4a8c
+                  id: req_dda9c9e1a1164b47a7fd0e4ff638241f
                   created: 1731336495086
                   modified: 1783343938371
                   isPrivate: false
@@ -1942,7 +1942,7 @@ collection:
                 name: Find products to show on a product page, cart page, or slide-out cart
                   [Single recommendation - context.urls/context.productNumbers]
                 meta:
-                  id: req_fc3b14c3d5af4b4395028ba06fd2e66c
+                  id: req_366c8614c6ef4d7da00e73da412a920d
                   created: 1731336495089
                   modified: 1783343948633
                   isPrivate: false
@@ -2030,7 +2030,7 @@ collection:
                   [Multiple recommendation -
                   context.urls/context.productNumbers]
                 meta:
-                  id: req_f4b92048a658440294956b6561177d45
+                  id: req_feea245d33564dadab349fc71101d6c2
                   created: 1731336495092
                   modified: 1783343954202
                   isPrivate: false
@@ -2137,7 +2137,7 @@ collection:
                 name: Find products to show on a category page [Single recommendation -
                   context.hierarchies]
                 meta:
-                  id: req_5d7f85263c2748d69b3e5e3917e1278e
+                  id: req_9275496667784bba8635c65332311091
                   created: 1733222728376
                   modified: 1783343959328
                   isPrivate: false
@@ -2224,7 +2224,7 @@ collection:
                 name: Find products to show on a brand page [Single recommendation -
                   context.brand]
                 meta:
-                  id: req_f0766dd24a16400c9e614bb11d5f9c5d
+                  id: req_67d09a9528764f9b8de580507cf51a64
                   created: 1782982858337
                   modified: 1783343963720
                   isPrivate: false
@@ -2311,7 +2311,7 @@ collection:
                 name: Find products to show on a custom (extraData) page [Single recommendation
                   - context.extraData]
                 meta:
-                  id: req_1665d28d182347a9a7a1ae63449d43c3
+                  id: req_3aad594abf9043cd95fa5b8874c36009
                   created: 1782983670326
                   modified: 1783343968406
                   isPrivate: false
@@ -2402,7 +2402,7 @@ collection:
                 name: Find products to show on a custom (extraDataList) page [Single
                   recommendation - context.extraDataList]
                 meta:
-                  id: req_2093c86b996340e9982469fbe61de8ac
+                  id: req_c7265df1e9a345c394137363f8ed5824
                   created: 1782984067105
                   modified: 1783343973775
                   isPrivate: false
@@ -2497,7 +2497,7 @@ collection:
           preRequest: ""
       - name: Search
         meta:
-          id: fld_cc4c90e76fd34d8aaf7470d65c9e6f94
+          id: fld_9d12be89aedb41fa9b7662e026f5216a
           created: 1731336495104
           modified: 1731336495104
           sortKey: -1724318260166
@@ -2505,7 +2505,7 @@ collection:
         children:
           - name: Without filters & sorting
             meta:
-              id: fld_87e923531a444c60bd124008ed41afad
+              id: fld_f377740dfb894793ba6c8601afe2437c
               created: 1731336495105
               modified: 1731336495105
               sortKey: -1724680741397
@@ -2514,7 +2514,7 @@ collection:
               - url: https://core.helloretail.com/serve/search/
                 name: Find products by search term
                 meta:
-                  id: req_59fb1667ee584f4b8fd836b4529640c7
+                  id: req_c17ff531b8944fd5b7602e4ef3b5eaf5
                   created: 1731336495106
                   modified: 1783344037388
                   isPrivate: false
@@ -2585,7 +2585,7 @@ collection:
               - url: https://core.helloretail.com/serve/search/
                 name: Find products and categories by search term
                 meta:
-                  id: req_e35c9a83da3a49769b003e58468a9ebf
+                  id: req_9c2c428c224f494fb26de7bf19c0785a
                   created: 1731336495107
                   modified: 1783344043166
                   isPrivate: false
@@ -2663,7 +2663,7 @@ collection:
               - url: https://core.helloretail.com/serve/search/
                 name: Find products and brands by search term
                 meta:
-                  id: req_6f2dce694ad14f5daa717211643fe0a5
+                  id: req_c2cdc725be554d079265ae58532e2df3
                   created: 1731336495109
                   modified: 1783344047901
                   isPrivate: false
@@ -2741,7 +2741,7 @@ collection:
               - url: https://core.helloretail.com/serve/search/
                 name: Find products and sitePages by search term
                 meta:
-                  id: req_49fd965997984ad0970dca0c8b4fabf9
+                  id: req_2fd65c81ac734c92842b11ccec3880d5
                   created: 1731336495110
                   modified: 1783344053287
                   isPrivate: false
@@ -2819,7 +2819,7 @@ collection:
               - url: https://core.helloretail.com/serve/search/
                 name: Find products and blogPosts by search term
                 meta:
-                  id: req_9d0c55647fdf4de388aabef59aa75bdc
+                  id: req_e1b61c8467254cfe8c2ab871c7e5187f
                   created: 1731336495111
                   modified: 1783344058713
                   isPrivate: false
@@ -2897,7 +2897,7 @@ collection:
               - url: https://core.helloretail.com/serve/search/
                 name: Find products and redirects by search term
                 meta:
-                  id: req_1a8815358cb041e695e7fa1ece0ef39b
+                  id: req_56b9dd8592aa474681bbe3010b508819
                   created: 1739354799385
                   modified: 1783344063571
                   isPrivate: false
@@ -2976,7 +2976,7 @@ collection:
               preRequest: ""
           - name: With filters & sorting
             meta:
-              id: fld_8215fdaa84854d1ca2eb1cc118997e68
+              id: fld_91ccc7c2fc4a4d41931562c2548535e1
               created: 1731336495113
               modified: 1782295140711
               sortKey: -1724677621836
@@ -2985,7 +2985,7 @@ collection:
               - url: https://core.helloretail.com/serve/search/
                 name: Find products by search term
                 meta:
-                  id: req_f19bc856ef1a4e849bdffe9c03e609c2
+                  id: req_40bf79d8cfe0456b93384229c78e0896
                   created: 1731336495114
                   modified: 1783344079161
                   isPrivate: false
@@ -3056,7 +3056,7 @@ collection:
               - url: https://core.helloretail.com/serve/search/
                 name: Find products and categories by search term
                 meta:
-                  id: req_40ced3419a524f3d887a1d147e1a442c
+                  id: req_df8c29c2a72345c59ccfb3107d534bda
                   created: 1731336495115
                   modified: 1783344085464
                   isPrivate: false
@@ -3135,7 +3135,7 @@ collection:
               - url: https://core.helloretail.com/serve/search/
                 name: Find products and brands by search term
                 meta:
-                  id: req_fbee6c9843c74e478ea2ff7b66429ac5
+                  id: req_09147cd80c874c1f83464e1cb6442f83
                   created: 1731336495117
                   modified: 1783344090205
                   isPrivate: false
@@ -3214,7 +3214,7 @@ collection:
               - url: https://core.helloretail.com/serve/search/
                 name: Find products and sitePages by search term
                 meta:
-                  id: req_b96fe793218a4900bb93c779a690afeb
+                  id: req_c5c580f6f9884dc0a4580a615c330f2e
                   created: 1731336495118
                   modified: 1783344095749
                   isPrivate: false
@@ -3293,7 +3293,7 @@ collection:
               - url: https://core.helloretail.com/serve/search/
                 name: Find products and blogPosts by search term
                 meta:
-                  id: req_0bef0f6ed8a1445aa1bf2018938b48ce
+                  id: req_b7ffd6a48a5d400cba6432abc487c2d4
                   created: 1731336495119
                   modified: 1783344100506
                   isPrivate: false
@@ -3372,7 +3372,7 @@ collection:
               - url: https://core.helloretail.com/serve/search/
                 name: Find products and redirects by search term
                 meta:
-                  id: req_f8160e043f4a412181cdb8d0f5eb9996
+                  id: req_035e1cc4d85840c1909ce4453e4bf017
                   created: 1782991833628
                   modified: 1783344104826
                   isPrivate: false
@@ -3454,7 +3454,7 @@ collection:
           preRequest: ""
       - name: Tracking
         meta:
-          id: fld_d35e78a87e744896acd01b533ee7fc10
+          id: fld_2e9dabf4ee6f41d78b5ae71e6661e4b6
           created: 1731336495131
           modified: 1731336495131
           sortKey: -1724925545317
@@ -3463,7 +3463,7 @@ collection:
           - url: https://core.helloretail.com/serve/collect/click
             name: Track click by trackingUserId
             meta:
-              id: req_fd2cd105522e4f11a6faa91232634bb7
+              id: req_bb7c102e9c334904aa31b106358d3cc5
               created: 1731336495132
               modified: 1783424569736
               isPrivate: false
@@ -3509,7 +3509,7 @@ collection:
           - url: https://core.helloretail.com/serve/collect/pageview
             name: Track view by trackingUserId
             meta:
-              id: req_ec378a84ead9456190b4d36ea7978d23
+              id: req_96130be80da14375b0f940df9951eef2
               created: 1731336495134
               modified: 1783424458860
               isPrivate: false
@@ -3558,7 +3558,7 @@ collection:
           - url: https://core.helloretail.com/serve/trackingUser
             name: Generate a new trackingUserId
             meta:
-              id: req_f602d7452b264cceaba93467f84a93d0
+              id: req_208ee08678f44cba99747c4d3f6af745
               created: 1731336495138
               modified: 1783426847427
               isPrivate: false
@@ -3607,7 +3607,7 @@ collection:
           - url: https://core.helloretail.com/serve/collect/cart
             name: Track cart by trackingUserId
             meta:
-              id: req_5dd6f6cbe4b14ff3bf1fdc85de6ce284
+              id: req_0e9047889d6b4d03903c17853ccbdb28
               created: 1731336495140
               modified: 1783423807100
               isPrivate: false
@@ -3661,7 +3661,7 @@ collection:
           - url: https://core.helloretail.com/serve/collect/conversion
             name: Track conversion by trackingUserId
             meta:
-              id: req_6b13176023154fa38aadc1e49ff0c6d9
+              id: req_8f6bac17142c45d0961752e35307514f
               created: 1731336495144
               modified: 1783423532971
               isPrivate: false
@@ -3741,7 +3741,7 @@ collection:
           - url: https://core.helloretail.com/serve/collect/conversion
             name: Track conversion by customerId
             meta:
-              id: req_ccd3100cec674b2a9b5e96e9c23b865f
+              id: req_aae9316bfc8b4fea9e9639fb34119a57
               created: 1783341534910
               modified: 1783423548514
               isPrivate: false
@@ -3821,7 +3821,7 @@ collection:
           - url: https://core.helloretail.com/serve/collect/cart
             name: Track cart by customerId
             meta:
-              id: req_a049d808be8f43abb8ddf717bb56b37b
+              id: req_8f3657e672064534bfde5de6575a37ac
               created: 1783423697004
               modified: 1783423824455
               isPrivate: false
@@ -3875,7 +3875,7 @@ collection:
           - url: https://core.helloretail.com/serve/collect/pageview
             name: Track view by customerId
             meta:
-              id: req_c65ccf13ba4547e6872553ccdbf4a9e3
+              id: req_4cee75f6a7d44abebbc5df43b68ebf7a
               created: 1783423886929
               modified: 1783424462962
               isPrivate: false
@@ -3923,7 +3923,7 @@ collection:
           - url: https://core.helloretail.com/serve/collect/click
             name: Track click by customerId
             meta:
-              id: req_ca2be9994f5d477f94d476165008b439
+              id: req_bc505dfc604641bcbb0303f996dba075
               created: 1783424854731
               modified: 1783424893641
               isPrivate: false
@@ -3966,12 +3966,121 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+          - url: https://core.helloretail.com/serve/collect/customerEmail
+            name: Connect customer email and trackingUserId
+            meta:
+              id: req_a97279a0800a4a3581367a65d3ba6765
+              created: 1791965335176
+              modified: 1791965552851
+              isPrivate: false
+              description: >+
+                **Claude Skill**:
+
+
+                #connect-email-and-trackingUserId
+
+
+                **Behaviour**:
+
+
+                Informs the Hello Retail system of a customers email address and
+                their trackingUserId, connecting them for better
+                personalization.
+
+
+                **Explanation of important properties to surface to the user**:
+
+              sortKey: -1724926058988.6484
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"trackingUserId": "6acf333085e256e7ca4fab7f",
+                		"websiteUuid": "d364dcdc-e618-45bd-b395-8653579884fe",
+                		"email": "test@helloretail.com"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://core.helloretail.com/serve/collect/customerId
+            name: Connect customerId and trackingUserId
+            meta:
+              id: req_b81905a2175043a1b6875307e542a7cf
+              created: 1791965654894
+              modified: 1791965952117
+              isPrivate: false
+              description: >+
+                **Claude Skill**:
+
+
+                #connect-customerId-and-trackingUserId
+
+
+                **Behaviour**:
+
+
+                Informs the Hello Retail system of the internal id the shop has
+                for the customer, and their trackingUserId, connecting them for
+                better personalization.
+
+
+                This is valuable in scenarios where a customer visits the shop
+                from two different devices, but where the shop knows that both
+                devices represent the same customer. Connecting the customers
+                trackingUserIds from both devices, to the shops internal id for
+                this customer, subsequently ensures that tracking across all
+                connected trackingUserIds are shared.
+
+
+                This results in the customers behaviour on device 1 also being
+                considered when they interact with Hello Retail solutions on
+                device 2, and vice versa.
+
+
+                **Explanation of important properties to surface to the user**:
+
+              sortKey: -1724926057758.8242
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"trackingUserId": "6acf333085e256e7ca4fab7f",
+                		"websiteUuid": "d364dcdc-e618-45bd-b395-8653579884fe",
+                		"id": "123456789"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            scripts:
+              preRequest: ""
+              afterResponse: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
         scripts:
           afterResponse: ""
           preRequest: ""
       - name: Feeds
         meta:
-          id: fld_1dc6ac7eb7bf4c5ba25a2bb3c7dc7107
+          id: fld_afe1033da97849129dddf95d9aeefc21
           created: 1731336495148
           modified: 1731336495148
           sortKey: -1725269002588
@@ -3979,7 +4088,7 @@ collection:
         children:
           - name: Product feeds
             meta:
-              id: fld_7ba0ee65f88a4b17a05a768d2d2ab387
+              id: fld_57b500cdcc2247d09fc069446cc5cd8a
               created: 1731336495149
               modified: 1731336495149
               sortKey: -1725269026937
@@ -3988,7 +4097,7 @@ collection:
               - url: https://core.helloretail.com/api/websites/d364dcdc-e618-45bd-b395-8653579884fe/productfeedruns/11388?apiKey={API-KEY}
                 name: Queue specific product feed (defaults to delta feed run if enabled)
                 meta:
-                  id: req_ccafc38239c6481ba822c24ba82b59c5
+                  id: req_ea9284f67ad64c6686fcc4d74753f1ed
                   created: 1731336495150
                   modified: 1731337685954
                   isPrivate: false
@@ -4013,7 +4122,7 @@ collection:
                 name: Queue specific product feed (force full feed run, even if delta runs are
                   enabled)
                 meta:
-                  id: req_c8324c5a2a8244eda0eaf0ee37af0144
+                  id: req_eb867d8b0d114aed83f19f39c754fde8
                   created: 1731336495152
                   modified: 1731337695036
                   isPrivate: false
@@ -4042,7 +4151,7 @@ collection:
           preRequest: ""
       - name: Managing Product Data (CRUD operations)
         meta:
-          id: fld_9b15f69e6e234f3c9fe04c36b5e38f21
+          id: fld_b2c82ff47bbe4a8f9720a11482caa42b
           created: 1731336495155
           modified: 1731336495155
           sortKey: -1725269750050
@@ -4051,7 +4160,7 @@ collection:
           - url: https://core.helloretail.com/api/websites/d364dcdc-e618-45bd-b395-8653579884fe/products?apiKey={API-KEY}
             name: Create product
             meta:
-              id: req_65bdd78751a440bc84203a21f10e0747
+              id: req_a8308654ab59461a9a13eb23e977c2cb
               created: 1731336495156
               modified: 1736512363202
               isPrivate: false
@@ -4113,7 +4222,7 @@ collection:
           - url: https://core.helloretail.com/api/websites/d364dcdc-e618-45bd-b395-8653579884fe/products?id=https%3A%2F%2Fwww.hr-api-test.dk%2Fproducts%2Ftest-product-created-through-CRUD-operations%2F&apiKey={API-KEY}
             name: Update product
             meta:
-              id: req_f013f174426143a7b0f05991ce6854c3
+              id: req_f59e30bd10fc4be7bd2b10d79f02430a
               created: 1731336495159
               modified: 1736512362917
               isPrivate: false
@@ -4175,7 +4284,7 @@ collection:
           - url: https://core.helloretail.com/api/websites/d364dcdc-e618-45bd-b395-8653579884fe/products?id=https%3A%2F%2Fwww.hr-api-test.dk%2Fproducts%2Ftest-product-created-through-CRUD-operations%2F&apiKey={API-KEY}
             name: Get product
             meta:
-              id: req_640419f0e9a14354861cf447834fd494
+              id: req_9fac012b18cb46e3bae866d15c516b14
               created: 1731336495160
               modified: 1731337415439
               isPrivate: false
@@ -4196,7 +4305,7 @@ collection:
           - url: https://core.helloretail.com/api/websites/d364dcdc-e618-45bd-b395-8653579884fe/products?id=https%3A%2F%2Fwww.hr-api-test.dk%2Fproducts%2Ftest-product-created-through-CRUD-operations%2F&apiKey={API-KEY}
             name: Delete product
             meta:
-              id: req_0ed8853bc5034d499384ff304e22a0fa
+              id: req_498097a061af4135873cab7283bf3537
               created: 1731336495162
               modified: 1731337434002
               isPrivate: false
@@ -4219,7 +4328,7 @@ collection:
           preRequest: ""
       - name: Customer Bias
         meta:
-          id: fld_6f82c293c7ef481ebcedcd8f6e840617
+          id: fld_4c180bcbd6f34708888ffddb38d56c2d
           created: 1731336495164
           modified: 1731336495164
           sortKey: -1725271766236
@@ -4228,7 +4337,7 @@ collection:
           - url: https://core.helloretail.com/serve/customer/bias
             name: Find Customer Bias by customerId
             meta:
-              id: req_5e930b4968ec4f4faa2ed12aeb8b7396
+              id: req_9e56628a43794740a5b2a60e5c230104
               created: 1731336495165
               modified: 1783425413014
               isPrivate: false
@@ -4272,7 +4381,7 @@ collection:
           - url: https://core.helloretail.com/serve/customer/bias
             name: Find Customer Bias by trackingUserId
             meta:
-              id: req_1f99c816ee914a9cbc7a97369ff7ba65
+              id: req_379e9ef46c9343baab358ed530f73b7f
               created: 1783425271262
               modified: 1783425416671
               isPrivate: false
@@ -4318,7 +4427,7 @@ collection:
           preRequest: ""
       - name: Product Intelligence
         meta:
-          id: fld_3cbbbaa8be044e93ace0c4daebd2208f
+          id: fld_84f4f701270b4d3cbe5c0f7da783ff55
           created: 1731336495168
           modified: 1731336495168
           sortKey: -1728545177969
@@ -4327,7 +4436,7 @@ collection:
           - url: https://core.helloretail.com/pi/graphql?apiKey={API-KEY}
             name: Product Intelligence
             meta:
-              id: req_6c568a3d71154001a512b5950a2cc9a3
+              id: req_962532bcc02f4fe2a8a3bde6e0f44512
               created: 1731336495168
               modified: 1733224179783
               isPrivate: false
@@ -4363,7 +4472,7 @@ collection:
           preRequest: ""
       - name: Platform plugin endpoint examples
         meta:
-          id: fld_384b267624954a978c957257e7080e67
+          id: fld_55de80446a664b6fb39db4ccc66cda0d
           created: 1736938842981
           modified: 1736938842981
           sortKey: -1736938842981
@@ -4371,18 +4480,18 @@ collection:
         children:
           - name: Magento 2
             meta:
-              id: fld_4822836867a64a5693f5f7b9eefb9217
+              id: fld_754097364e814140ad5020d226249217
               created: 1736938861874
               modified: 1736938861874
               sortKey: -1736938861874
               description: ""
             children:
-              - url: https://www.domain-name.dk/awext/index/info
+              - url: https://www.domain-name.dk/rest/V1/awext/info
                 name: Version and extraattributes information
                 meta:
-                  id: req_eb35f1fc5c0c4d85a19aacfbdf5aeaf8
+                  id: req_bdacb45f61ea4d048f85e8ecea5ca675
                   created: 1736938871579
-                  modified: 1783684588559
+                  modified: 1791965287174
                   isPrivate: false
                   description: ""
                   sortKey: -1736938871579
@@ -4390,7 +4499,6 @@ collection:
                 headers:
                   - name: Authorization
                     value: Bearer tok_{ your Magento 2 token }
-                    id: pair_9e8adc3c4ede4ccc81147eceeb92b410
                 scripts:
                   preRequest: ""
                   afterResponse: ""
@@ -4407,7 +4515,7 @@ collection:
               preRequest: ""
           - name: Magento 1
             meta:
-              id: fld_6e7f67eacc0846d2baebb4dfad636cd3
+              id: fld_79850bd6673248468548f28ce10607c4
               created: 1736943552598
               modified: 1736943552598
               sortKey: -1736943552598
@@ -4416,7 +4524,7 @@ collection:
               - url: https://www.domain-name.dk/awext/index/info
                 name: Version and extraattributes information
                 meta:
-                  id: req_406e53d3e8d04016b164b05bfa25cce1
+                  id: req_b6c6b9120267443eae98a719e6bd773f
                   created: 1736943555077
                   modified: 1736944020263
                   isPrivate: false
@@ -4442,7 +4550,7 @@ collection:
               preRequest: ""
           - name: WooCommerce
             meta:
-              id: fld_9e20b92d82ae420283d2fc284c7f5473
+              id: fld_7acc969ec0c5448697239550c6970bc4
               created: 1736943891578
               modified: 1736943891578
               sortKey: -1736943891578
@@ -4451,7 +4559,7 @@ collection:
               - url: https://www.domain-name.dk/?feed=addwish_info
                 name: Version and extraattributes information
                 meta:
-                  id: req_d28717a651d24832965bc1cfbd86b75c
+                  id: req_f03281d74d874e98b0ebd204ae659a22
                   created: 1736943894206
                   modified: 1736944051954
                   isPrivate: false
@@ -4480,7 +4588,7 @@ collection:
           preRequest: ""
       - name: Configuring Solutions
         meta:
-          id: fld_53caef95634241e290ab54c5951081c1
+          id: fld_5f165e1297b3413caef32b83f7c4416c
           created: 1749628550788
           modified: 1749628550788
           sortKey: -1749628550788
@@ -4488,7 +4596,7 @@ collection:
         children:
           - name: Configuring Pages
             meta:
-              id: fld_daa04bfbcd054d719470e5c93865e566
+              id: fld_4dedcd58392743f9a1f723cce250e440
               created: 1749634630079
               modified: 1750148283097
               sortKey: -1749634630079
@@ -4497,7 +4605,7 @@ collection:
               - url: https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/latest/{pageKey}?apiKey={apiKey}
                 name: Fetch latest page configuration
                 meta:
-                  id: req_196584ab04b04f618370e11b861c9f73
+                  id: req_51e84848de4544858872503a752d4e3e
                   created: 1749628554360
                   modified: 1749634769767
                   isPrivate: false
@@ -4521,7 +4629,7 @@ collection:
               - url: https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/{versionId}?apiKey={apiKey}
                 name: Update page configuration [Personalized_Boosts]
                 meta:
-                  id: req_818dc2020ef6410cacd525b5e2ee8e28
+                  id: req_e774b3cb4f09429d816994cccdbff63c
                   created: 1749628728687
                   modified: 1750149300380
                   isPrivate: false
@@ -4578,7 +4686,7 @@ collection:
               - url: https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/{versionId}?apiKey={apiKey}
                 name: Update page configuration [product_boosts]
                 meta:
-                  id: req_8052b50623bb4094a59d03eda1eaf125
+                  id: req_dfb9d753c2e2448bbdcd41e6db52cd38
                   created: 1749631608432
                   modified: 1749634805321
                   isPrivate: false
@@ -4630,7 +4738,7 @@ collection:
               - url: https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/{versionId}?apiKey={apiKey}
                 name: Update page configuration [url_overrides]
                 meta:
-                  id: req_b801d65fa24042f7a0ed058d184444a3
+                  id: req_c4e139bc493b4b55bb1b8c2789303350
                   created: 1749632093272
                   modified: 1749634807401
                   isPrivate: false
@@ -4685,7 +4793,7 @@ collection:
               - url: https://core.helloretail.com/api/companies/{companyId}/websites/{websiteUuid}/pages/{versionId}?apiKey={apiKey}
                 name: Update page configuration [show_out_of_stock_products]
                 meta:
-                  id: req_63fb2761be484ce9988655b377bb0f54
+                  id: req_d29934da2c2341a3a50c52e0bffcccc4
                   created: 1749632214307
                   modified: 1749634895567
                   isPrivate: false
@@ -4723,7 +4831,7 @@ collection:
               preRequest: ""
           - name: Configuring Search
             meta:
-              id: fld_653e2c338ba641c595a537d390c5b482
+              id: fld_4fe1dad49b744c9cbdf05960a8ab399e
               created: 1750148304503
               modified: 1750148304503
               sortKey: -1750148304503
@@ -4732,7 +4840,7 @@ collection:
               - url: https://core.helloretail.com/graphql?apiKey={apiKey}
                 name: Update Search configuration [personalizedFields]
                 meta:
-                  id: req_737faef412bf49fc9b43c6627289a403
+                  id: req_bfedb3be617341a9821672ee8cd39220
                   created: 1750148404857
                   modified: 1750149440679
                   isPrivate: false
@@ -4772,7 +4880,7 @@ collection:
               - url: https://core.helloretail.com/graphql?apiKey={apiKey}
                 name: Update Search configuration [Clear all personalizedFields]
                 meta:
-                  id: req_3704f945f44c4a8e8514e7c9ecf78c34
+                  id: req_6431eeb8bc3242428c560b557953fc1a
                   created: 1750149340178
                   modified: 1750149423557
                   isPrivate: false
@@ -4815,7 +4923,7 @@ cookieJar:
   meta:
     id: jar_99d30891da4bdcebc63947a8fc17f076de878684
     created: 1755861427869
-    modified: 1779878666197
+    modified: 1791529329721
   cookies:
     - key: store
       value: be_nl
@@ -4825,7 +4933,7 @@ cookieJar:
       hostOnly: true
       creation: 2025-11-26T07:49:55.520Z
       lastAccessed: 2025-11-26T09:23:34.198Z
-      id: 7e49830e-4d44-470e-857b-37dab563bc69
+      id: 7e8db586-3f8b-425b-a517-01e29682e78d
     - key: PHPSESSID
       value: fc7a3b3ad52265bf509efa637f07a290
       maxAge: 86400
@@ -4837,7 +4945,7 @@ cookieJar:
       creation: 2025-11-26T07:49:55.523Z
       lastAccessed: 2025-11-26T09:23:34.199Z
       sameSite: lax
-      id: 6f6fab98-26e6-4dd9-854d-452a1eefa155
+      id: 4a8ea5b1-2a69-4ecc-82cc-a2c5c2f2ae87
     - key: session-
       value: mi0uhv5pfd8nairam1jakelkng
       domain: tencate.sition.dev
@@ -4848,7 +4956,7 @@ cookieJar:
       creation: 2025-12-10T13:59:57.157Z
       lastAccessed: 2025-12-10T13:59:57.157Z
       sameSite: lax
-      id: 0380e7e9-3305-429f-a949-7be602c0e312
+      id: d10827fc-e22a-4033-bdc6-61fc7d5255ad
     - key: pritunl-zero
       maxAge: 0
       domain: bs24-test.wexohosting.com
@@ -4858,7 +4966,7 @@ cookieJar:
       hostOnly: true
       creation: 2025-12-16T09:57:12.837Z
       lastAccessed: 2025-12-16T12:54:31.033Z
-      id: 5ae06cc6-e882-4f75-8e4d-849f5166a915
+      id: cdbe925f-6c79-4904-81b7-4e93ded9de74
     - key: pritunl-zero
       maxAge: 0
       domain: wexohosting.com
@@ -4868,7 +4976,7 @@ cookieJar:
       hostOnly: false
       creation: 2025-12-16T09:57:12.838Z
       lastAccessed: 2025-12-16T12:54:31.033Z
-      id: 19029953-9a76-4db3-ad13-8436f992da4a
+      id: cd8f8766-240f-4b82-b62c-b305294e871b
     - key: PrestaShop-f12e36015b3d713e6ba033527a0e7800
       value: def5020024a91da165f86951a2b658d479700557ca98d7bd96de7ddec93336abaa8b1bb5474d5865d6a546813ff33518f98fb1e5b3b80a58497837fedf7c92129f7cad884ada82c1e4437e0eff1c73dd3957c0973a8fe11b4b15bab19532cb91f751d0900b122c741103f68dd718c72eb8c8df7492e6101d0eaeafef1896f3c1b9d4a67efb9d49536dcd7eea5047477661c51101bf07d2d1772cb7f25d0a752614b6a96fb962ffa363df2bd50776a7deb92ce575c4a35189ff5fedf6507e2751db66739e24c2b8022184a6d6dd1659ef15ec423cc22d70bf3570a393a164c95adb0cc43fb304e0a18ff3c5fabe1b7b80fa26f77a10c4f4
       maxAge: 1728000
@@ -4879,7 +4987,7 @@ cookieJar:
       hostOnly: false
       creation: 2026-02-03T10:06:25.690Z
       lastAccessed: 2026-02-03T10:06:25.690Z
-      id: 493a166c-daeb-4010-aed0-3cc8d5ee2b46
+      id: d7c6a85c-3f20-4863-84c4-835a3fbb51f6
     - key: laravel_session
       value: eyJpdiI6Ild0SStZZFJMQXlVdkdhTVdVMmtNUVE9PSIsInZhbHVlIjoidFVuVWRTMElnWG1XenFOK1cyTEprUFF1V3dTRjZTS3lReUh0cTFySDNyTFg0OS9PdktFVTZIWFBOUURuSkE4K0dpR1luRVJiSnRxeFhmUXgyZUtDc2NoWiszTnA5eW1iUm9BQ0ZXUGx0eVJ1SUd5akJOV2pGTjFOcG56WXc2QmMiLCJtYWMiOiJkOWUzNzY4MWMxMTVlY2VmNzQxMTJlYTVkMTJiMGU4OTQ1NDQ4YTM3NjY3ZTk5NmYxY2ExNTY3NGMzYWFjMDhjIiwidGFnIjoiIn0%3D
       maxAge: 2592000
@@ -4891,7 +4999,7 @@ cookieJar:
       creation: 2026-03-13T11:49:45.691Z
       lastAccessed: 2026-03-13T11:49:45.691Z
       sameSite: lax
-      id: 7f195390-d9df-4f4b-a5fc-253520ddcfe3
+      id: 9a8c8f67-a21f-49f9-a6d3-11cf83f1adf8
     - key: PHPSESSID
       value: sn6u5ag1g0ee31ujikoahuns2q
       maxAge: 3600
@@ -4903,7 +5011,7 @@ cookieJar:
       creation: 2026-05-20T08:53:37.960Z
       lastAccessed: 2026-05-20T08:53:37.960Z
       sameSite: lax
-      id: 4184f14f-b2a5-4015-b3fa-c08b94282c93
+      id: 3def5e2d-901f-458c-98e6-5d0bdf18ef7e
     - key: laravel_session
       value: eyJpdiI6ImZVVjF6UzFaRit3Z0xEL2JzUUZTNnc9PSIsInZhbHVlIjoiZkdINk1wY3dpSlhncllpZlNnK0RKOE9sWGI1MXpFdTdJMEs4WHFHS3dBZ1hkTjVpd2hNRUxocGZnTlJoMFpFVU9FMFZpMnpRWjA4alZKYU5GWWlUU2ZITjR6OXM3NkhoK3hRQXBLZjlmbnd4NUtWVjRmZzViMlArNFgyTG9IN0QiLCJtYWMiOiI0ZGI0ZTk0Zjk5ODRiNmU4YTUxZjdmMDI4MDljYTlmNDI2ZGE2ZDljZjc0N2JiYWMzMjMzN2ExYzBjYWY0Y2Y3IiwidGFnIjoiIn0%3D
       maxAge: 28800
@@ -4914,7 +5022,108 @@ cookieJar:
       creation: 2026-05-20T09:24:03.838Z
       lastAccessed: 2026-05-27T10:44:26.197Z
       sameSite: lax
-      id: 624a1485-2f9d-4023-b379-941fe7a9b51f
+      id: 38337438-efa2-4aa1-af63-08780406b6b0
+    - key: PHPSESSID
+      value: a0bd24f90e5900426f1a0f05005df246
+      maxAge: 3600
+      domain: joehyva.hypernode.io
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+      creation: 2026-07-10T11:59:46.145Z
+      lastAccessed: 2026-07-10T11:59:46.145Z
+      sameSite: lax
+      id: 0e9dff65-5684-43bc-a78b-50e637213ed3
+    - key: wp_ga4_user_id
+      value: deleted
+      maxAge: 0
+      domain: joehyva.hypernode.io
+      path: /
+      hostOnly: false
+      creation: 2026-07-10T11:59:46.146Z
+      lastAccessed: 2026-07-10T11:59:46.146Z
+      sameSite: lax
+      id: e0d9a3c6-9052-4d32-bae4-3dd8832c3279
+    - key: wp_ga4_customerGroup
+      value: NOT%20LOGGED%20IN
+      maxAge: 31536000
+      domain: joehyva.hypernode.io
+      path: /
+      hostOnly: false
+      creation: 2026-07-10T11:59:46.146Z
+      lastAccessed: 2026-07-10T11:59:46.146Z
+      sameSite: lax
+      id: f8359828-29a6-4f87-a921-0b08a9a8a57d
+    - key: __cf_bm
+      value: 7718R_cDz8YmAHx9cHK35n.LInjSabXecWvkcvzvGTU-1785500999.4476376-1.0.1.1-I7iR_Ys2xy3dJrsX4UBAhoB2qAAUvDKSQCbw9s6QYVfGcUUfiJPHQWdvzQvphN4ECJ4.Q2s8DqZCqH7XRnqXc1UWYr3v2X6TWGDk80aWk_0JDTsHDYnixK55OaD72Teb
+      domain: horecacentrumamsterdam.nl
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+      creation: 2026-07-31T12:30:01.004Z
+      lastAccessed: 2026-07-31T12:30:01.004Z
+      id: ea1c2300-5662-4082-9f30-d08d7e0f48d0
+    - key: PHPSESSID
+      value: lgg3i1l27vfmcmubf0t9hoqhr6
+      maxAge: 3600000
+      domain: www.stigefabrikken.dk
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+      creation: 2026-08-06T11:18:18.377Z
+      lastAccessed: 2026-08-06T11:18:18.377Z
+      sameSite: lax
+      id: 3097674e-489b-420c-b7f6-dacf90a8013f
+    - key: PHPSESSID
+      value: e4jcarjrgo4ds43ohmo6l7l976
+      maxAge: 32400
+      domain: www.jespersplanteskole.dk
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+      creation: 2026-08-17T08:01:56.551Z
+      lastAccessed: 2026-08-17T08:01:56.551Z
+      sameSite: lax
+      id: f0dee3de-305a-4a47-8000-fbfcd484cd13
+    - key: PHPSESSID
+      value: j0unsap87v06tka3bu1i6odqrg
+      maxAge: 3600
+      domain: dev.franchinishop.it
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+      creation: 2026-08-25T12:28:12.800Z
+      lastAccessed: 2026-10-09T07:02:09.719Z
+      sameSite: lax
+      id: b2531d73-ed92-4a70-8ff7-0b1ab489e53c
+    - key: session-
+      value: 34481ba19f7ba08e9ce9eab3831ed984
+      domain: duijvestein.acc.h1web.dev
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+      creation: 2026-09-04T11:47:21.025Z
+      lastAccessed: 2026-09-04T11:47:21.025Z
+      sameSite: lax
+      id: e4b7dfb9-d15c-4e8a-879d-174f20b82f45
+    - key: session-
+      value: 3b49a9621b4d49b5c645cc0407407608
+      maxAge: 3672000
+      domain: cykelpartner-prelive.wexohosting.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+      creation: 2026-09-25T07:18:06.848Z
+      lastAccessed: 2026-09-25T07:18:06.848Z
+      sameSite: lax
+      id: da494245-4060-4096-99f3-3ffcea7d7228
 environments:
   name: Base Environment
   meta:
